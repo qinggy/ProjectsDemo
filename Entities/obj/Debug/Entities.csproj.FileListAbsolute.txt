@@ -1,0 +1,4 @@
+D:\CodeSource\CompanyDemo\Entities\bin\Debug\Entities.dll
+D:\CodeSource\CompanyDemo\Entities\bin\Debug\Entities.pdb
+D:\CodeSource\CompanyDemo\Entities\obj\Debug\Entities.dll
+D:\CodeSource\CompanyDemo\Entities\obj\Debug\Entities.pdb

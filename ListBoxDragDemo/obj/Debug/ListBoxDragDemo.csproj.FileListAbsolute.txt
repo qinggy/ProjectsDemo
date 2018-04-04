@@ -1,0 +1,11 @@
+D:\CodeSource\CompanyDemo\ListBoxDragDemo\obj\Debug\ListBoxDragDemo_MarkupCompile.cache
+D:\CodeSource\CompanyDemo\ListBoxDragDemo\bin\Debug\ListBoxDragDemo.exe
+D:\CodeSource\CompanyDemo\ListBoxDragDemo\bin\Debug\ListBoxDragDemo.pdb
+D:\CodeSource\CompanyDemo\ListBoxDragDemo\obj\Debug\MainWindow.baml
+D:\CodeSource\CompanyDemo\ListBoxDragDemo\obj\Debug\MainWindow.g.cs
+D:\CodeSource\CompanyDemo\ListBoxDragDemo\obj\Debug\App.g.cs
+D:\CodeSource\CompanyDemo\ListBoxDragDemo\obj\Debug\ListBoxDragDemo.g.resources
+D:\CodeSource\CompanyDemo\ListBoxDragDemo\obj\Debug\ListBoxDragDemo.Properties.Resources.resources
+D:\CodeSource\CompanyDemo\ListBoxDragDemo\obj\Debug\ListBoxDragDemo.csproj.GenerateResource.Cache
+D:\CodeSource\CompanyDemo\ListBoxDragDemo\obj\Debug\ListBoxDragDemo.exe
+D:\CodeSource\CompanyDemo\ListBoxDragDemo\obj\Debug\ListBoxDragDemo.pdb

@@ -1,0 +1,15 @@
+D:\CodeSource\CompanyDemo\DinoTechDataSyncService\DinoTechDataSyncService.Business\obj\Debug\DinoTechDataSyncService.Business.csprojResolveAssemblyReference.cache
+D:\CodeSource\CompanyDemo\DinoTechDataSyncService\DinoTechDataSyncService.Business\bin\Debug\DinoTechDataSyncService.Business.dll
+D:\CodeSource\CompanyDemo\DinoTechDataSyncService\DinoTechDataSyncService.Business\bin\Debug\DinoTechDataSyncService.Business.pdb
+D:\CodeSource\CompanyDemo\DinoTechDataSyncService\DinoTechDataSyncService.Business\bin\Debug\DinoTechDataSyncService.Domain.dll
+D:\CodeSource\CompanyDemo\DinoTechDataSyncService\DinoTechDataSyncService.Business\bin\Debug\DinoTechDataSyncService.Repository.dll
+D:\CodeSource\CompanyDemo\DinoTechDataSyncService\DinoTechDataSyncService.Business\bin\Debug\DinoTechDataSyncService.Utility.dll
+D:\CodeSource\CompanyDemo\DinoTechDataSyncService\DinoTechDataSyncService.Business\bin\Debug\log4net.dll
+D:\CodeSource\CompanyDemo\DinoTechDataSyncService\DinoTechDataSyncService.Business\bin\Debug\NLog.dll
+D:\CodeSource\CompanyDemo\DinoTechDataSyncService\DinoTechDataSyncService.Business\bin\Debug\DinoTechDataSyncService.Domain.pdb
+D:\CodeSource\CompanyDemo\DinoTechDataSyncService\DinoTechDataSyncService.Business\bin\Debug\DinoTechDataSyncService.Repository.pdb
+D:\CodeSource\CompanyDemo\DinoTechDataSyncService\DinoTechDataSyncService.Business\bin\Debug\DinoTechDataSyncService.Utility.pdb
+D:\CodeSource\CompanyDemo\DinoTechDataSyncService\DinoTechDataSyncService.Business\bin\Debug\log4net.xml
+D:\CodeSource\CompanyDemo\DinoTechDataSyncService\DinoTechDataSyncService.Business\bin\Debug\NLog.xml
+D:\CodeSource\CompanyDemo\DinoTechDataSyncService\DinoTechDataSyncService.Business\obj\Debug\DinoTechDataSyncService.Business.dll
+D:\CodeSource\CompanyDemo\DinoTechDataSyncService\DinoTechDataSyncService.Business\obj\Debug\DinoTechDataSyncService.Business.pdb

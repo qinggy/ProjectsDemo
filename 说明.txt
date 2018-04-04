@@ -1,0 +1,4 @@
+对比两个程序【SignalR.Demo官方】和【SignalR简单通讯】
+前者将Hub调用客户端方法单独封装成Broadcaster类，当一个客户端通过调用服务端方法UpdateModel后会修改Broadcaster的_model属性，
+该类中定义的Timer每隔指定的时间调用BroadcastShape方法定时向各个连接的客户端发送信息。
+相比这种服务端主动推动消息的方式，【SignalR简单通讯】采用的是客户端主动发送信息到服务端，然后服务端及时再推送到其他客户端。

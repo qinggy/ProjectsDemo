@@ -1,0 +1,10 @@
+D:\CodeSource\CompanyDemo\MSSQLToMongo\bin\Debug\MSSQLToMongo.exe.config
+D:\CodeSource\CompanyDemo\MSSQLToMongo\bin\Debug\MSSQLToMongo.exe
+D:\CodeSource\CompanyDemo\MSSQLToMongo\bin\Debug\MSSQLToMongo.pdb
+D:\CodeSource\CompanyDemo\MSSQLToMongo\bin\Debug\MongoDB.Bson.dll
+D:\CodeSource\CompanyDemo\MSSQLToMongo\bin\Debug\MongoDB.Driver.Core.dll
+D:\CodeSource\CompanyDemo\MSSQLToMongo\bin\Debug\MongoDB.Driver.dll
+D:\CodeSource\CompanyDemo\MSSQLToMongo\bin\Debug\MongoDB.Bson.xml
+D:\CodeSource\CompanyDemo\MSSQLToMongo\bin\Debug\MongoDB.Driver.xml
+D:\CodeSource\CompanyDemo\MSSQLToMongo\obj\Debug\MSSQLToMongo.exe
+D:\CodeSource\CompanyDemo\MSSQLToMongo\obj\Debug\MSSQLToMongo.pdb

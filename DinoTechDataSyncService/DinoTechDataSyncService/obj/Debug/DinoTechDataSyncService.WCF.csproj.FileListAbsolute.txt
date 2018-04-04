@@ -1,0 +1,14 @@
+D:\CodeSource\CompanyDemo\DinoTechDataSyncService\DinoTechDataSyncService\obj\Debug\DinoTechDataSyncService.WCF.csprojResolveAssemblyReference.cache
+D:\CodeSource\CompanyDemo\DinoTechDataSyncService\DinoTechDataSyncService\bin\DinoTechDataSyncService.WCF.dll.config
+D:\CodeSource\CompanyDemo\DinoTechDataSyncService\DinoTechDataSyncService\bin\DinoTechDataSyncService.WCF.dll
+D:\CodeSource\CompanyDemo\DinoTechDataSyncService\DinoTechDataSyncService\bin\DinoTechDataSyncService.WCF.pdb
+D:\CodeSource\CompanyDemo\DinoTechDataSyncService\DinoTechDataSyncService\bin\DinoTechDataSyncService.Business.dll
+D:\CodeSource\CompanyDemo\DinoTechDataSyncService\DinoTechDataSyncService\bin\DinoTechDataSyncService.Domain.dll
+D:\CodeSource\CompanyDemo\DinoTechDataSyncService\DinoTechDataSyncService\bin\DinoTechDataSyncService.Utility.dll
+D:\CodeSource\CompanyDemo\DinoTechDataSyncService\DinoTechDataSyncService\bin\DinoTechDataSyncService.Repository.dll
+D:\CodeSource\CompanyDemo\DinoTechDataSyncService\DinoTechDataSyncService\bin\DinoTechDataSyncService.Business.pdb
+D:\CodeSource\CompanyDemo\DinoTechDataSyncService\DinoTechDataSyncService\bin\DinoTechDataSyncService.Domain.pdb
+D:\CodeSource\CompanyDemo\DinoTechDataSyncService\DinoTechDataSyncService\bin\DinoTechDataSyncService.Utility.pdb
+D:\CodeSource\CompanyDemo\DinoTechDataSyncService\DinoTechDataSyncService\bin\DinoTechDataSyncService.Repository.pdb
+D:\CodeSource\CompanyDemo\DinoTechDataSyncService\DinoTechDataSyncService\obj\Debug\DinoTechDataSyncService.WCF.dll
+D:\CodeSource\CompanyDemo\DinoTechDataSyncService\DinoTechDataSyncService\obj\Debug\DinoTechDataSyncService.WCF.pdb

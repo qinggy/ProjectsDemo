@@ -1,0 +1,4 @@
+D:\CodeSource\CompanyDemo\QuickSort\bin\Debug\QuickSort.exe
+D:\CodeSource\CompanyDemo\QuickSort\bin\Debug\QuickSort.pdb
+D:\CodeSource\CompanyDemo\QuickSort\obj\Debug\QuickSort.exe
+D:\CodeSource\CompanyDemo\QuickSort\obj\Debug\QuickSort.pdb

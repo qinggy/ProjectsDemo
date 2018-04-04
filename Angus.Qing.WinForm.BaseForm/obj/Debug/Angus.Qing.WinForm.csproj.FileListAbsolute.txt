@@ -1,0 +1,4 @@
+D:\CodeSource\CompanyDemo\Angus.Qing.WinForm.BaseForm\bin\Debug\Angus.Qing.WinForm.dll
+D:\CodeSource\CompanyDemo\Angus.Qing.WinForm.BaseForm\bin\Debug\Angus.Qing.WinForm.pdb
+D:\CodeSource\CompanyDemo\Angus.Qing.WinForm.BaseForm\obj\Debug\Angus.Qing.WinForm.dll
+D:\CodeSource\CompanyDemo\Angus.Qing.WinForm.BaseForm\obj\Debug\Angus.Qing.WinForm.pdb

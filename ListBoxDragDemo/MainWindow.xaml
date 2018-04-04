@@ -1,0 +1,13 @@
+﻿<Window x:Class="ListBoxDragDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <ListBox Grid.Column="0" Margin="10" x:Name="lbOne" PreviewMouseLeftButtonDown="lbOne_PreviewMouseLeftButtonDown" ItemsSource="{Binding}"></ListBox>
+        <ListBox Grid.Column="1" Margin="10" x:Name="lbTwo" AllowDrop="True" Drop="lbTwo_Drop"></ListBox>
+    </Grid>
+</Window>

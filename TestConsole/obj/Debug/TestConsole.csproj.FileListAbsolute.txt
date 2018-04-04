@@ -1,0 +1,14 @@
+D:\CodeSource\CompanyDemo\TestConsole\bin\Debug\TestConsole.exe.config
+D:\CodeSource\CompanyDemo\TestConsole\bin\Debug\TestConsole.exe
+D:\CodeSource\CompanyDemo\TestConsole\bin\Debug\TestConsole.pdb
+D:\CodeSource\CompanyDemo\TestConsole\bin\Debug\EF-CF-Data.dll
+D:\CodeSource\CompanyDemo\TestConsole\bin\Debug\EntityFramework.dll
+D:\CodeSource\CompanyDemo\TestConsole\bin\Debug\EntityFramework.SqlServer.dll
+D:\CodeSource\CompanyDemo\TestConsole\bin\Debug\EF-CF-Data.pdb
+D:\CodeSource\CompanyDemo\TestConsole\bin\Debug\EntityFramework.xml
+D:\CodeSource\CompanyDemo\TestConsole\bin\Debug\EntityFramework.SqlServer.xml
+D:\CodeSource\CompanyDemo\TestConsole\obj\Debug\TestConsole.csprojResolveAssemblyReference.cache
+D:\CodeSource\CompanyDemo\TestConsole\obj\Debug\TestConsole.exe
+D:\CodeSource\CompanyDemo\TestConsole\obj\Debug\TestConsole.pdb
+D:\CodeSource\CompanyDemo\TestConsole\bin\Debug\zh-Hans\EntityFramework.resources.dll
+D:\CodeSource\CompanyDemo\TestConsole\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll

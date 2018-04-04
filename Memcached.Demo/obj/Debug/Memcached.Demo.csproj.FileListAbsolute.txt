@@ -1,0 +1,1 @@
+D:\CodeSource\CompanyDemo\Memcached.Demo\obj\Debug\Memcached.Demo.csprojResolveAssemblyReference.cache

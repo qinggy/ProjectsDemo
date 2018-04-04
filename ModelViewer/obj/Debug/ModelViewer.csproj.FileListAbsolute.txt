@@ -1,0 +1,16 @@
+D:\CodeSource\CompanyDemo\ModelViewer\obj\Debug\ModelViewer_Content.g.cs
+D:\CodeSource\CompanyDemo\ModelViewer\obj\Debug\ModelViewer_MarkupCompile.cache
+D:\CodeSource\CompanyDemo\ModelViewer\bin\Debug\Sample Models\Tiger.xaml
+D:\CodeSource\CompanyDemo\ModelViewer\bin\Debug\Sample Models\Tiger.bmp
+D:\CodeSource\CompanyDemo\ModelViewer\bin\Debug\ModelViewer.exe
+D:\CodeSource\CompanyDemo\ModelViewer\bin\Debug\ModelViewer.pdb
+D:\CodeSource\CompanyDemo\ModelViewer\bin\Debug\3DTools.dll
+D:\CodeSource\CompanyDemo\ModelViewer\obj\Debug\MainWindow.baml
+D:\CodeSource\CompanyDemo\ModelViewer\obj\Debug\MainWindow.g.cs
+D:\CodeSource\CompanyDemo\ModelViewer\obj\Debug\MyApp.g.cs
+D:\CodeSource\CompanyDemo\ModelViewer\obj\Debug\ModelViewer.g.resources
+D:\CodeSource\CompanyDemo\ModelViewer\obj\Debug\ModelViewer.Properties.Resources.resources
+D:\CodeSource\CompanyDemo\ModelViewer\obj\Debug\ModelViewer.csproj.GenerateResource.Cache
+D:\CodeSource\CompanyDemo\ModelViewer\obj\Debug\ModelViewer.exe
+D:\CodeSource\CompanyDemo\ModelViewer\obj\Debug\ModelViewer.pdb
+D:\CodeSource\CompanyDemo\ModelViewer\obj\Debug\ModelViewer.csprojResolveAssemblyReference.cache

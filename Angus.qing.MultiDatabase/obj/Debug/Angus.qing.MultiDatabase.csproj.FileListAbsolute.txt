@@ -1,0 +1,4 @@
+D:\CodeSource\CompanyDemo\Angus.qing.MultiDatabase\bin\Debug\Angus.qing.MultiDatabase.dll
+D:\CodeSource\CompanyDemo\Angus.qing.MultiDatabase\bin\Debug\Angus.qing.MultiDatabase.pdb
+D:\CodeSource\CompanyDemo\Angus.qing.MultiDatabase\obj\Debug\Angus.qing.MultiDatabase.dll
+D:\CodeSource\CompanyDemo\Angus.qing.MultiDatabase\obj\Debug\Angus.qing.MultiDatabase.pdb

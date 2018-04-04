@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>SignalR Demo</title>
+    <style>
+        #shape {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+    </style>
+    <script src="Scripts/jquery-1.6.4.min.js"></script>
+    <script src="Scripts/jquery-ui-1.11.4.min.js"></script>
+    <script src="Scripts/jquery.signalR-2.2.0.min.js"></script>
+    <script src="/signalr/hubs"></script>
+</head>
+<body>
+    <script>
+        $(function () {
+            var moveShapeHub = $.connection.moveShapeHub;
+            $shape = $("#shape");
+            // Send a maximum of 10 messages per second 
+            // (mouse movements trigger a lot of messages)
+            messageFrequency = 10,
+            // Determine how often to send messages in
+            // time to abide by the messageFrequency
+            updateRate = 1000 / messageFrequency,
+            shapeModel = {
+                left: 0,
+                top: 0
+            };
+            moved = false;
+
+            moveShapeHub.client.updateShape = function (model) {
+                shapeModel = model;
+                //$shape.css({ left: model.left, top: model.top });
+                $shape.animate(shapeModel, { duration: updateRate, queue: false });
+            };
+         
+            $.connection.hub.start().done(function () {
+                $shape.draggable({
+                    drag: function () {
+                        shapeModel = $shape.offset();
+                        moved = true;
+                        // Start the client side server update interval
+                        setInterval(updateServerModel, updateRate);
+                    }
+                });
+            });
+
+            function updateServerModel() {
+                // Only update server if we have a new movement
+                if (moved) {
+                    moveShapeHub.server.updateModel(shapeModel);
+                    moved = false;
+                }
+            }
+        });
+    </script>
+    <div id="shape" />
+</body>
+</html>

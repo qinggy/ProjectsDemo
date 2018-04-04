@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartReportTool", "SmartReportTool\SmartReportTool.csproj", "{B49E4378-120E-45E6-89E4-042DE3472A56}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://angusqing-projects.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = SmartReportTool\\SmartReportTool.csproj
+		SccProjectName1 = SmartReportTool
+		SccLocalPath1 = SmartReportTool
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B49E4378-120E-45E6-89E4-042DE3472A56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B49E4378-120E-45E6-89E4-042DE3472A56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B49E4378-120E-45E6-89E4-042DE3472A56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B49E4378-120E-45E6-89E4-042DE3472A56}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

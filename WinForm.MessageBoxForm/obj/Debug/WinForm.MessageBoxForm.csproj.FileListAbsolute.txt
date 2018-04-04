@@ -1,0 +1,8 @@
+D:\CodeSource\CompanyDemo\WinForm.MessageBoxForm\bin\Debug\WinForm.MessageBoxForm.exe
+D:\CodeSource\CompanyDemo\WinForm.MessageBoxForm\bin\Debug\WinForm.MessageBoxForm.pdb
+D:\CodeSource\CompanyDemo\WinForm.MessageBoxForm\obj\Debug\WinForm.MessageBoxForm.Form1.resources
+D:\CodeSource\CompanyDemo\WinForm.MessageBoxForm\obj\Debug\WinForm.MessageBoxForm.MessageBoxForm.resources
+D:\CodeSource\CompanyDemo\WinForm.MessageBoxForm\obj\Debug\WinForm.MessageBoxForm.Properties.Resources.resources
+D:\CodeSource\CompanyDemo\WinForm.MessageBoxForm\obj\Debug\WinForm.MessageBoxForm.csproj.GenerateResource.Cache
+D:\CodeSource\CompanyDemo\WinForm.MessageBoxForm\obj\Debug\WinForm.MessageBoxForm.exe
+D:\CodeSource\CompanyDemo\WinForm.MessageBoxForm\obj\Debug\WinForm.MessageBoxForm.pdb

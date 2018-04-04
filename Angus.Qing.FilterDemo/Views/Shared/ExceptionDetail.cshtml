@@ -1,0 +1,12 @@
+﻿@model System.Web.Mvc.HandleErrorInfo
+
+@{
+    ViewBag.Title = "异常信息";
+}
+
+<h2>异常信息</h2>
+<div>
+    <p>抛错控制器：<b> @Model.ControllerName</b> 抛错方法： <b>@Model.ActionName</b> 抛错类型： <b>@Model.Exception.GetType().Name</b></p>
+    <p>抛错信息： <b>@Model.Exception.Message</b></p>
+    <p>堆栈信息： <b>@Model.Exception.StackTrace</b></p>
+</div>

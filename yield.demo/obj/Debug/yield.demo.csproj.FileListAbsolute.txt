@@ -1,0 +1,4 @@
+D:\CodeSource\CompanyDemo\yield.demo\bin\Debug\yield.demo.exe
+D:\CodeSource\CompanyDemo\yield.demo\bin\Debug\yield.demo.pdb
+D:\CodeSource\CompanyDemo\yield.demo\obj\Debug\yield.demo.exe
+D:\CodeSource\CompanyDemo\yield.demo\obj\Debug\yield.demo.pdb

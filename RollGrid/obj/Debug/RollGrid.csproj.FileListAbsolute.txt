@@ -1,0 +1,14 @@
+D:\CodeSource\CompanyDemo\RollGrid\obj\Debug\RollGrid_MarkupCompile.cache
+D:\CodeSource\CompanyDemo\RollGrid\bin\Debug\RollGrid.exe.config
+D:\CodeSource\CompanyDemo\RollGrid\bin\Debug\RollGrid.exe
+D:\CodeSource\CompanyDemo\RollGrid\bin\Debug\RollGrid.pdb
+D:\CodeSource\CompanyDemo\RollGrid\obj\Debug\MainWindow.baml
+D:\CodeSource\CompanyDemo\RollGrid\obj\Debug\Page1.baml
+D:\CodeSource\CompanyDemo\RollGrid\obj\Debug\MainWindow.g.cs
+D:\CodeSource\CompanyDemo\RollGrid\obj\Debug\Page1.g.cs
+D:\CodeSource\CompanyDemo\RollGrid\obj\Debug\App.g.cs
+D:\CodeSource\CompanyDemo\RollGrid\obj\Debug\RollGrid.g.resources
+D:\CodeSource\CompanyDemo\RollGrid\obj\Debug\RollGrid.Properties.Resources.resources
+D:\CodeSource\CompanyDemo\RollGrid\obj\Debug\RollGrid.csproj.GenerateResource.Cache
+D:\CodeSource\CompanyDemo\RollGrid\obj\Debug\RollGrid.exe
+D:\CodeSource\CompanyDemo\RollGrid\obj\Debug\RollGrid.pdb

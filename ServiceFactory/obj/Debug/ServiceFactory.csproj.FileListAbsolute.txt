@@ -1,0 +1,14 @@
+D:\CodeSource\CompanyDemo\ServiceFactory\bin\Debug\ServiceFactory.exe.config
+D:\CodeSource\CompanyDemo\ServiceFactory\bin\Debug\ServiceFactory.exe
+D:\CodeSource\CompanyDemo\ServiceFactory\bin\Debug\ServiceFactory.pdb
+D:\CodeSource\CompanyDemo\ServiceFactory\bin\Debug\Entities.dll
+D:\CodeSource\CompanyDemo\ServiceFactory\bin\Debug\ServiceDao.dll
+D:\CodeSource\CompanyDemo\ServiceFactory\bin\Debug\ServiceInterface.dll
+D:\CodeSource\CompanyDemo\ServiceFactory\bin\Debug\Entities.pdb
+D:\CodeSource\CompanyDemo\ServiceFactory\bin\Debug\ServiceDao.pdb
+D:\CodeSource\CompanyDemo\ServiceFactory\bin\Debug\ServiceInterface.pdb
+D:\CodeSource\CompanyDemo\ServiceFactory\obj\Debug\ServiceFactory.csprojResolveAssemblyReference.cache
+D:\CodeSource\CompanyDemo\ServiceFactory\obj\Debug\ServiceFactory.ProjectInstaller.resources
+D:\CodeSource\CompanyDemo\ServiceFactory\obj\Debug\ServiceFactory.csproj.GenerateResource.Cache
+D:\CodeSource\CompanyDemo\ServiceFactory\obj\Debug\ServiceFactory.exe
+D:\CodeSource\CompanyDemo\ServiceFactory\obj\Debug\ServiceFactory.pdb

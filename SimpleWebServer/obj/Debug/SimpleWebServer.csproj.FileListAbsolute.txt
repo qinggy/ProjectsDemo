@@ -1,0 +1,7 @@
+D:\CodeSource\CompanyDemo\SimpleWebServer\bin\Debug\SimpleWebServer.exe
+D:\CodeSource\CompanyDemo\SimpleWebServer\bin\Debug\SimpleWebServer.pdb
+D:\CodeSource\CompanyDemo\SimpleWebServer\obj\Debug\SimpleWebServer.WebServer.resources
+D:\CodeSource\CompanyDemo\SimpleWebServer\obj\Debug\SimpleWebServer.Properties.Resources.resources
+D:\CodeSource\CompanyDemo\SimpleWebServer\obj\Debug\SimpleWebServer.csproj.GenerateResource.Cache
+D:\CodeSource\CompanyDemo\SimpleWebServer\obj\Debug\SimpleWebServer.exe
+D:\CodeSource\CompanyDemo\SimpleWebServer\obj\Debug\SimpleWebServer.pdb

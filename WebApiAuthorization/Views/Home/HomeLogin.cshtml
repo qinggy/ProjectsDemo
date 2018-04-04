@@ -1,0 +1,62 @@
+﻿@{
+    ViewBag.Title = "Home";
+}
+
+<h2>HomeLogin</h2>
+<div style="position:relative; left:45%;">
+    <input type="button" value="授权调用" id="invoke" />
+    <input type="button" value="Anonymous调用" id="anonInvoke" />
+</div>
+<div id="div_test"></div>
+<script type="text/javascript">
+    $(function () {
+        var Ticket = "@ViewBag.Ticket";
+        $("#invoke").click(function () {
+            $.ajax({
+                type: "get",
+                url: "/api/values",
+                data: {},
+                beforeSend: function (XHR) {
+                    //发送ajax请求之前向http的head里面加入验证信息
+                    XHR.setRequestHeader('Authorization', 'BasicAuth ' + Ticket);
+                },
+                success: function (data, status) {
+                    if (status == "success") {
+                        $("#div_test").html(data);
+                    }
+                },
+                error: function (e) {
+                    $("#div_test").html("Error");
+                },
+                complete: function () {
+
+                }
+
+            });
+        });
+
+        $("#anonInvoke").click(function () {
+            $.ajax({
+                type: "get",
+                url: "/api/values/6",
+                data: {},
+                beforeSend: function (XHR) {
+                    //发送ajax请求之前向http的head里面加入验证信息
+                    //XHR.setRequestHeader('Authorization', 'BasicAuth ' + Ticket);
+                },
+                success: function (data, status) {
+                    if (status == "success") {
+                        $("#div_test").html(data);
+                    }
+                },
+                error: function (e) {
+                    $("#div_test").html("Error");
+                },
+                complete: function () {
+
+                }
+
+            });
+        });
+    })
+</script>

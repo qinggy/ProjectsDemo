@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link href="bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="http://static.jstree.com/3.3.1/assets/dist/themes/default/style.min.css">
+    <!--<link rel="stylesheet" href="//static.jstree.com/3.3.1/assets/docs.css">-->
+    <script src="jquery-1.10.2.min.js"></script>
+    <script src="jstree.min.js"></script>
+    <style type="text/css">
+        div#container span {
+            margin: 5px;
+        }
+
+        #panel:hover {
+            outline: 1px solid blue;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div id="panel" style="border:1px solid #ddd;width:500px; height:300px;float:left;margin:20px;">
+        <fieldset>
+            <legend>容器框</legend>
+            <div id="container" ondrop="ondrop()" draggable="true" style="height:100%;overflow-x:hidden;word-wrap:break-word;word-break:break-all"></div>
+        </fieldset>
+    </div>
+    <div id="plugins3" class="demo plugin-demo jstree jstree-4 jstree-default" role="tree" style="border:1px solid red;float:left;width:200px; height:300px;margin:20px;" />
+</body>
+</html>
+<script type="text/javascript">
+    $(function () {
+
+        $("#plugins3").jstree({
+            "core": {
+                "data": [{
+                    "data": "[A node]",
+                    "children": ["Child 1", "Child 2"]
+                }],
+                "check_callback": true
+            },
+            "plugins": ["dnd"]
+        }).on('move_node.jstree', function (e, data) {
+            alert(data.node.text);
+        }).on('copy_node.jstree', function (e, data) {
+            alert(data.node.text + " 按住Ctrl键，拷贝拖动");
+
+        });
+
+        $(document).on('dnd_stop.vakata', function (e, data) {
+
+            $('#container').append(data.element.id + ";");
+        });
+
+    });
+
+    function ondrop() {
+        alert("aa");
+    }
+</script>

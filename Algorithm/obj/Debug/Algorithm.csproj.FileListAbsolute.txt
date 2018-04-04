@@ -1,0 +1,8 @@
+D:\CodeSource\CompanyDemo\Algorithm\bin\Debug\python.py
+D:\CodeSource\CompanyDemo\Algorithm\bin\Debug\Algorithm.exe
+D:\CodeSource\CompanyDemo\Algorithm\bin\Debug\Algorithm.pdb
+D:\CodeSource\CompanyDemo\Algorithm\bin\Debug\IronPython.dll
+D:\CodeSource\CompanyDemo\Algorithm\bin\Debug\Microsoft.Scripting.dll
+D:\CodeSource\CompanyDemo\Algorithm\obj\Debug\Algorithm.exe
+D:\CodeSource\CompanyDemo\Algorithm\obj\Debug\Algorithm.pdb
+D:\CodeSource\CompanyDemo\Algorithm\obj\Debug\Algorithm.csprojResolveAssemblyReference.cache

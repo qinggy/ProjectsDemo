@@ -1,0 +1,7 @@
+D:\CodeSource\CompanyDemo\ServiceInterface\bin\Debug\ServiceInterface.dll
+D:\CodeSource\CompanyDemo\ServiceInterface\bin\Debug\ServiceInterface.pdb
+D:\CodeSource\CompanyDemo\ServiceInterface\bin\Debug\Entities.dll
+D:\CodeSource\CompanyDemo\ServiceInterface\bin\Debug\Entities.pdb
+D:\CodeSource\CompanyDemo\ServiceInterface\obj\Debug\ServiceInterface.csprojResolveAssemblyReference.cache
+D:\CodeSource\CompanyDemo\ServiceInterface\obj\Debug\ServiceInterface.dll
+D:\CodeSource\CompanyDemo\ServiceInterface\obj\Debug\ServiceInterface.pdb

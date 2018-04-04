@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="DinoTechDataSyncService.WCF.DinoTechDataSyncService" CodeBehind="DinoTechDataSyncService.svc.cs" %>

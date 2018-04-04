@@ -1,0 +1,17 @@
+D:\CodeSource\CompanyDemo\WPFMEFDemo\CalculatorDemoUsingMEF\CalculatorUI\obj\Debug\CalculatorUI.csprojResolveAssemblyReference.cache
+D:\CodeSource\CompanyDemo\WPFMEFDemo\CalculatorDemoUsingMEF\CalculatorUI\obj\Debug\CalculatorUI_MarkupCompile.cache
+D:\CodeSource\CompanyDemo\WPFMEFDemo\CalculatorDemoUsingMEF\CalculatorUI\bin\Debug\CalculatorUI.exe.config
+D:\CodeSource\CompanyDemo\WPFMEFDemo\CalculatorDemoUsingMEF\CalculatorUI\bin\Debug\CalculatorUI.exe
+D:\CodeSource\CompanyDemo\WPFMEFDemo\CalculatorDemoUsingMEF\CalculatorUI\bin\Debug\CalculatorUI.pdb
+D:\CodeSource\CompanyDemo\WPFMEFDemo\CalculatorDemoUsingMEF\CalculatorUI\bin\Debug\CompositionHelper.dll
+D:\CodeSource\CompanyDemo\WPFMEFDemo\CalculatorDemoUsingMEF\CalculatorUI\bin\Debug\CalculatorContract.dll
+D:\CodeSource\CompanyDemo\WPFMEFDemo\CalculatorDemoUsingMEF\CalculatorUI\bin\Debug\CompositionHelper.pdb
+D:\CodeSource\CompanyDemo\WPFMEFDemo\CalculatorDemoUsingMEF\CalculatorUI\bin\Debug\CalculatorContract.pdb
+D:\CodeSource\CompanyDemo\WPFMEFDemo\CalculatorDemoUsingMEF\CalculatorUI\obj\Debug\MainWindow.baml
+D:\CodeSource\CompanyDemo\WPFMEFDemo\CalculatorDemoUsingMEF\CalculatorUI\obj\Debug\MainWindow.g.cs
+D:\CodeSource\CompanyDemo\WPFMEFDemo\CalculatorDemoUsingMEF\CalculatorUI\obj\Debug\App.g.cs
+D:\CodeSource\CompanyDemo\WPFMEFDemo\CalculatorDemoUsingMEF\CalculatorUI\obj\Debug\CalculatorUI.g.resources
+D:\CodeSource\CompanyDemo\WPFMEFDemo\CalculatorDemoUsingMEF\CalculatorUI\obj\Debug\CalculatorUI.Properties.Resources.resources
+D:\CodeSource\CompanyDemo\WPFMEFDemo\CalculatorDemoUsingMEF\CalculatorUI\obj\Debug\CalculatorUI.csproj.GenerateResource.Cache
+D:\CodeSource\CompanyDemo\WPFMEFDemo\CalculatorDemoUsingMEF\CalculatorUI\obj\Debug\CalculatorUI.exe
+D:\CodeSource\CompanyDemo\WPFMEFDemo\CalculatorDemoUsingMEF\CalculatorUI\obj\Debug\CalculatorUI.pdb

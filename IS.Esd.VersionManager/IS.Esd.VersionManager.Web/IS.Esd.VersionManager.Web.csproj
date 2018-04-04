@@ -1,0 +1,1287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5AF38689-D84F-4E71-978E-C2AC893A29FE}</ProjectGuid>
+    <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IS.Esd.VersionManager.Web</RootNamespace>
+    <AssemblyName>IS.Esd.VersionManager.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper, Version=3.3.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.3.3.1\lib\net40\AutoMapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="AutoMapper.Net4, Version=3.3.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.3.3.1\lib\net40\AutoMapper.Net4.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework, Version=4.4.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="NLog, Version=3.2.1.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.3.2.1\lib\net40\NLog.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="StructureMap, Version=3.1.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\structuremap.3.1.5.154\lib\net40\StructureMap.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="StructureMap.Net4, Version=3.1.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\structuremap.3.1.5.154\lib\net40\StructureMap.Net4.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Mvc.FixedDisplayModes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.FixedDisplayModes.1.0.0\lib\net40\Microsoft.Web.Mvc.FixedDisplayModes.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Net.Http.2.0.30506.0\lib\net40\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.30506.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Net.Http.2.0.30506.0\lib\net40\System.Net.Http.WebRequest.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.30506.0\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.30506.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.30506.0\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.30506.0\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\ClientController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Infrastructure\AutoMapperVM2D.cs" />
+    <Compile Include="Infrastructure\StructureMapper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Models\ClientVM.cs" />
+    <Compile Include="Models\ProductVM.cs" />
+    <Compile Include="Models\RoleVM.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Content Include="Content\css\countdown.css" />
+    <Content Include="Content\css\custom.css" />
+    <Content Include="Content\css\main.css" />
+    <Content Include="Content\css\main.min.css" />
+    <Content Include="Content\css\style-switcher.css" />
+    <Content Include="Content\css\theme.css" />
+    <Content Include="Content\img\cp.png" />
+    <Content Include="Content\img\logo.png" />
+    <Content Include="Content\img\metis-tile.png" />
+    <Content Include="Content\img\pattern\always_grey.png" />
+    <Content Include="Content\img\pattern\arches.png" />
+    <Content Include="Content\img\pattern\batthern.png" />
+    <Content Include="Content\img\pattern\bo_play_pattern.png" />
+    <Content Include="Content\img\pattern\brillant.png" />
+    <Content Include="Content\img\pattern\carbon_fibre.png" />
+    <Content Include="Content\img\pattern\cartographer.png" />
+    <Content Include="Content\img\pattern\crissXcross.png" />
+    <Content Include="Content\img\pattern\diagonal_striped_brick.png" />
+    <Content Include="Content\img\pattern\diamond_upholstery.png" />
+    <Content Include="Content\img\pattern\egg_shell.png" />
+    <Content Include="Content\img\pattern\gplaypattern.png" />
+    <Content Include="Content\img\pattern\greyfloral.png" />
+    <Content Include="Content\img\pattern\irongrip.png" />
+    <Content Include="Content\img\pattern\large_leather.png" />
+    <Content Include="Content\img\pattern\low_contrast_linen.png" />
+    <Content Include="Content\img\pattern\noisy_grid.png" />
+    <Content Include="Content\img\pattern\pool_table.png" />
+    <Content Include="Content\img\pattern\purty_wood.png" />
+    <Content Include="Content\img\pattern\random_grey_variations.png" />
+    <Content Include="Content\img\pattern\retina_wood.png" />
+    <Content Include="Content\img\pattern\rip_jobs.png" />
+    <Content Include="Content\img\pattern\white_tiles.png" />
+    <Content Include="Content\img\pattern\wood_1.png" />
+    <Content Include="Content\img\user.gif" />
+    <Content Include="Content\js\app.js" />
+    <Content Include="Content\js\app.min.js" />
+    <Content Include="Content\js\core.js" />
+    <Content Include="Content\js\core.min.js" />
+    <Content Include="Content\js\countdown.js" />
+    <Content Include="Content\js\countdown.min.js" />
+    <Content Include="Content\js\style-switcher.js" />
+    <Content Include="Content\js\style-switcher.min.js" />
+    <Content Include="Content\lib\bootstrap-daterangepicker\daterangepicker-bs2.css" />
+    <Content Include="Content\lib\bootstrap-daterangepicker\daterangepicker-bs3.css" />
+    <Content Include="Content\lib\bootstrap-daterangepicker\daterangepicker.js" />
+    <Content Include="Content\lib\bootstrap-daterangepicker\examples.html" />
+    <Content Include="Content\lib\bootstrap-duallistbox\demo\index.html" />
+    <Content Include="Content\lib\bootstrap-duallistbox\dist\bootstrap-duallistbox.css" />
+    <Content Include="Content\lib\bootstrap-duallistbox\dist\bootstrap-duallistbox.min.css" />
+    <Content Include="Content\lib\bootstrap-duallistbox\dist\jquery.bootstrap-duallistbox.js" />
+    <Content Include="Content\lib\bootstrap-duallistbox\dist\jquery.bootstrap-duallistbox.min.js" />
+    <Content Include="Content\lib\bootstrap-duallistbox\Gruntfile.js" />
+    <Content Include="Content\lib\bootstrap-duallistbox\src\bootstrap-duallistbox.css" />
+    <Content Include="Content\lib\bootstrap-duallistbox\src\jquery.bootstrap-duallistbox.js" />
+    <Content Include="Content\lib\bootstrap-switch\dist\css\bootstrap2\bootstrap-switch.css" />
+    <Content Include="Content\lib\bootstrap-switch\dist\css\bootstrap2\bootstrap-switch.min.css" />
+    <Content Include="Content\lib\bootstrap-switch\dist\css\bootstrap3\bootstrap-switch.css" />
+    <Content Include="Content\lib\bootstrap-switch\dist\css\bootstrap3\bootstrap-switch.min.css" />
+    <Content Include="Content\lib\bootstrap-switch\dist\js\bootstrap-switch.js" />
+    <Content Include="Content\lib\bootstrap-switch\dist\js\bootstrap-switch.min.js" />
+    <Content Include="Content\lib\bootstrap-switch\documentation-2.html" />
+    <Content Include="Content\lib\bootstrap-switch\events-3.html" />
+    <Content Include="Content\lib\bootstrap-switch\events.html" />
+    <Content Include="Content\lib\bootstrap-switch\examples.html" />
+    <Content Include="Content\lib\bootstrap-switch\main.html" />
+    <Content Include="Content\lib\bootstrap-switch\methods-3.html" />
+    <Content Include="Content\lib\bootstrap-switch\methods.html" />
+    <Content Include="Content\lib\bootstrap-switch\options-3.html" />
+    <Content Include="Content\lib\bootstrap-switch\options.html" />
+    <Content Include="Content\lib\bootstrap3-wysihtml5-bower\dist\amd\bootstrap3-wysihtml5.all.js" />
+    <Content Include="Content\lib\bootstrap3-wysihtml5-bower\dist\amd\bootstrap3-wysihtml5.all.min.js" />
+    <Content Include="Content\lib\bootstrap3-wysihtml5-bower\dist\amd\commands.js" />
+    <Content Include="Content\lib\bootstrap3-wysihtml5-bower\dist\amd\handlebars.runtime.amd.js" />
+    <Content Include="Content\lib\bootstrap3-wysihtml5-bower\dist\amd\templates.js" />
+    <Content Include="Content\lib\bootstrap3-wysihtml5-bower\dist\amd\wysihtml5.js" />
+    <Content Include="Content\lib\bootstrap3-wysihtml5-bower\dist\bootstrap3-wysihtml5.all.js" />
+    <Content Include="Content\lib\bootstrap3-wysihtml5-bower\dist\bootstrap3-wysihtml5.all.min.js" />
+    <Content Include="Content\lib\bootstrap3-wysihtml5-bower\dist\bootstrap3-wysihtml5.css" />
+    <Content Include="Content\lib\bootstrap3-wysihtml5-bower\dist\bootstrap3-wysihtml5.js" />
+    <Content Include="Content\lib\bootstrap3-wysihtml5-bower\dist\bootstrap3-wysihtml5.min.css" />
+    <Content Include="Content\lib\bootstrap3-wysihtml5-bower\dist\bootstrap3-wysihtml5.min.js" />
+    <Content Include="Content\lib\bootstrap3-wysihtml5-bower\dist\commands.js" />
+    <Content Include="Content\lib\bootstrap3-wysihtml5-bower\dist\locales\bootstrap-wysihtml5.ar-AR.js" />
+    <Content Include="Content\lib\bootstrap3-wysihtml5-bower\dist\locales\bootstrap-wysihtml5.bg-BG.js" />
+    <Content Include="Content\lib\bootstrap3-wysihtml5-bower\dist\locales\bootstrap-wysihtml5.ca-CT.js" />
+    <Content Include="Content\lib\bootstrap3-wysihtml5-bower\dist\locales\bootstrap-wysihtml5.cs-CZ.js" />
+    <Content Include="Content\lib\bootstrap3-wysihtml5-bower\dist\locales\bootstrap-wysihtml5.da-DK.js" />
+    <Content Include="Content\lib\bootstrap3-wysihtml5-bower\dist\locales\bootstrap-wysihtml5.de-DE.js" />
+    <Content Include="Content\lib\bootstrap3-wysihtml5-bower\dist\locales\bootstrap-wysihtml5.el-GR.js" />
+    <Content Include="Content\lib\bootstrap3-wysihtml5-bower\dist\locales\bootstrap-wysihtml5.en-US.js" />
+    <Content Include="Content\lib\bootstrap3-wysihtml5-bower\dist\locales\bootstrap-wysihtml5.es-AR.js" />
+    <Content Include="Content\lib\bootstrap3-wysihtml5-bower\dist\locales\bootstrap-wysihtml5.es-ES.js" />
+    <Content Include="Content\lib\bootstrap3-wysihtml5-bower\dist\locales\bootstrap-wysihtml5.fr-FR.js" />
+    <Content Include="Content\lib\bootstrap3-wysihtml5-bower\dist\locales\bootstrap-wysihtml5.hr-HR.js" />
+    <Content Include="Content\lib\bootstrap3-wysihtml5-bower\dist\locales\bootstrap-wysihtml5.hu-HU.js" />
+    <Content Include="Content\lib\bootstrap3-wysihtml5-bower\dist\locales\bootstrap-wysihtml5.il-HE.js" />
+    <Content Include="Content\lib\bootstrap3-wysihtml5-bower\dist\locales\bootstrap-wysihtml5.it-IT.js" />
+    <Content Include="Content\lib\bootstrap3-wysihtml5-bower\dist\locales\bootstrap-wysihtml5.ja-JP.js" />
+    <Content Include="Content\lib\bootstrap3-wysihtml5-bower\dist\locales\bootstrap-wysihtml5.ko-KR.js" />
+    <Content Include="Content\lib\bootstrap3-wysihtml5-bower\dist\locales\bootstrap-wysihtml5.lt-LT.js" />
+    <Content Include="Content\lib\bootstrap3-wysihtml5-bower\dist\locales\bootstrap-wysihtml5.mo-MD.js" />
+    <Content Include="Content\lib\bootstrap3-wysihtml5-bower\dist\locales\bootstrap-wysihtml5.nb-NB.js" />
+    <Content Include="Content\lib\bootstrap3-wysihtml5-bower\dist\locales\bootstrap-wysihtml5.nl-NL.js" />
+    <Content Include="Content\lib\bootstrap3-wysihtml5-bower\dist\locales\bootstrap-wysihtml5.pl-PL.js" />
+    <Content Include="Content\lib\bootstrap3-wysihtml5-bower\dist\locales\bootstrap-wysihtml5.pt-BR.js" />
+    <Content Include="Content\lib\bootstrap3-wysihtml5-bower\dist\locales\bootstrap-wysihtml5.ru-RU.js" />
+    <Content Include="Content\lib\bootstrap3-wysihtml5-bower\dist\locales\bootstrap-wysihtml5.sk-SK.js" />
+    <Content Include="Content\lib\bootstrap3-wysihtml5-bower\dist\locales\bootstrap-wysihtml5.sv-SE.js" />
+    <Content Include="Content\lib\bootstrap3-wysihtml5-bower\dist\locales\bootstrap-wysihtml5.tr-TR.js" />
+    <Content Include="Content\lib\bootstrap3-wysihtml5-bower\dist\locales\bootstrap-wysihtml5.ua-UA.js" />
+    <Content Include="Content\lib\bootstrap3-wysihtml5-bower\dist\locales\bootstrap-wysihtml5.zh-CN.js" />
+    <Content Include="Content\lib\bootstrap3-wysihtml5-bower\dist\locales\bootstrap-wysihtml5.zh-TW.js" />
+    <Content Include="Content\lib\bootstrap3-wysihtml5-bower\dist\templates.js" />
+    <Content Include="Content\lib\bootstrap3-wysihtml5-bower\examples\index-require-dev.html" />
+    <Content Include="Content\lib\bootstrap3-wysihtml5-bower\examples\index-require.html" />
+    <Content Include="Content\lib\bootstrap3-wysihtml5-bower\examples\main-dev.js" />
+    <Content Include="Content\lib\bootstrap3-wysihtml5-bower\examples\main.js" />
+    <Content Include="Content\lib\bootstrap3-wysihtml5-bower\examples\start-dev.js" />
+    <Content Include="Content\lib\bootstrap3-wysihtml5-bower\examples\start.js" />
+    <Content Include="Content\lib\bootstrap3-wysihtml5-bower\index-all.html" />
+    <Content Include="Content\lib\bootstrap3-wysihtml5-bower\index-dev.html" />
+    <Content Include="Content\lib\bootstrap3-wysihtml5-bower\index-multi-dev.html" />
+    <Content Include="Content\lib\bootstrap3-wysihtml5-bower\index.html" />
+    <Content Include="Content\lib\bootstrap3-wysihtml5-bower\karma.conf.js" />
+    <Content Include="Content\lib\bootstrap\dist\css\bootstrap-theme.css" />
+    <Content Include="Content\lib\bootstrap\dist\css\bootstrap-theme.min.css" />
+    <Content Include="Content\lib\bootstrap\dist\css\bootstrap.css" />
+    <Content Include="Content\lib\bootstrap\dist\css\bootstrap.min.css" />
+    <Content Include="Content\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\lib\bootstrap\dist\js\bootstrap.js" />
+    <Content Include="Content\lib\bootstrap\dist\js\bootstrap.min.js" />
+    <Content Include="Content\lib\bootstrap\dist\js\npm.js" />
+    <Content Include="Content\lib\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\lib\bootstrap\Gruntfile.js" />
+    <Content Include="Content\lib\bootstrap\grunt\bs-commonjs-generator.js" />
+    <Content Include="Content\lib\bootstrap\grunt\bs-lessdoc-parser.js" />
+    <Content Include="Content\lib\bootstrap\grunt\bs-raw-files-generator.js" />
+    <Content Include="Content\lib\bootstrap\js\affix.js" />
+    <Content Include="Content\lib\bootstrap\js\alert.js" />
+    <Content Include="Content\lib\bootstrap\js\button.js" />
+    <Content Include="Content\lib\bootstrap\js\carousel.js" />
+    <Content Include="Content\lib\bootstrap\js\collapse.js" />
+    <Content Include="Content\lib\bootstrap\js\dropdown.js" />
+    <Content Include="Content\lib\bootstrap\js\modal.js" />
+    <Content Include="Content\lib\bootstrap\js\popover.js" />
+    <Content Include="Content\lib\bootstrap\js\scrollspy.js" />
+    <Content Include="Content\lib\bootstrap\js\tab.js" />
+    <Content Include="Content\lib\bootstrap\js\tooltip.js" />
+    <Content Include="Content\lib\bootstrap\js\transition.js" />
+    <Content Include="Content\lib\components-font-awesome\css\font-awesome.css" />
+    <Content Include="Content\lib\components-font-awesome\css\font-awesome.min.css" />
+    <Content Include="Content\lib\components-font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\lib\formwizard\changelog.txt" />
+    <Content Include="Content\lib\formwizard\examples\css\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\lib\formwizard\examples\css\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\lib\formwizard\examples\css\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\lib\formwizard\examples\css\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\lib\formwizard\examples\css\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\lib\formwizard\examples\css\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\lib\formwizard\examples\css\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\lib\formwizard\examples\css\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\lib\formwizard\examples\css\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\lib\formwizard\examples\css\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\lib\formwizard\examples\css\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\lib\formwizard\examples\css\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\lib\formwizard\examples\css\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\lib\formwizard\examples\css\base\jquery.ui.all.css" />
+    <Content Include="Content\lib\formwizard\examples\css\base\jquery.ui.base.css" />
+    <Content Include="Content\lib\formwizard\examples\css\base\jquery.ui.core.css" />
+    <Content Include="Content\lib\formwizard\examples\css\base\jquery.ui.theme.css" />
+    <Content Include="Content\lib\formwizard\examples\css\ui-lightness\images\ui-anim_basic_16x16.gif" />
+    <Content Include="Content\lib\formwizard\examples\css\ui-lightness\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="Content\lib\formwizard\examples\css\ui-lightness\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="Content\lib\formwizard\examples\css\ui-lightness\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="Content\lib\formwizard\examples\css\ui-lightness\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="Content\lib\formwizard\examples\css\ui-lightness\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="Content\lib\formwizard\examples\css\ui-lightness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\lib\formwizard\examples\css\ui-lightness\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="Content\lib\formwizard\examples\css\ui-lightness\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="Content\lib\formwizard\examples\css\ui-lightness\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="Content\lib\formwizard\examples\css\ui-lightness\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\lib\formwizard\examples\css\ui-lightness\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="Content\lib\formwizard\examples\css\ui-lightness\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="Content\lib\formwizard\examples\css\ui-lightness\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="Content\lib\formwizard\examples\css\ui-lightness\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Content\lib\formwizard\examples\css\ui-lightness\jquery-ui-1.8.2.custom.css" />
+    <Content Include="Content\lib\formwizard\examples\example_10_custom_validation_initialization.html" />
+    <Content Include="Content\lib\formwizard\examples\example_11_changing_options_after_initialization.html" />
+    <Content Include="Content\lib\formwizard\examples\example_12_using_remoteAjax_for_all_steps.html" />
+    <Content Include="Content\lib\formwizard\examples\example_13_nested_routes.html" />
+    <Content Include="Content\lib\formwizard\examples\example_14_using_fieldset_as_step_identifier.html" />
+    <Content Include="Content\lib\formwizard\examples\example_15_add_and_remove_steps_dynamically.html" />
+    <Content Include="Content\lib\formwizard\examples\example_16_have_the_wizard_ignore_specific_inputs_during_transition.html" />
+    <Content Include="Content\lib\formwizard\examples\example_17_cancel_the_submit_in_using_beforeSubmit_beforeSend_and_beforeSerialize_callbacks.html" />
+    <Content Include="Content\lib\formwizard\examples\example_18_disable_jquery_ui_styles_using_disableUIStyles.html" />
+    <Content Include="Content\lib\formwizard\examples\example_19_summary_page.html" />
+    <Content Include="Content\lib\formwizard\examples\example_1_straight.html" />
+    <Content Include="Content\lib\formwizard\examples\example_20_submit_form_without_ajax.html" />
+    <Content Include="Content\lib\formwizard\examples\example_21_add_steps_using_update_steps_method.html" />
+    <Content Include="Content\lib\formwizard\examples\example_22_before_step_shown_event.html" />
+    <Content Include="Content\lib\formwizard\examples\example_2_branch.html" />
+    <Content Include="Content\lib\formwizard\examples\example_3_bbq_integration_history_handling.html" />
+    <Content Include="Content\lib\formwizard\examples\example_4_step_shown_event.html" />
+    <Content Include="Content\lib\formwizard\examples\example_5_methods.html" />
+    <Content Include="Content\lib\formwizard\examples\example_6_remoteAjax_and_events.html" />
+    <Content Include="Content\lib\formwizard\examples\example_7_transition_animation.html" />
+    <Content Include="Content\lib\formwizard\examples\example_8_multiple_wizards.html" />
+    <Content Include="Content\lib\formwizard\examples\example_9_branching_using_checkbox_radiobutton_hidden_.html" />
+    <Content Include="Content\lib\formwizard\examples\json.html" />
+    <Content Include="Content\lib\formwizard\examples\normal_submit.html" />
+    <Content Include="Content\lib\formwizard\examples\store_in_database.html" />
+    <Content Include="Content\lib\formwizard\examples\validate.html" />
+    <Content Include="Content\lib\formwizard\js\bbq.js" />
+    <Content Include="Content\lib\formwizard\js\jquery-1.4.2.min.js" />
+    <Content Include="Content\lib\formwizard\js\jquery-ui-1.8.5.custom.min.js" />
+    <Content Include="Content\lib\formwizard\js\jquery.form.js" />
+    <Content Include="Content\lib\formwizard\js\jquery.form.wizard.js" />
+    <Content Include="Content\lib\formwizard\js\jquery.validate.js" />
+    <Content Include="Content\lib\fullcalendar\dist\fullcalendar.css" />
+    <Content Include="Content\lib\fullcalendar\dist\fullcalendar.js" />
+    <Content Include="Content\lib\fullcalendar\dist\fullcalendar.min.css" />
+    <Content Include="Content\lib\fullcalendar\dist\fullcalendar.min.js" />
+    <Content Include="Content\lib\fullcalendar\dist\fullcalendar.print.css" />
+    <Content Include="Content\lib\fullcalendar\dist\gcal.js" />
+    <Content Include="Content\lib\fullcalendar\dist\lang-all.js" />
+    <Content Include="Content\lib\fullcalendar\dist\lang\ar-ma.js" />
+    <Content Include="Content\lib\fullcalendar\dist\lang\ar-sa.js" />
+    <Content Include="Content\lib\fullcalendar\dist\lang\ar-tn.js" />
+    <Content Include="Content\lib\fullcalendar\dist\lang\ar.js" />
+    <Content Include="Content\lib\fullcalendar\dist\lang\bg.js" />
+    <Content Include="Content\lib\fullcalendar\dist\lang\ca.js" />
+    <Content Include="Content\lib\fullcalendar\dist\lang\cs.js" />
+    <Content Include="Content\lib\fullcalendar\dist\lang\da.js" />
+    <Content Include="Content\lib\fullcalendar\dist\lang\de-at.js" />
+    <Content Include="Content\lib\fullcalendar\dist\lang\de.js" />
+    <Content Include="Content\lib\fullcalendar\dist\lang\el.js" />
+    <Content Include="Content\lib\fullcalendar\dist\lang\en-au.js" />
+    <Content Include="Content\lib\fullcalendar\dist\lang\en-ca.js" />
+    <Content Include="Content\lib\fullcalendar\dist\lang\en-gb.js" />
+    <Content Include="Content\lib\fullcalendar\dist\lang\es.js" />
+    <Content Include="Content\lib\fullcalendar\dist\lang\fa.js" />
+    <Content Include="Content\lib\fullcalendar\dist\lang\fi.js" />
+    <Content Include="Content\lib\fullcalendar\dist\lang\fr-ca.js" />
+    <Content Include="Content\lib\fullcalendar\dist\lang\fr.js" />
+    <Content Include="Content\lib\fullcalendar\dist\lang\he.js" />
+    <Content Include="Content\lib\fullcalendar\dist\lang\hi.js" />
+    <Content Include="Content\lib\fullcalendar\dist\lang\hr.js" />
+    <Content Include="Content\lib\fullcalendar\dist\lang\hu.js" />
+    <Content Include="Content\lib\fullcalendar\dist\lang\id.js" />
+    <Content Include="Content\lib\fullcalendar\dist\lang\is.js" />
+    <Content Include="Content\lib\fullcalendar\dist\lang\it.js" />
+    <Content Include="Content\lib\fullcalendar\dist\lang\ja.js" />
+    <Content Include="Content\lib\fullcalendar\dist\lang\ko.js" />
+    <Content Include="Content\lib\fullcalendar\dist\lang\lt.js" />
+    <Content Include="Content\lib\fullcalendar\dist\lang\lv.js" />
+    <Content Include="Content\lib\fullcalendar\dist\lang\nl.js" />
+    <Content Include="Content\lib\fullcalendar\dist\lang\pl.js" />
+    <Content Include="Content\lib\fullcalendar\dist\lang\pt-br.js" />
+    <Content Include="Content\lib\fullcalendar\dist\lang\pt.js" />
+    <Content Include="Content\lib\fullcalendar\dist\lang\ro.js" />
+    <Content Include="Content\lib\fullcalendar\dist\lang\ru.js" />
+    <Content Include="Content\lib\fullcalendar\dist\lang\sk.js" />
+    <Content Include="Content\lib\fullcalendar\dist\lang\sl.js" />
+    <Content Include="Content\lib\fullcalendar\dist\lang\sr-cyrl.js" />
+    <Content Include="Content\lib\fullcalendar\dist\lang\sr.js" />
+    <Content Include="Content\lib\fullcalendar\dist\lang\sv.js" />
+    <Content Include="Content\lib\fullcalendar\dist\lang\th.js" />
+    <Content Include="Content\lib\fullcalendar\dist\lang\tr.js" />
+    <Content Include="Content\lib\fullcalendar\dist\lang\uk.js" />
+    <Content Include="Content\lib\fullcalendar\dist\lang\vi.js" />
+    <Content Include="Content\lib\fullcalendar\dist\lang\zh-cn.js" />
+    <Content Include="Content\lib\fullcalendar\dist\lang\zh-tw.js" />
+    <Content Include="Content\lib\fullcalendar\license.txt" />
+    <Content Include="Content\lib\gmaps\examples\basic.html" />
+    <Content Include="Content\lib\gmaps\examples\context_menu.html" />
+    <Content Include="Content\lib\gmaps\examples\custom_controls.html" />
+    <Content Include="Content\lib\gmaps\examples\elevation_locations.html" />
+    <Content Include="Content\lib\gmaps\examples\elevation_routes.html" />
+    <Content Include="Content\lib\gmaps\examples\examples.css" />
+    <Content Include="Content\lib\gmaps\examples\fusion_tables.html" />
+    <Content Include="Content\lib\gmaps\examples\geocoding.html" />
+    <Content Include="Content\lib\gmaps\examples\geofences.html" />
+    <Content Include="Content\lib\gmaps\examples\geolocation.html" />
+    <Content Include="Content\lib\gmaps\examples\geometry.html" />
+    <Content Include="Content\lib\gmaps\examples\kml.html" />
+    <Content Include="Content\lib\gmaps\examples\layers.html" />
+    <Content Include="Content\lib\gmaps\examples\layers_places.html" />
+    <Content Include="Content\lib\gmaps\examples\map_events.html" />
+    <Content Include="Content\lib\gmaps\examples\map_types.html" />
+    <Content Include="Content\lib\gmaps\examples\markers.html" />
+    <Content Include="Content\lib\gmaps\examples\marker_clusterer.html" />
+    <Content Include="Content\lib\gmaps\examples\overlays.html" />
+    <Content Include="Content\lib\gmaps\examples\overlay_map_types.html" />
+    <Content Include="Content\lib\gmaps\examples\polygons.html" />
+    <Content Include="Content\lib\gmaps\examples\polylines.html" />
+    <Content Include="Content\lib\gmaps\examples\routes.html" />
+    <Content Include="Content\lib\gmaps\examples\routes_advanced.html" />
+    <Content Include="Content\lib\gmaps\examples\static.html" />
+    <Content Include="Content\lib\gmaps\examples\static_markers.html" />
+    <Content Include="Content\lib\gmaps\examples\static_polylines.html" />
+    <Content Include="Content\lib\gmaps\examples\static_styles.html" />
+    <Content Include="Content\lib\gmaps\examples\styled_maps.html" />
+    <Content Include="Content\lib\gmaps\examples\travel_route.html" />
+    <Content Include="Content\lib\gmaps\gmaps.js" />
+    <Content Include="Content\lib\gmaps\Gruntfile.js" />
+    <Content Include="Content\lib\gmaps\lib\gmaps.controls.js" />
+    <Content Include="Content\lib\gmaps\lib\gmaps.core.js" />
+    <Content Include="Content\lib\gmaps\lib\gmaps.events.js" />
+    <Content Include="Content\lib\gmaps\lib\gmaps.geofences.js" />
+    <Content Include="Content\lib\gmaps\lib\gmaps.geometry.js" />
+    <Content Include="Content\lib\gmaps\lib\gmaps.layers.js" />
+    <Content Include="Content\lib\gmaps\lib\gmaps.map_types.js" />
+    <Content Include="Content\lib\gmaps\lib\gmaps.markers.js" />
+    <Content Include="Content\lib\gmaps\lib\gmaps.native_extensions.js" />
+    <Content Include="Content\lib\gmaps\lib\gmaps.overlays.js" />
+    <Content Include="Content\lib\gmaps\lib\gmaps.routes.js" />
+    <Content Include="Content\lib\gmaps\lib\gmaps.static.js" />
+    <Content Include="Content\lib\gmaps\lib\gmaps.streetview.js" />
+    <Content Include="Content\lib\gmaps\lib\gmaps.styles.js" />
+    <Content Include="Content\lib\gmaps\lib\gmaps.utils.js" />
+    <Content Include="Content\lib\gmaps\test\index.html" />
+    <Content Include="Content\lib\gmaps\test\lib\jasmine-html.js" />
+    <Content Include="Content\lib\gmaps\test\lib\jasmine.css" />
+    <Content Include="Content\lib\gmaps\test\lib\jasmine.js" />
+    <Content Include="Content\lib\gmaps\test\spec\ControlSpec.js" />
+    <Content Include="Content\lib\gmaps\test\spec\EventSpec.js" />
+    <Content Include="Content\lib\gmaps\test\spec\GeometrySpec.js" />
+    <Content Include="Content\lib\gmaps\test\spec\LayerSpec.js" />
+    <Content Include="Content\lib\gmaps\test\spec\MapSpec.js" />
+    <Content Include="Content\lib\gmaps\test\spec\MarkerSpec.js" />
+    <Content Include="Content\lib\gmaps\test\spec\OverlaySpec.js" />
+    <Content Include="Content\lib\gmaps\test\spec\RouteSpec.js" />
+    <Content Include="Content\lib\gmaps\test\spec\StreetViewSpec.js" />
+    <Content Include="Content\lib\gmaps\test\spec\StyleSpec.js" />
+    <Content Include="Content\lib\gmaps\test\style.css" />
+    <Content Include="Content\lib\gmaps\test\template\jasmine-gmaps.html" />
+    <Content Include="Content\lib\handlebars\handlebars.amd.js" />
+    <Content Include="Content\lib\handlebars\handlebars.amd.min.js" />
+    <Content Include="Content\lib\handlebars\handlebars.js" />
+    <Content Include="Content\lib\handlebars\handlebars.min.js" />
+    <Content Include="Content\lib\handlebars\handlebars.runtime.amd.js" />
+    <Content Include="Content\lib\handlebars\handlebars.runtime.amd.min.js" />
+    <Content Include="Content\lib\handlebars\handlebars.runtime.js" />
+    <Content Include="Content\lib\handlebars\handlebars.runtime.min.js" />
+    <Content Include="Content\lib\html5shiv\dist\html5shiv-printshiv.js" />
+    <Content Include="Content\lib\html5shiv\dist\html5shiv-printshiv.min.js" />
+    <Content Include="Content\lib\html5shiv\dist\html5shiv.js" />
+    <Content Include="Content\lib\html5shiv\dist\html5shiv.min.js" />
+    <Content Include="Content\lib\html5shiv\Gruntfile.js" />
+    <Content Include="Content\lib\jquery-inputlimiter\demo.htm" />
+    <Content Include="Content\lib\jquery-inputlimiter\jquery-1.7.2.min.js" />
+    <Content Include="Content\lib\jquery-inputlimiter\jquery.inputlimiter.1.0.css" />
+    <Content Include="Content\lib\jquery-inputlimiter\jquery.inputlimiter.1.3.1.js" />
+    <Content Include="Content\lib\jquery-inputlimiter\jquery.inputlimiter.1.3.1.min.js" />
+    <Content Include="Content\lib\jquery-inputlimiter\LICENSE.txt" />
+    <Content Include="Content\lib\jquery-mousewheel\jquery.mousewheel.js" />
+    <Content Include="Content\lib\jquery-mousewheel\jquery.mousewheel.min.js" />
+    <Content Include="Content\lib\jquery-mousewheel\LICENSE.txt" />
+    <Content Include="Content\lib\jquery-validation\build\release.js" />
+    <Content Include="Content\lib\jquery-validation\dist\additional-methods.js" />
+    <Content Include="Content\lib\jquery-validation\dist\additional-methods.min.js" />
+    <Content Include="Content\lib\jquery-validation\dist\jquery.validate.js" />
+    <Content Include="Content\lib\jquery-validation\dist\jquery.validate.min.js" />
+    <Content Include="Content\lib\jquery-validation\Gruntfile.js" />
+    <Content Include="Content\lib\jquery-validation\src\additional\accept.js" />
+    <Content Include="Content\lib\jquery-validation\src\additional\additional.js" />
+    <Content Include="Content\lib\jquery-validation\src\additional\alphanumeric.js" />
+    <Content Include="Content\lib\jquery-validation\src\additional\bankaccountNL.js" />
+    <Content Include="Content\lib\jquery-validation\src\additional\bankorgiroaccountNL.js" />
+    <Content Include="Content\lib\jquery-validation\src\additional\bic.js" />
+    <Content Include="Content\lib\jquery-validation\src\additional\cifES.js" />
+    <Content Include="Content\lib\jquery-validation\src\additional\creditcardtypes.js" />
+    <Content Include="Content\lib\jquery-validation\src\additional\currency.js" />
+    <Content Include="Content\lib\jquery-validation\src\additional\dateFA.js" />
+    <Content Include="Content\lib\jquery-validation\src\additional\dateITA.js" />
+    <Content Include="Content\lib\jquery-validation\src\additional\dateNL.js" />
+    <Content Include="Content\lib\jquery-validation\src\additional\extension.js" />
+    <Content Include="Content\lib\jquery-validation\src\additional\giroaccountNL.js" />
+    <Content Include="Content\lib\jquery-validation\src\additional\iban.js" />
+    <Content Include="Content\lib\jquery-validation\src\additional\integer.js" />
+    <Content Include="Content\lib\jquery-validation\src\additional\ipv4.js" />
+    <Content Include="Content\lib\jquery-validation\src\additional\ipv6.js" />
+    <Content Include="Content\lib\jquery-validation\src\additional\lettersonly.js" />
+    <Content Include="Content\lib\jquery-validation\src\additional\letterswithbasicpunc.js" />
+    <Content Include="Content\lib\jquery-validation\src\additional\mobileNL.js" />
+    <Content Include="Content\lib\jquery-validation\src\additional\mobileUK.js" />
+    <Content Include="Content\lib\jquery-validation\src\additional\nieES.js" />
+    <Content Include="Content\lib\jquery-validation\src\additional\nifES.js" />
+    <Content Include="Content\lib\jquery-validation\src\additional\nowhitespace.js" />
+    <Content Include="Content\lib\jquery-validation\src\additional\pattern.js" />
+    <Content Include="Content\lib\jquery-validation\src\additional\phoneNL.js" />
+    <Content Include="Content\lib\jquery-validation\src\additional\phonesUK.js" />
+    <Content Include="Content\lib\jquery-validation\src\additional\phoneUK.js" />
+    <Content Include="Content\lib\jquery-validation\src\additional\phoneUS.js" />
+    <Content Include="Content\lib\jquery-validation\src\additional\postalcodeBR.js" />
+    <Content Include="Content\lib\jquery-validation\src\additional\postalCodeCA.js" />
+    <Content Include="Content\lib\jquery-validation\src\additional\postalcodeIT.js" />
+    <Content Include="Content\lib\jquery-validation\src\additional\postalcodeNL.js" />
+    <Content Include="Content\lib\jquery-validation\src\additional\postcodeUK.js" />
+    <Content Include="Content\lib\jquery-validation\src\additional\require_from_group.js" />
+    <Content Include="Content\lib\jquery-validation\src\additional\skip_or_fill_minimum.js" />
+    <Content Include="Content\lib\jquery-validation\src\additional\statesUS.js" />
+    <Content Include="Content\lib\jquery-validation\src\additional\strippedminlength.js" />
+    <Content Include="Content\lib\jquery-validation\src\additional\time.js" />
+    <Content Include="Content\lib\jquery-validation\src\additional\time12h.js" />
+    <Content Include="Content\lib\jquery-validation\src\additional\url2.js" />
+    <Content Include="Content\lib\jquery-validation\src\additional\vinUS.js" />
+    <Content Include="Content\lib\jquery-validation\src\additional\zipcodeUS.js" />
+    <Content Include="Content\lib\jquery-validation\src\additional\ziprange.js" />
+    <Content Include="Content\lib\jquery-validation\src\ajax.js" />
+    <Content Include="Content\lib\jquery-validation\src\core.js" />
+    <Content Include="Content\lib\jquery-validation\src\delegate.js" />
+    <Content Include="Content\lib\jquery-validation\src\localization\messages_ar.js" />
+    <Content Include="Content\lib\jquery-validation\src\localization\messages_bg.js" />
+    <Content Include="Content\lib\jquery-validation\src\localization\messages_ca.js" />
+    <Content Include="Content\lib\jquery-validation\src\localization\messages_cs.js" />
+    <Content Include="Content\lib\jquery-validation\src\localization\messages_da.js" />
+    <Content Include="Content\lib\jquery-validation\src\localization\messages_de.js" />
+    <Content Include="Content\lib\jquery-validation\src\localization\messages_el.js" />
+    <Content Include="Content\lib\jquery-validation\src\localization\messages_es.js" />
+    <Content Include="Content\lib\jquery-validation\src\localization\messages_es_AR.js" />
+    <Content Include="Content\lib\jquery-validation\src\localization\messages_et.js" />
+    <Content Include="Content\lib\jquery-validation\src\localization\messages_eu.js" />
+    <Content Include="Content\lib\jquery-validation\src\localization\messages_fa.js" />
+    <Content Include="Content\lib\jquery-validation\src\localization\messages_fi.js" />
+    <Content Include="Content\lib\jquery-validation\src\localization\messages_fr.js" />
+    <Content Include="Content\lib\jquery-validation\src\localization\messages_gl.js" />
+    <Content Include="Content\lib\jquery-validation\src\localization\messages_he.js" />
+    <Content Include="Content\lib\jquery-validation\src\localization\messages_hr.js" />
+    <Content Include="Content\lib\jquery-validation\src\localization\messages_hu.js" />
+    <Content Include="Content\lib\jquery-validation\src\localization\messages_id.js" />
+    <Content Include="Content\lib\jquery-validation\src\localization\messages_is.js" />
+    <Content Include="Content\lib\jquery-validation\src\localization\messages_it.js" />
+    <Content Include="Content\lib\jquery-validation\src\localization\messages_ja.js" />
+    <Content Include="Content\lib\jquery-validation\src\localization\messages_ka.js" />
+    <Content Include="Content\lib\jquery-validation\src\localization\messages_kk.js" />
+    <Content Include="Content\lib\jquery-validation\src\localization\messages_ko.js" />
+    <Content Include="Content\lib\jquery-validation\src\localization\messages_lt.js" />
+    <Content Include="Content\lib\jquery-validation\src\localization\messages_lv.js" />
+    <Content Include="Content\lib\jquery-validation\src\localization\messages_my.js" />
+    <Content Include="Content\lib\jquery-validation\src\localization\messages_nl.js" />
+    <Content Include="Content\lib\jquery-validation\src\localization\messages_no.js" />
+    <Content Include="Content\lib\jquery-validation\src\localization\messages_pl.js" />
+    <Content Include="Content\lib\jquery-validation\src\localization\messages_pt_BR.js" />
+    <Content Include="Content\lib\jquery-validation\src\localization\messages_pt_PT.js" />
+    <Content Include="Content\lib\jquery-validation\src\localization\messages_ro.js" />
+    <Content Include="Content\lib\jquery-validation\src\localization\messages_ru.js" />
+    <Content Include="Content\lib\jquery-validation\src\localization\messages_si.js" />
+    <Content Include="Content\lib\jquery-validation\src\localization\messages_sk.js" />
+    <Content Include="Content\lib\jquery-validation\src\localization\messages_sl.js" />
+    <Content Include="Content\lib\jquery-validation\src\localization\messages_sr.js" />
+    <Content Include="Content\lib\jquery-validation\src\localization\messages_sr_lat.js" />
+    <Content Include="Content\lib\jquery-validation\src\localization\messages_sv.js" />
+    <Content Include="Content\lib\jquery-validation\src\localization\messages_th.js" />
+    <Content Include="Content\lib\jquery-validation\src\localization\messages_tj.js" />
+    <Content Include="Content\lib\jquery-validation\src\localization\messages_tr.js" />
+    <Content Include="Content\lib\jquery-validation\src\localization\messages_uk.js" />
+    <Content Include="Content\lib\jquery-validation\src\localization\messages_vi.js" />
+    <Content Include="Content\lib\jquery-validation\src\localization\messages_zh.js" />
+    <Content Include="Content\lib\jquery-validation\src\localization\messages_zh_TW.js" />
+    <Content Include="Content\lib\jquery-validation\src\localization\methods_de.js" />
+    <Content Include="Content\lib\jquery-validation\src\localization\methods_es_CL.js" />
+    <Content Include="Content\lib\jquery-validation\src\localization\methods_fi.js" />
+    <Content Include="Content\lib\jquery-validation\src\localization\methods_nl.js" />
+    <Content Include="Content\lib\jquery-validation\src\localization\methods_pt.js" />
+    <Content Include="Content\lib\jquery.gritter\css\jquery.gritter.css" />
+    <Content Include="Content\lib\jquery.gritter\images\gritter-light.png" />
+    <Content Include="Content\lib\jquery.gritter\images\gritter-long.png" />
+    <Content Include="Content\lib\jquery.gritter\images\gritter.png" />
+    <Content Include="Content\lib\jquery.gritter\images\ie-spacer.gif" />
+    <Content Include="Content\lib\jquery.gritter\images\trees.jpg" />
+    <Content Include="Content\lib\jquery.gritter\index.html" />
+    <Content Include="Content\lib\jquery.gritter\js\jquery.gritter.js" />
+    <Content Include="Content\lib\jquery.gritter\js\jquery.gritter.min.js" />
+    <Content Include="Content\lib\jQuery.validVal\index.html" />
+    <Content Include="Content\lib\jQuery.validVal\js\jquery.validVal-customValidations.js" />
+    <Content Include="Content\lib\jQuery.validVal\js\jquery.validVal-debugger.js" />
+    <Content Include="Content\lib\jQuery.validVal\js\jquery.validVal.js" />
+    <Content Include="Content\lib\jQuery.validVal\js\jquery.validVal.min.js" />
+    <Content Include="Content\lib\jQuery.validVal\serverside-validations\index.html" />
+    <Content Include="Content\lib\jQuery.validVal\serverside-validations\validations.php" />
+    <Content Include="Content\lib\jquery\dist\jquery.js" />
+    <Content Include="Content\lib\jquery\dist\jquery.min.js" />
+    <Content Include="Content\lib\jquery\MIT-LICENSE.txt" />
+    <Content Include="Content\lib\jquery\src\ajax.js" />
+    <Content Include="Content\lib\jquery\src\ajax\jsonp.js" />
+    <Content Include="Content\lib\jquery\src\ajax\load.js" />
+    <Content Include="Content\lib\jquery\src\ajax\parseJSON.js" />
+    <Content Include="Content\lib\jquery\src\ajax\parseXML.js" />
+    <Content Include="Content\lib\jquery\src\ajax\script.js" />
+    <Content Include="Content\lib\jquery\src\ajax\var\nonce.js" />
+    <Content Include="Content\lib\jquery\src\ajax\var\rquery.js" />
+    <Content Include="Content\lib\jquery\src\ajax\xhr.js" />
+    <Content Include="Content\lib\jquery\src\attributes.js" />
+    <Content Include="Content\lib\jquery\src\attributes\attr.js" />
+    <Content Include="Content\lib\jquery\src\attributes\classes.js" />
+    <Content Include="Content\lib\jquery\src\attributes\prop.js" />
+    <Content Include="Content\lib\jquery\src\attributes\support.js" />
+    <Content Include="Content\lib\jquery\src\attributes\val.js" />
+    <Content Include="Content\lib\jquery\src\callbacks.js" />
+    <Content Include="Content\lib\jquery\src\core.js" />
+    <Content Include="Content\lib\jquery\src\core\access.js" />
+    <Content Include="Content\lib\jquery\src\core\init.js" />
+    <Content Include="Content\lib\jquery\src\core\parseHTML.js" />
+    <Content Include="Content\lib\jquery\src\core\ready.js" />
+    <Content Include="Content\lib\jquery\src\core\var\rsingleTag.js" />
+    <Content Include="Content\lib\jquery\src\css.js" />
+    <Content Include="Content\lib\jquery\src\css\addGetHookIf.js" />
+    <Content Include="Content\lib\jquery\src\css\curCSS.js" />
+    <Content Include="Content\lib\jquery\src\css\defaultDisplay.js" />
+    <Content Include="Content\lib\jquery\src\css\hiddenVisibleSelectors.js" />
+    <Content Include="Content\lib\jquery\src\css\support.js" />
+    <Content Include="Content\lib\jquery\src\css\swap.js" />
+    <Content Include="Content\lib\jquery\src\css\var\cssExpand.js" />
+    <Content Include="Content\lib\jquery\src\css\var\getStyles.js" />
+    <Content Include="Content\lib\jquery\src\css\var\isHidden.js" />
+    <Content Include="Content\lib\jquery\src\css\var\rmargin.js" />
+    <Content Include="Content\lib\jquery\src\css\var\rnumnonpx.js" />
+    <Content Include="Content\lib\jquery\src\data.js" />
+    <Content Include="Content\lib\jquery\src\data\accepts.js" />
+    <Content Include="Content\lib\jquery\src\data\Data.js" />
+    <Content Include="Content\lib\jquery\src\data\var\data_priv.js" />
+    <Content Include="Content\lib\jquery\src\data\var\data_user.js" />
+    <Content Include="Content\lib\jquery\src\deferred.js" />
+    <Content Include="Content\lib\jquery\src\deprecated.js" />
+    <Content Include="Content\lib\jquery\src\dimensions.js" />
+    <Content Include="Content\lib\jquery\src\effects.js" />
+    <Content Include="Content\lib\jquery\src\effects\animatedSelector.js" />
+    <Content Include="Content\lib\jquery\src\effects\Tween.js" />
+    <Content Include="Content\lib\jquery\src\event.js" />
+    <Content Include="Content\lib\jquery\src\event\ajax.js" />
+    <Content Include="Content\lib\jquery\src\event\alias.js" />
+    <Content Include="Content\lib\jquery\src\event\support.js" />
+    <Content Include="Content\lib\jquery\src\exports\amd.js" />
+    <Content Include="Content\lib\jquery\src\exports\global.js" />
+    <Content Include="Content\lib\jquery\src\intro.js" />
+    <Content Include="Content\lib\jquery\src\jquery.js" />
+    <Content Include="Content\lib\jquery\src\manipulation.js" />
+    <Content Include="Content\lib\jquery\src\manipulation\support.js" />
+    <Content Include="Content\lib\jquery\src\manipulation\var\rcheckableType.js" />
+    <Content Include="Content\lib\jquery\src\manipulation\_evalUrl.js" />
+    <Content Include="Content\lib\jquery\src\offset.js" />
+    <Content Include="Content\lib\jquery\src\outro.js" />
+    <Content Include="Content\lib\jquery\src\queue.js" />
+    <Content Include="Content\lib\jquery\src\queue\delay.js" />
+    <Content Include="Content\lib\jquery\src\selector-native.js" />
+    <Content Include="Content\lib\jquery\src\selector-sizzle.js" />
+    <Content Include="Content\lib\jquery\src\selector.js" />
+    <Content Include="Content\lib\jquery\src\serialize.js" />
+    <Content Include="Content\lib\jquery\src\sizzle\dist\sizzle.js" />
+    <Content Include="Content\lib\jquery\src\sizzle\dist\sizzle.min.js" />
+    <Content Include="Content\lib\jquery\src\traversing.js" />
+    <Content Include="Content\lib\jquery\src\traversing\findFilter.js" />
+    <Content Include="Content\lib\jquery\src\traversing\var\rneedsContext.js" />
+    <Content Include="Content\lib\jquery\src\var\arr.js" />
+    <Content Include="Content\lib\jquery\src\var\class2type.js" />
+    <Content Include="Content\lib\jquery\src\var\concat.js" />
+    <Content Include="Content\lib\jquery\src\var\hasOwn.js" />
+    <Content Include="Content\lib\jquery\src\var\indexOf.js" />
+    <Content Include="Content\lib\jquery\src\var\pnum.js" />
+    <Content Include="Content\lib\jquery\src\var\push.js" />
+    <Content Include="Content\lib\jquery\src\var\rnotwhite.js" />
+    <Content Include="Content\lib\jquery\src\var\slice.js" />
+    <Content Include="Content\lib\jquery\src\var\strundefined.js" />
+    <Content Include="Content\lib\jquery\src\var\support.js" />
+    <Content Include="Content\lib\jquery\src\var\toString.js" />
+    <Content Include="Content\lib\jquery\src\wrap.js" />
+    <Content Include="Content\lib\kbwood_countdown\countdownBasic.html" />
+    <Content Include="Content\lib\kbwood_countdown\countdownGlowing.gif" />
+    <Content Include="Content\lib\kbwood_countdown\countdownLED.png" />
+    <Content Include="Content\lib\kbwood_countdown\jquery.countdown-ar.js" />
+    <Content Include="Content\lib\kbwood_countdown\jquery.countdown-bg.js" />
+    <Content Include="Content\lib\kbwood_countdown\jquery.countdown-bn.js" />
+    <Content Include="Content\lib\kbwood_countdown\jquery.countdown-bs.js" />
+    <Content Include="Content\lib\kbwood_countdown\jquery.countdown-ca.js" />
+    <Content Include="Content\lib\kbwood_countdown\jquery.countdown-cs.js" />
+    <Content Include="Content\lib\kbwood_countdown\jquery.countdown-cy.js" />
+    <Content Include="Content\lib\kbwood_countdown\jquery.countdown-da.js" />
+    <Content Include="Content\lib\kbwood_countdown\jquery.countdown-de.js" />
+    <Content Include="Content\lib\kbwood_countdown\jquery.countdown-el.js" />
+    <Content Include="Content\lib\kbwood_countdown\jquery.countdown-es.js" />
+    <Content Include="Content\lib\kbwood_countdown\jquery.countdown-et.js" />
+    <Content Include="Content\lib\kbwood_countdown\jquery.countdown-fa.js" />
+    <Content Include="Content\lib\kbwood_countdown\jquery.countdown-fi.js" />
+    <Content Include="Content\lib\kbwood_countdown\jquery.countdown-fo.js" />
+    <Content Include="Content\lib\kbwood_countdown\jquery.countdown-fr.js" />
+    <Content Include="Content\lib\kbwood_countdown\jquery.countdown-gl.js" />
+    <Content Include="Content\lib\kbwood_countdown\jquery.countdown-gu.js" />
+    <Content Include="Content\lib\kbwood_countdown\jquery.countdown-he.js" />
+    <Content Include="Content\lib\kbwood_countdown\jquery.countdown-hr.js" />
+    <Content Include="Content\lib\kbwood_countdown\jquery.countdown-hu.js" />
+    <Content Include="Content\lib\kbwood_countdown\jquery.countdown-hy.js" />
+    <Content Include="Content\lib\kbwood_countdown\jquery.countdown-id.js" />
+    <Content Include="Content\lib\kbwood_countdown\jquery.countdown-is.js" />
+    <Content Include="Content\lib\kbwood_countdown\jquery.countdown-it.js" />
+    <Content Include="Content\lib\kbwood_countdown\jquery.countdown-ja.js" />
+    <Content Include="Content\lib\kbwood_countdown\jquery.countdown-kn.js" />
+    <Content Include="Content\lib\kbwood_countdown\jquery.countdown-ko.js" />
+    <Content Include="Content\lib\kbwood_countdown\jquery.countdown-lt.js" />
+    <Content Include="Content\lib\kbwood_countdown\jquery.countdown-lv.js" />
+    <Content Include="Content\lib\kbwood_countdown\jquery.countdown-ml.js" />
+    <Content Include="Content\lib\kbwood_countdown\jquery.countdown-ms.js" />
+    <Content Include="Content\lib\kbwood_countdown\jquery.countdown-my.js" />
+    <Content Include="Content\lib\kbwood_countdown\jquery.countdown-nb.js" />
+    <Content Include="Content\lib\kbwood_countdown\jquery.countdown-nl.js" />
+    <Content Include="Content\lib\kbwood_countdown\jquery.countdown-pl.js" />
+    <Content Include="Content\lib\kbwood_countdown\jquery.countdown-pt-BR.js" />
+    <Content Include="Content\lib\kbwood_countdown\jquery.countdown-ro.js" />
+    <Content Include="Content\lib\kbwood_countdown\jquery.countdown-ru.js" />
+    <Content Include="Content\lib\kbwood_countdown\jquery.countdown-sk.js" />
+    <Content Include="Content\lib\kbwood_countdown\jquery.countdown-sl.js" />
+    <Content Include="Content\lib\kbwood_countdown\jquery.countdown-sq.js" />
+    <Content Include="Content\lib\kbwood_countdown\jquery.countdown-sr-SR.js" />
+    <Content Include="Content\lib\kbwood_countdown\jquery.countdown-sr.js" />
+    <Content Include="Content\lib\kbwood_countdown\jquery.countdown-sv.js" />
+    <Content Include="Content\lib\kbwood_countdown\jquery.countdown-th.js" />
+    <Content Include="Content\lib\kbwood_countdown\jquery.countdown-tr.js" />
+    <Content Include="Content\lib\kbwood_countdown\jquery.countdown-uk.js" />
+    <Content Include="Content\lib\kbwood_countdown\jquery.countdown-ur.js" />
+    <Content Include="Content\lib\kbwood_countdown\jquery.countdown-uz.js" />
+    <Content Include="Content\lib\kbwood_countdown\jquery.countdown-vi.js" />
+    <Content Include="Content\lib\kbwood_countdown\jquery.countdown-zh-CN.js" />
+    <Content Include="Content\lib\kbwood_countdown\jquery.countdown-zh-TW.js" />
+    <Content Include="Content\lib\kbwood_countdown\jquery.countdown.css" />
+    <Content Include="Content\lib\kbwood_countdown\jquery.countdown.js" />
+    <Content Include="Content\lib\kbwood_countdown\jquery.countdown.min.js" />
+    <Content Include="Content\lib\kbwood_countdown\jquery.plugin.js" />
+    <Content Include="Content\lib\kbwood_countdown\jquery.plugin.min.js" />
+    <Content Include="Content\lib\modernizr\modernizr.min.js" />
+    <Content Include="Content\lib\moment\benchmarks\clone.js" />
+    <Content Include="Content\lib\moment\locale\af.js" />
+    <Content Include="Content\lib\moment\locale\ar-ma.js" />
+    <Content Include="Content\lib\moment\locale\ar-sa.js" />
+    <Content Include="Content\lib\moment\locale\ar.js" />
+    <Content Include="Content\lib\moment\locale\az.js" />
+    <Content Include="Content\lib\moment\locale\be.js" />
+    <Content Include="Content\lib\moment\locale\bg.js" />
+    <Content Include="Content\lib\moment\locale\bn.js" />
+    <Content Include="Content\lib\moment\locale\bo.js" />
+    <Content Include="Content\lib\moment\locale\br.js" />
+    <Content Include="Content\lib\moment\locale\bs.js" />
+    <Content Include="Content\lib\moment\locale\ca.js" />
+    <Content Include="Content\lib\moment\locale\cs.js" />
+    <Content Include="Content\lib\moment\locale\cv.js" />
+    <Content Include="Content\lib\moment\locale\cy.js" />
+    <Content Include="Content\lib\moment\locale\da.js" />
+    <Content Include="Content\lib\moment\locale\de-at.js" />
+    <Content Include="Content\lib\moment\locale\de.js" />
+    <Content Include="Content\lib\moment\locale\el.js" />
+    <Content Include="Content\lib\moment\locale\en-au.js" />
+    <Content Include="Content\lib\moment\locale\en-ca.js" />
+    <Content Include="Content\lib\moment\locale\en-gb.js" />
+    <Content Include="Content\lib\moment\locale\eo.js" />
+    <Content Include="Content\lib\moment\locale\es.js" />
+    <Content Include="Content\lib\moment\locale\et.js" />
+    <Content Include="Content\lib\moment\locale\eu.js" />
+    <Content Include="Content\lib\moment\locale\fa.js" />
+    <Content Include="Content\lib\moment\locale\fi.js" />
+    <Content Include="Content\lib\moment\locale\fo.js" />
+    <Content Include="Content\lib\moment\locale\fr-ca.js" />
+    <Content Include="Content\lib\moment\locale\fr.js" />
+    <Content Include="Content\lib\moment\locale\gl.js" />
+    <Content Include="Content\lib\moment\locale\he.js" />
+    <Content Include="Content\lib\moment\locale\hi.js" />
+    <Content Include="Content\lib\moment\locale\hr.js" />
+    <Content Include="Content\lib\moment\locale\hu.js" />
+    <Content Include="Content\lib\moment\locale\hy-am.js" />
+    <Content Include="Content\lib\moment\locale\id.js" />
+    <Content Include="Content\lib\moment\locale\is.js" />
+    <Content Include="Content\lib\moment\locale\it.js" />
+    <Content Include="Content\lib\moment\locale\ja.js" />
+    <Content Include="Content\lib\moment\locale\ka.js" />
+    <Content Include="Content\lib\moment\locale\km.js" />
+    <Content Include="Content\lib\moment\locale\ko.js" />
+    <Content Include="Content\lib\moment\locale\lb.js" />
+    <Content Include="Content\lib\moment\locale\lt.js" />
+    <Content Include="Content\lib\moment\locale\lv.js" />
+    <Content Include="Content\lib\moment\locale\mk.js" />
+    <Content Include="Content\lib\moment\locale\ml.js" />
+    <Content Include="Content\lib\moment\locale\mr.js" />
+    <Content Include="Content\lib\moment\locale\ms-my.js" />
+    <Content Include="Content\lib\moment\locale\my.js" />
+    <Content Include="Content\lib\moment\locale\nb.js" />
+    <Content Include="Content\lib\moment\locale\ne.js" />
+    <Content Include="Content\lib\moment\locale\nl.js" />
+    <Content Include="Content\lib\moment\locale\nn.js" />
+    <Content Include="Content\lib\moment\locale\pl.js" />
+    <Content Include="Content\lib\moment\locale\pt-br.js" />
+    <Content Include="Content\lib\moment\locale\pt.js" />
+    <Content Include="Content\lib\moment\locale\ro.js" />
+    <Content Include="Content\lib\moment\locale\ru.js" />
+    <Content Include="Content\lib\moment\locale\sk.js" />
+    <Content Include="Content\lib\moment\locale\sl.js" />
+    <Content Include="Content\lib\moment\locale\sq.js" />
+    <Content Include="Content\lib\moment\locale\sr-cyrl.js" />
+    <Content Include="Content\lib\moment\locale\sr.js" />
+    <Content Include="Content\lib\moment\locale\sv.js" />
+    <Content Include="Content\lib\moment\locale\ta.js" />
+    <Content Include="Content\lib\moment\locale\th.js" />
+    <Content Include="Content\lib\moment\locale\tl-ph.js" />
+    <Content Include="Content\lib\moment\locale\tr.js" />
+    <Content Include="Content\lib\moment\locale\tzm-latn.js" />
+    <Content Include="Content\lib\moment\locale\tzm.js" />
+    <Content Include="Content\lib\moment\locale\uk.js" />
+    <Content Include="Content\lib\moment\locale\uz.js" />
+    <Content Include="Content\lib\moment\locale\vi.js" />
+    <Content Include="Content\lib\moment\locale\zh-cn.js" />
+    <Content Include="Content\lib\moment\locale\zh-tw.js" />
+    <Content Include="Content\lib\moment\min\locales.js" />
+    <Content Include="Content\lib\moment\min\locales.min.js" />
+    <Content Include="Content\lib\moment\min\moment-with-locales.js" />
+    <Content Include="Content\lib\moment\min\moment-with-locales.min.js" />
+    <Content Include="Content\lib\moment\min\moment.min.js" />
+    <Content Include="Content\lib\moment\moment.js" />
+    <Content Include="Content\lib\pagedown-bootstrap\css\jquery.pagedown-bootstrap.css" />
+    <Content Include="Content\lib\pagedown-bootstrap\demo\index.html" />
+    <Content Include="Content\lib\pagedown-bootstrap\js\jquery.pagedown-bootstrap.combined.js" />
+    <Content Include="Content\lib\pagedown-bootstrap\js\jquery.pagedown-bootstrap.combined.min.js" />
+    <Content Include="Content\lib\pagedown-bootstrap\js\jquery.pagedown-bootstrap.js" />
+    <Content Include="Content\lib\pagedown-bootstrap\js\Markdown.Converter.js" />
+    <Content Include="Content\lib\pagedown-bootstrap\js\Markdown.Editor.js" />
+    <Content Include="Content\lib\pagedown-bootstrap\js\Markdown.Sanitizer.js" />
+    <Content Include="Content\lib\pagedown-bootstrap\LICENSE.txt" />
+    <Content Include="Content\lib\plupload\examples\custom.html" />
+    <Content Include="Content\lib\plupload\examples\dump.php" />
+    <Content Include="Content\lib\plupload\examples\events.html" />
+    <Content Include="Content\lib\plupload\examples\jquery\all_runtimes.html" />
+    <Content Include="Content\lib\plupload\examples\jquery\jquery_ui_widget.html" />
+    <Content Include="Content\lib\plupload\examples\jquery\queue_widget.html" />
+    <Content Include="Content\lib\plupload\examples\jquery\s3.php" />
+    <Content Include="Content\lib\plupload\examples\upload.php" />
+    <Content Include="Content\lib\plupload\js\i18n\ar.js" />
+    <Content Include="Content\lib\plupload\js\i18n\az.js" />
+    <Content Include="Content\lib\plupload\js\i18n\bs.js" />
+    <Content Include="Content\lib\plupload\js\i18n\cs.js" />
+    <Content Include="Content\lib\plupload\js\i18n\cy.js" />
+    <Content Include="Content\lib\plupload\js\i18n\da.js" />
+    <Content Include="Content\lib\plupload\js\i18n\de.js" />
+    <Content Include="Content\lib\plupload\js\i18n\el.js" />
+    <Content Include="Content\lib\plupload\js\i18n\en.js" />
+    <Content Include="Content\lib\plupload\js\i18n\es.js" />
+    <Content Include="Content\lib\plupload\js\i18n\et.js" />
+    <Content Include="Content\lib\plupload\js\i18n\fa.js" />
+    <Content Include="Content\lib\plupload\js\i18n\fi.js" />
+    <Content Include="Content\lib\plupload\js\i18n\fr.js" />
+    <Content Include="Content\lib\plupload\js\i18n\he.js" />
+    <Content Include="Content\lib\plupload\js\i18n\hr.js" />
+    <Content Include="Content\lib\plupload\js\i18n\hu.js" />
+    <Content Include="Content\lib\plupload\js\i18n\hy.js" />
+    <Content Include="Content\lib\plupload\js\i18n\id.js" />
+    <Content Include="Content\lib\plupload\js\i18n\it.js" />
+    <Content Include="Content\lib\plupload\js\i18n\ja.js" />
+    <Content Include="Content\lib\plupload\js\i18n\ka.js" />
+    <Content Include="Content\lib\plupload\js\i18n\kk.js" />
+    <Content Include="Content\lib\plupload\js\i18n\km.js" />
+    <Content Include="Content\lib\plupload\js\i18n\ko.js" />
+    <Content Include="Content\lib\plupload\js\i18n\lt.js" />
+    <Content Include="Content\lib\plupload\js\i18n\lv.js" />
+    <Content Include="Content\lib\plupload\js\i18n\mn.js" />
+    <Content Include="Content\lib\plupload\js\i18n\ms.js" />
+    <Content Include="Content\lib\plupload\js\i18n\nl.js" />
+    <Content Include="Content\lib\plupload\js\i18n\pl.js" />
+    <Content Include="Content\lib\plupload\js\i18n\pt_BR.js" />
+    <Content Include="Content\lib\plupload\js\i18n\ro.js" />
+    <Content Include="Content\lib\plupload\js\i18n\ru.js" />
+    <Content Include="Content\lib\plupload\js\i18n\sk.js" />
+    <Content Include="Content\lib\plupload\js\i18n\sq.js" />
+    <Content Include="Content\lib\plupload\js\i18n\sr.js" />
+    <Content Include="Content\lib\plupload\js\i18n\sr_RS.js" />
+    <Content Include="Content\lib\plupload\js\i18n\sv.js" />
+    <Content Include="Content\lib\plupload\js\i18n\th_TH.js" />
+    <Content Include="Content\lib\plupload\js\i18n\tr.js" />
+    <Content Include="Content\lib\plupload\js\i18n\uk_UA.js" />
+    <Content Include="Content\lib\plupload\js\i18n\zh_CN.js" />
+    <Content Include="Content\lib\plupload\js\i18n\zh_TW.js" />
+    <Content Include="Content\lib\plupload\js\jquery.plupload.queue\css\jquery.plupload.queue.css" />
+    <Content Include="Content\lib\plupload\js\jquery.plupload.queue\img\backgrounds.gif" />
+    <Content Include="Content\lib\plupload\js\jquery.plupload.queue\img\buttons-disabled.png" />
+    <Content Include="Content\lib\plupload\js\jquery.plupload.queue\img\buttons.png" />
+    <Content Include="Content\lib\plupload\js\jquery.plupload.queue\img\delete.gif" />
+    <Content Include="Content\lib\plupload\js\jquery.plupload.queue\img\done.gif" />
+    <Content Include="Content\lib\plupload\js\jquery.plupload.queue\img\error.gif" />
+    <Content Include="Content\lib\plupload\js\jquery.plupload.queue\img\throbber.gif" />
+    <Content Include="Content\lib\plupload\js\jquery.plupload.queue\img\transp50.png" />
+    <Content Include="Content\lib\plupload\js\jquery.plupload.queue\jquery.plupload.queue.js" />
+    <Content Include="Content\lib\plupload\js\jquery.plupload.queue\jquery.plupload.queue.min.js" />
+    <Content Include="Content\lib\plupload\js\jquery.ui.plupload\css\jquery.ui.plupload.css" />
+    <Content Include="Content\lib\plupload\js\jquery.ui.plupload\img\loading.gif" />
+    <Content Include="Content\lib\plupload\js\jquery.ui.plupload\img\plupload.png" />
+    <Content Include="Content\lib\plupload\js\jquery.ui.plupload\jquery.ui.plupload.js" />
+    <Content Include="Content\lib\plupload\js\jquery.ui.plupload\jquery.ui.plupload.min.js" />
+    <Content Include="Content\lib\plupload\js\moxie.js" />
+    <Content Include="Content\lib\plupload\js\moxie.min.js" />
+    <Content Include="Content\lib\plupload\js\Moxie.swf" />
+    <Content Include="Content\lib\plupload\js\Moxie.xap" />
+    <Content Include="Content\lib\plupload\js\plupload.dev.js" />
+    <Content Include="Content\lib\plupload\js\plupload.full.min.js" />
+    <Content Include="Content\lib\plupload\js\plupload.min.js" />
+    <Content Include="Content\lib\plupload\license.txt" />
+    <Content Include="Content\lib\rangy-1.3\rangy-core.js" />
+    <Content Include="Content\lib\rangy-1.3\rangy-cssclassapplier.js" />
+    <Content Include="Content\lib\rangy-1.3\rangy-highlighter.js" />
+    <Content Include="Content\lib\rangy-1.3\rangy-selectionsaverestore.js" />
+    <Content Include="Content\lib\rangy-1.3\rangy-serializer.js" />
+    <Content Include="Content\lib\rangy-1.3\rangy-textrange.js" />
+    <Content Include="Content\lib\rangy-1.3\uncompressed\rangy-core.js" />
+    <Content Include="Content\lib\rangy-1.3\uncompressed\rangy-cssclassapplier.js" />
+    <Content Include="Content\lib\rangy-1.3\uncompressed\rangy-highlighter.js" />
+    <Content Include="Content\lib\rangy-1.3\uncompressed\rangy-selectionsaverestore.js" />
+    <Content Include="Content\lib\rangy-1.3\uncompressed\rangy-serializer.js" />
+    <Content Include="Content\lib\rangy-1.3\uncompressed\rangy-textrange.js" />
+    <Content Include="Content\lib\respond\cross-domain\example.html" />
+    <Content Include="Content\lib\respond\cross-domain\respond-proxy.html" />
+    <Content Include="Content\lib\respond\cross-domain\respond.proxy.gif" />
+    <Content Include="Content\lib\respond\cross-domain\respond.proxy.js" />
+    <Content Include="Content\lib\respond\dest\respond.matchmedia.addListener.min.js" />
+    <Content Include="Content\lib\respond\dest\respond.matchmedia.addListener.src.js" />
+    <Content Include="Content\lib\respond\dest\respond.min.js" />
+    <Content Include="Content\lib\respond\dest\respond.src.js" />
+    <Content Include="Content\lib\respond\Gruntfile.js" />
+    <Content Include="Content\lib\respond\src\matchmedia.addListener.js" />
+    <Content Include="Content\lib\respond\src\matchmedia.polyfill.js" />
+    <Content Include="Content\lib\respond\src\respond.js" />
+    <Content Include="Content\lib\wysihtml5x\dist\wysihtml5x-toolbar.js" />
+    <Content Include="Content\lib\wysihtml5x\dist\wysihtml5x-toolbar.min.js" />
+    <Content Include="Content\lib\wysihtml5x\dist\wysihtml5x.js" />
+    <Content Include="Content\lib\wysihtml5x\dist\wysihtml5x.min.js" />
+    <Content Include="Content\lib\wysihtml5x\Gruntfile.js" />
+    <Content Include="Content\lib\wysihtml5x\lib\base\base.js" />
+    <Content Include="Content\lib\wysihtml5x\lib\rangy\rangy-core.js" />
+    <Content Include="Content\lib\wysihtml5x\lib\rangy\rangy-selectionsaverestore.js" />
+    <Content Include="Content\lib\wysihtml5x\parser_rules\advanced.js" />
+    <Content Include="Content\lib\wysihtml5x\parser_rules\advanced_unwrap.js" />
+    <Content Include="Content\lib\wysihtml5x\parser_rules\simple.js" />
+    <Content Include="Global.asax" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IS.Esd.Business\IS.Esd.Business.csproj">
+      <Project>{b76b0c69-e96c-4f82-aec7-e42eb44f8ece}</Project>
+      <Name>IS.Esd.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IS.Esd.Domain\IS.Esd.Domain.csproj">
+      <Project>{3d48f156-6690-43ce-b113-8db8992b8c03}</Project>
+      <Name>IS.Esd.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IS.Esd.Utility\IS.Esd.Utility.csproj">
+      <Project>{6ba82765-d3f7-4d89-8036-dad1a20232af}</Project>
+      <Name>IS.Esd.Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Client\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Client\Details.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Client\Create.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Client\Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Client\Delete.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\img\pattern\README.md" />
+    <Content Include="Content\js\app.js.map" />
+    <Content Include="Content\js\core.js.map" />
+    <Content Include="Content\js\countdown.js.map" />
+    <Content Include="Content\js\style-switcher.js.map" />
+    <Content Include="Content\less\theme.less" />
+    <Content Include="Content\lib\bootstrap-daterangepicker\bower.json" />
+    <Content Include="Content\lib\bootstrap-daterangepicker\package.json" />
+    <Content Include="Content\lib\bootstrap-daterangepicker\README.md" />
+    <Content Include="Content\lib\bootstrap-duallistbox\bootstrap-duallistbox.jquery.json" />
+    <Content Include="Content\lib\bootstrap-duallistbox\bower.json" />
+    <Content Include="Content\lib\bootstrap-duallistbox\composer.json" />
+    <Content Include="Content\lib\bootstrap-duallistbox\CONTRIBUTING.md" />
+    <Content Include="Content\lib\bootstrap-duallistbox\LICENSE.md" />
+    <Content Include="Content\lib\bootstrap-duallistbox\package.json" />
+    <Content Include="Content\lib\bootstrap-duallistbox\README.md" />
+    <Content Include="Content\lib\bootstrap-switch\bower.json" />
+    <Content Include="Content\lib\bootstrap-switch\karma.json" />
+    <Content Include="Content\lib\bootstrap-switch\README.md" />
+    <Content Include="Content\lib\bootstrap-switch\src\coffee\bootstrap-switch.coffee" />
+    <Content Include="Content\lib\bootstrap-switch\src\coffee\bootstrap-switch.tests.coffee" />
+    <Content Include="Content\lib\bootstrap-switch\src\less\bootstrap2\bootstrap-switch.less" />
+    <Content Include="Content\lib\bootstrap-switch\src\less\bootstrap2\build.less" />
+    <Content Include="Content\lib\bootstrap-switch\src\less\bootstrap2\mixins.less" />
+    <Content Include="Content\lib\bootstrap-switch\src\less\bootstrap2\variables.less" />
+    <Content Include="Content\lib\bootstrap-switch\src\less\bootstrap3\bootstrap-switch.less" />
+    <Content Include="Content\lib\bootstrap-switch\src\less\bootstrap3\build.less" />
+    <Content Include="Content\lib\bootstrap-switch\src\less\bootstrap3\mixins.less" />
+    <Content Include="Content\lib\bootstrap-switch\src\less\bootstrap3\variables.less" />
+    <Content Include="Content\lib\bootstrap3-wysihtml5-bower\bower.json" />
+    <Content Include="Content\lib\bootstrap3-wysihtml5-bower\README.md" />
+    <Content Include="Content\lib\bootstrap\bower.json" />
+    <Content Include="Content\lib\bootstrap\dist\css\bootstrap-theme.css.map" />
+    <Content Include="Content\lib\bootstrap\dist\css\bootstrap.css.map" />
+    <Content Include="Content\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\lib\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\lib\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\lib\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\lib\bootstrap\grunt\configBridge.json" />
+    <Content Include="Content\lib\bootstrap\grunt\sauce_browsers.yml" />
+    <Content Include="Content\lib\bootstrap\less\alerts.less" />
+    <Content Include="Content\lib\bootstrap\less\badges.less" />
+    <Content Include="Content\lib\bootstrap\less\bootstrap.less" />
+    <Content Include="Content\lib\bootstrap\less\breadcrumbs.less" />
+    <Content Include="Content\lib\bootstrap\less\button-groups.less" />
+    <Content Include="Content\lib\bootstrap\less\buttons.less" />
+    <Content Include="Content\lib\bootstrap\less\carousel.less" />
+    <Content Include="Content\lib\bootstrap\less\close.less" />
+    <Content Include="Content\lib\bootstrap\less\code.less" />
+    <Content Include="Content\lib\bootstrap\less\component-animations.less" />
+    <Content Include="Content\lib\bootstrap\less\dropdowns.less" />
+    <Content Include="Content\lib\bootstrap\less\forms.less" />
+    <Content Include="Content\lib\bootstrap\less\glyphicons.less" />
+    <Content Include="Content\lib\bootstrap\less\grid.less" />
+    <Content Include="Content\lib\bootstrap\less\input-groups.less" />
+    <Content Include="Content\lib\bootstrap\less\jumbotron.less" />
+    <Content Include="Content\lib\bootstrap\less\labels.less" />
+    <Content Include="Content\lib\bootstrap\less\list-group.less" />
+    <Content Include="Content\lib\bootstrap\less\media.less" />
+    <Content Include="Content\lib\bootstrap\less\mixins.less" />
+    <Content Include="Content\lib\bootstrap\less\mixins\alerts.less" />
+    <Content Include="Content\lib\bootstrap\less\mixins\background-variant.less" />
+    <Content Include="Content\lib\bootstrap\less\mixins\border-radius.less" />
+    <Content Include="Content\lib\bootstrap\less\mixins\buttons.less" />
+    <Content Include="Content\lib\bootstrap\less\mixins\center-block.less" />
+    <Content Include="Content\lib\bootstrap\less\mixins\clearfix.less" />
+    <Content Include="Content\lib\bootstrap\less\mixins\forms.less" />
+    <Content Include="Content\lib\bootstrap\less\mixins\gradients.less" />
+    <Content Include="Content\lib\bootstrap\less\mixins\grid-framework.less" />
+    <Content Include="Content\lib\bootstrap\less\mixins\grid.less" />
+    <Content Include="Content\lib\bootstrap\less\mixins\hide-text.less" />
+    <Content Include="Content\lib\bootstrap\less\mixins\image.less" />
+    <Content Include="Content\lib\bootstrap\less\mixins\labels.less" />
+    <Content Include="Content\lib\bootstrap\less\mixins\list-group.less" />
+    <Content Include="Content\lib\bootstrap\less\mixins\nav-divider.less" />
+    <Content Include="Content\lib\bootstrap\less\mixins\nav-vertical-align.less" />
+    <Content Include="Content\lib\bootstrap\less\mixins\opacity.less" />
+    <Content Include="Content\lib\bootstrap\less\mixins\pagination.less" />
+    <Content Include="Content\lib\bootstrap\less\mixins\panels.less" />
+    <Content Include="Content\lib\bootstrap\less\mixins\progress-bar.less" />
+    <Content Include="Content\lib\bootstrap\less\mixins\reset-filter.less" />
+    <Content Include="Content\lib\bootstrap\less\mixins\resize.less" />
+    <Content Include="Content\lib\bootstrap\less\mixins\responsive-visibility.less" />
+    <Content Include="Content\lib\bootstrap\less\mixins\size.less" />
+    <Content Include="Content\lib\bootstrap\less\mixins\tab-focus.less" />
+    <Content Include="Content\lib\bootstrap\less\mixins\table-row.less" />
+    <Content Include="Content\lib\bootstrap\less\mixins\text-emphasis.less" />
+    <Content Include="Content\lib\bootstrap\less\mixins\text-overflow.less" />
+    <Content Include="Content\lib\bootstrap\less\mixins\vendor-prefixes.less" />
+    <Content Include="Content\lib\bootstrap\less\modals.less" />
+    <Content Include="Content\lib\bootstrap\less\navbar.less" />
+    <Content Include="Content\lib\bootstrap\less\navs.less" />
+    <Content Include="Content\lib\bootstrap\less\normalize.less" />
+    <Content Include="Content\lib\bootstrap\less\pager.less" />
+    <Content Include="Content\lib\bootstrap\less\pagination.less" />
+    <Content Include="Content\lib\bootstrap\less\panels.less" />
+    <Content Include="Content\lib\bootstrap\less\popovers.less" />
+    <Content Include="Content\lib\bootstrap\less\print.less" />
+    <Content Include="Content\lib\bootstrap\less\progress-bars.less" />
+    <Content Include="Content\lib\bootstrap\less\responsive-embed.less" />
+    <Content Include="Content\lib\bootstrap\less\responsive-utilities.less" />
+    <Content Include="Content\lib\bootstrap\less\scaffolding.less" />
+    <Content Include="Content\lib\bootstrap\less\tables.less" />
+    <Content Include="Content\lib\bootstrap\less\theme.less" />
+    <Content Include="Content\lib\bootstrap\less\thumbnails.less" />
+    <Content Include="Content\lib\bootstrap\less\tooltip.less" />
+    <Content Include="Content\lib\bootstrap\less\type.less" />
+    <Content Include="Content\lib\bootstrap\less\utilities.less" />
+    <Content Include="Content\lib\bootstrap\less\variables.less" />
+    <Content Include="Content\lib\bootstrap\less\wells.less" />
+    <Content Include="Content\lib\bootstrap\package.json" />
+    <Content Include="Content\lib\bootstrap\README.md" />
+    <Content Include="Content\lib\components-font-awesome\bower.json" />
+    <Content Include="Content\lib\components-font-awesome\component.json" />
+    <Content Include="Content\lib\components-font-awesome\composer.json" />
+    <Content Include="Content\lib\components-font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\lib\components-font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\lib\components-font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\lib\components-font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="Content\lib\components-font-awesome\less\bordered-pulled.less" />
+    <Content Include="Content\lib\components-font-awesome\less\core.less" />
+    <Content Include="Content\lib\components-font-awesome\less\fixed-width.less" />
+    <Content Include="Content\lib\components-font-awesome\less\font-awesome.less" />
+    <Content Include="Content\lib\components-font-awesome\less\icons.less" />
+    <Content Include="Content\lib\components-font-awesome\less\larger.less" />
+    <Content Include="Content\lib\components-font-awesome\less\list.less" />
+    <Content Include="Content\lib\components-font-awesome\less\mixins.less" />
+    <Content Include="Content\lib\components-font-awesome\less\path.less" />
+    <Content Include="Content\lib\components-font-awesome\less\rotated-flipped.less" />
+    <Content Include="Content\lib\components-font-awesome\less\spinning.less" />
+    <Content Include="Content\lib\components-font-awesome\less\stacked.less" />
+    <Content Include="Content\lib\components-font-awesome\less\variables.less" />
+    <Content Include="Content\lib\components-font-awesome\README.md" />
+    <Content Include="Content\lib\components-font-awesome\scss\font-awesome.scss" />
+    <Content Include="Content\lib\components-font-awesome\scss\_bordered-pulled.scss" />
+    <Content Include="Content\lib\components-font-awesome\scss\_core.scss" />
+    <Content Include="Content\lib\components-font-awesome\scss\_fixed-width.scss" />
+    <Content Include="Content\lib\components-font-awesome\scss\_icons.scss" />
+    <Content Include="Content\lib\components-font-awesome\scss\_larger.scss" />
+    <Content Include="Content\lib\components-font-awesome\scss\_list.scss" />
+    <Content Include="Content\lib\components-font-awesome\scss\_mixins.scss" />
+    <Content Include="Content\lib\components-font-awesome\scss\_path.scss" />
+    <Content Include="Content\lib\components-font-awesome\scss\_rotated-flipped.scss" />
+    <Content Include="Content\lib\components-font-awesome\scss\_spinning.scss" />
+    <Content Include="Content\lib\components-font-awesome\scss\_stacked.scss" />
+    <Content Include="Content\lib\components-font-awesome\scss\_variables.scss" />
+    <Content Include="Content\lib\formwizard\README.md" />
+    <Content Include="Content\lib\fullcalendar\bower.json" />
+    <Content Include="Content\lib\fullcalendar\changelog.md" />
+    <Content Include="Content\lib\fullcalendar\readme.md" />
+    <Content Include="Content\lib\gmaps\bower.json" />
+    <Content Include="Content\lib\gmaps\CONTRIBUTING.md" />
+    <Content Include="Content\lib\gmaps\package.json" />
+    <Content Include="Content\lib\gmaps\README.md" />
+    <Content Include="Content\lib\gmaps\umd.hbs" />
+    <Content Include="Content\lib\handlebars\bower.json" />
+    <Content Include="Content\lib\handlebars\component.json" />
+    <Content Include="Content\lib\handlebars\composer.json" />
+    <Content Include="Content\lib\handlebars\handlebars-source.gemspec" />
+    <Content Include="Content\lib\handlebars\handlebars.js.nuspec" />
+    <Content Include="Content\lib\handlebars\lib\handlebars\source.rb" />
+    <Content Include="Content\lib\handlebars\README.md" />
+    <Content Include="Content\lib\html5shiv\bower.json" />
+    <Content Include="Content\lib\html5shiv\package.json" />
+    <Content Include="Content\lib\html5shiv\readme.md" />
+    <Content Include="Content\lib\jquery-mousewheel\bower.json" />
+    <Content Include="Content\lib\jquery-mousewheel\ChangeLog.md" />
+    <Content Include="Content\lib\jquery-mousewheel\README.md" />
+    <Content Include="Content\lib\jquery-validation\bower.json" />
+    <Content Include="Content\lib\jquery-validation\changelog.md" />
+    <Content Include="Content\lib\jquery-validation\CONTRIBUTING.md" />
+    <Content Include="Content\lib\jquery-validation\package.json" />
+    <Content Include="Content\lib\jquery-validation\README.md" />
+    <Content Include="Content\lib\jquery-validation\validation.jquery.json" />
+    <Content Include="Content\lib\jquery.gritter\bower.json" />
+    <Content Include="Content\lib\jquery.gritter\package.json" />
+    <Content Include="Content\lib\jquery.gritter\README.markdown" />
+    <Content Include="Content\lib\jQuery.validVal\bower.json" />
+    <Content Include="Content\lib\jQuery.validVal\README.md" />
+    <Content Include="Content\lib\jQuery.validVal\validVal.jquery.json" />
+    <Content Include="Content\lib\jquery\bower.json" />
+    <Content Include="Content\lib\jquery\dist\jquery.min.map" />
+    <Content Include="Content\lib\jquery\src\sizzle\dist\sizzle.min.map" />
+    <Content Include="Content\lib\kbwood_countdown\kbw.countdown.jquery.json" />
+    <Content Include="Content\lib\kbwood_countdown\README.md" />
+    <Content Include="Content\lib\moment\bower.json" />
+    <Content Include="Content\lib\moment\CHANGELOG.md" />
+    <Content Include="Content\lib\moment\README.md" />
+    <Content Include="Content\lib\moment\scripts\npm_prepublish.sh" />
+    <Content Include="Content\lib\pagedown-bootstrap\less\jquery.pagedown-bootstrap.less" />
+    <Content Include="Content\lib\pagedown-bootstrap\README.md" />
+    <Content Include="Content\lib\plupload\readme.md" />
+    <Content Include="Content\lib\rangy-1.3\bower.json" />
+    <Content Include="Content\lib\respond\bower.json" />
+    <Content Include="Content\lib\respond\package.json" />
+    <Content Include="Content\lib\respond\README.md" />
+    <Content Include="Content\lib\wysihtml5x\bower.json" />
+    <Content Include="Content\lib\wysihtml5x\CHANGELOG.textile" />
+    <Content Include="Content\lib\wysihtml5x\dist\wysihtml5x-toolbar.min.map" />
+    <Content Include="Content\lib\wysihtml5x\dist\wysihtml5x.min.map" />
+    <Content Include="Content\lib\wysihtml5x\package.json" />
+    <Content Include="Content\lib\wysihtml5x\README.markdown" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52657</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:52657/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="..\packages\AutoMapper.3.3.1\tools\AutoMapper.targets" Condition="Exists('..\packages\AutoMapper.3.3.1\tools\AutoMapper.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

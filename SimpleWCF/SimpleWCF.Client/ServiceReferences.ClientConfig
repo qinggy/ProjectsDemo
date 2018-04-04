@@ -1,0 +1,17 @@
+﻿<configuration>
+    <system.serviceModel>
+        <bindings>
+            <basicHttpBinding>
+                <binding name="BasicHttpBinding_ISquareService" maxBufferSize="2147483647"
+                    maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+            </basicHttpBinding>
+        </bindings>
+        <client>
+            <endpoint address="http://localhost:6944/SquareService.svc" binding="basicHttpBinding"
+                bindingConfiguration="BasicHttpBinding_ISquareService" contract="SquareService.ISquareService"
+                name="BasicHttpBinding_ISquareService" />
+        </client>
+    </system.serviceModel>
+</configuration>

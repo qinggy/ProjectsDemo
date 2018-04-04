@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/DinoTechDataSyncService.Domain" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/DinoTechDataSyncService.Domain" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ResponseUserTokenInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CustomerId" type="xs:int" />
+      <xs:element minOccurs="0" name="LogId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Token" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResponseUserTokenInfo" nillable="true" type="tns:ResponseUserTokenInfo" />
+  <xs:complexType name="ArrayOfEnergy">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Energy" nillable="true" type="tns:Energy" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEnergy" nillable="true" type="tns:ArrayOfEnergy" />
+  <xs:complexType name="Energy">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EnergyType" type="xs:int" />
+      <xs:element minOccurs="0" name="Id" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsEnabled" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Remark" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Energy" nillable="true" type="tns:Energy" />
+  <xs:complexType name="ArrayOfMeterModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MeterModel" nillable="true" type="tns:MeterModel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMeterModel" nillable="true" type="tns:ArrayOfMeterModel" />
+  <xs:complexType name="MeterModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Accuracy" type="xs:double" />
+      <xs:element minOccurs="0" name="CanReadBack" type="xs:boolean" />
+      <xs:element minOccurs="0" name="EnergyId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MaxValue" type="xs:double" />
+      <xs:element minOccurs="0" name="MinValue" type="xs:double" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Remark" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MeterModel" nillable="true" type="tns:MeterModel" />
+  <xs:complexType name="ArrayOfAcquisitionParameters">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AcquisitionParameters" nillable="true" type="tns:AcquisitionParameters" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAcquisitionParameters" nillable="true" type="tns:ArrayOfAcquisitionParameters" />
+  <xs:complexType name="AcquisitionParameters">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DefaultUnit" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="InventedParameter" type="xs:int" />
+      <xs:element minOccurs="0" name="MeterDataType" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ParameterType" type="xs:int" />
+      <xs:element minOccurs="0" name="Remark" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AcquisitionParameters" nillable="true" type="tns:AcquisitionParameters" />
+  <xs:complexType name="ArrayOfAreas">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Areas" nillable="true" type="tns:Areas" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAreas" nillable="true" type="tns:ArrayOfAreas" />
+  <xs:complexType name="Areas">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Acreage" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Address" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AreaType" type="xs:int" />
+      <xs:element minOccurs="0" name="Contact" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Coordinate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DisplayedOrder" type="xs:int" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Fax" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ParentAreaId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Phone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Remark" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ZipCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Areas" nillable="true" type="tns:Areas" />
+  <xs:complexType name="ArrayOfMeterModelFieldTypes">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MeterModelFieldTypes" nillable="true" type="tns:MeterModelFieldTypes" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMeterModelFieldTypes" nillable="true" type="tns:ArrayOfMeterModelFieldTypes" />
+  <xs:complexType name="MeterModelFieldTypes">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FieldTypeId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MeterModelId" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MeterModelFieldTypes" nillable="true" type="tns:MeterModelFieldTypes" />
+  <xs:complexType name="ArrayOfBaseMeter">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="BaseMeter" nillable="true" type="tns:BaseMeter" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBaseMeter" nillable="true" type="tns:ArrayOfBaseMeter" />
+  <xs:complexType name="BaseMeter">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BaseMeterEnergyId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BaseMeterModelId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BaseMeterParentAreaId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BaseMeterType" type="xs:int" />
+      <xs:element minOccurs="0" name="DisplayedOrder" type="xs:int" />
+      <xs:element minOccurs="0" name="Id" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="InitialValue" type="xs:double" />
+      <xs:element minOccurs="0" name="IsEnabled" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsVirtualMeter" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Manufacturer" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MeterNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Remark" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseMeter" nillable="true" type="tns:BaseMeter" />
+  <xs:complexType name="ArrayOfBaseMeterAcuisitionParameter">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="BaseMeterAcuisitionParameter" nillable="true" type="tns:BaseMeterAcuisitionParameter" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBaseMeterAcuisitionParameter" nillable="true" type="tns:ArrayOfBaseMeterAcuisitionParameter" />
+  <xs:complexType name="BaseMeterAcuisitionParameter">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AcuisitionParameterId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BaseMeterId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Factor" type="xs:double" />
+      <xs:element minOccurs="0" name="Id" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Interval" type="xs:int" />
+      <xs:element minOccurs="0" name="PNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Unit" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseMeterAcuisitionParameter" nillable="true" type="tns:BaseMeterAcuisitionParameter" />
+  <xs:complexType name="ArrayOfVirtualMeterParameterInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VirtualMeterParameterInfo" nillable="true" type="tns:VirtualMeterParameterInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVirtualMeterParameterInfo" nillable="true" type="tns:ArrayOfVirtualMeterParameterInfo" />
+  <xs:complexType name="VirtualMeterParameterInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AssociatedParameterIds" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CalculateFormula" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Factor" type="xs:int" />
+      <xs:element minOccurs="0" name="FieldTypeSyncId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Interval" type="xs:int" />
+      <xs:element minOccurs="0" name="MeterDataType" type="xs:int" />
+      <xs:element minOccurs="0" name="MeterSyncId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecordDeleted" type="xs:int" />
+      <xs:element minOccurs="0" name="ShowCalculateFormula" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Unit" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VirtualMeterParameterInfo" nillable="true" type="tns:VirtualMeterParameterInfo" />
+  <xs:complexType name="ArrayOfMinutesRecord">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MinutesRecord" nillable="true" type="tns:MinutesRecord" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMinutesRecord" nillable="true" type="tns:ArrayOfMinutesRecord" />
+  <xs:complexType name="MinutesRecord">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseRecord">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MinutesRecord" nillable="true" type="tns:MinutesRecord" />
+  <xs:complexType name="BaseRecord">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AcuisitionParameterId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BaseMeterAcquisitionParameterId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BaseMeterId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DateTime" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Id" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LinkCompareTotalData" type="xs:double" />
+      <xs:element minOccurs="0" name="LinkCompareTotalMoney" type="xs:double" />
+      <xs:element minOccurs="0" name="RecordTypeId" type="xs:int" />
+      <xs:element minOccurs="0" name="SameCompareTotalData" type="xs:double" />
+      <xs:element minOccurs="0" name="SameCompareTotalMoney" type="xs:double" />
+      <xs:element minOccurs="0" name="TotalData" type="xs:double" />
+      <xs:element minOccurs="0" name="TotalMoney" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseRecord" nillable="true" type="tns:BaseRecord" />
+  <xs:complexType name="ArrayOfHourRecord">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="HourRecord" nillable="true" type="tns:HourRecord" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHourRecord" nillable="true" type="tns:ArrayOfHourRecord" />
+  <xs:complexType name="HourRecord">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseRecord">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="HourRecord" nillable="true" type="tns:HourRecord" />
+  <xs:complexType name="ArrayOfDayRecord">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DayRecord" nillable="true" type="tns:DayRecord" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDayRecord" nillable="true" type="tns:ArrayOfDayRecord" />
+  <xs:complexType name="DayRecord">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseRecord">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DayRecord" nillable="true" type="tns:DayRecord" />
+  <xs:complexType name="ArrayOfMonthRecord">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MonthRecord" nillable="true" type="tns:MonthRecord" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMonthRecord" nillable="true" type="tns:ArrayOfMonthRecord" />
+  <xs:complexType name="MonthRecord">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseRecord">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MonthRecord" nillable="true" type="tns:MonthRecord" />
+  <xs:complexType name="ArrayOfYearRecord">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="YearRecord" nillable="true" type="tns:YearRecord" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfYearRecord" nillable="true" type="tns:ArrayOfYearRecord" />
+  <xs:complexType name="YearRecord">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseRecord">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="YearRecord" nillable="true" type="tns:YearRecord" />
+  <xs:complexType name="ArrayOfEnergyPowerMeterDataTree">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EnergyPowerMeterDataTree" nillable="true" type="tns:EnergyPowerMeterDataTree" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEnergyPowerMeterDataTree" nillable="true" type="tns:ArrayOfEnergyPowerMeterDataTree" />
+  <xs:complexType name="EnergyPowerMeterDataTree">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NodeType" type="xs:int" />
+      <xs:element minOccurs="0" name="ParentId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EnergyPowerMeterDataTree" nillable="true" type="tns:EnergyPowerMeterDataTree" />
+  <xs:complexType name="ArrayOfEnergyMeterHistoryDataRecord">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EnergyMeterHistoryDataRecord" nillable="true" type="tns:EnergyMeterHistoryDataRecord" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEnergyMeterHistoryDataRecord" nillable="true" type="tns:ArrayOfEnergyMeterHistoryDataRecord" />
+  <xs:complexType name="EnergyMeterHistoryDataRecord">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CloudBaseMeterFieldTypeId" type="xs:int" />
+      <xs:element minOccurs="0" name="DurationType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="LinkCompareTotalData" type="xs:double" />
+      <xs:element minOccurs="0" name="LinkCompareTotalMoney" type="xs:double" />
+      <xs:element minOccurs="0" name="RecordTypeId" type="xs:int" />
+      <xs:element minOccurs="0" name="SameCompareTotalData" type="xs:double" />
+      <xs:element minOccurs="0" name="SameCompareTotalMoney" type="xs:double" />
+      <xs:element minOccurs="0" name="TotalData" type="xs:double" />
+      <xs:element minOccurs="0" name="TotalMoney" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EnergyMeterHistoryDataRecord" nillable="true" type="tns:EnergyMeterHistoryDataRecord" />
+</xs:schema>

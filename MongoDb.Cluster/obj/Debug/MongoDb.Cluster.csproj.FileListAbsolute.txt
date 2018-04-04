@@ -1,0 +1,13 @@
+D:\CodeSource\CompanyDemo\MongoDb.Cluster\bin\Debug\MongoDb.Cluster.exe.config
+D:\CodeSource\CompanyDemo\MongoDb.Cluster\bin\Debug\MongoDb.Cluster.exe
+D:\CodeSource\CompanyDemo\MongoDb.Cluster\bin\Debug\MongoDb.Cluster.pdb
+D:\CodeSource\CompanyDemo\MongoDb.Cluster\bin\Debug\MongoDB.Bson.dll
+D:\CodeSource\CompanyDemo\MongoDb.Cluster\bin\Debug\MongoDB.Driver.Core.dll
+D:\CodeSource\CompanyDemo\MongoDb.Cluster\bin\Debug\MongoDB.Driver.dll
+D:\CodeSource\CompanyDemo\MongoDb.Cluster\bin\Debug\MongoDB.Driver.Legacy.dll
+D:\CodeSource\CompanyDemo\MongoDb.Cluster\bin\Debug\MongoDB.Bson.xml
+D:\CodeSource\CompanyDemo\MongoDb.Cluster\bin\Debug\MongoDB.Driver.xml
+D:\CodeSource\CompanyDemo\MongoDb.Cluster\bin\Debug\MongoDB.Driver.Legacy.xml
+D:\CodeSource\CompanyDemo\MongoDb.Cluster\obj\Debug\MongoDb.Cluster.exe
+D:\CodeSource\CompanyDemo\MongoDb.Cluster\obj\Debug\MongoDb.Cluster.pdb
+D:\CodeSource\CompanyDemo\MongoDb.Cluster\obj\Debug\MongoDb.Cluster.csprojResolveAssemblyReference.cache

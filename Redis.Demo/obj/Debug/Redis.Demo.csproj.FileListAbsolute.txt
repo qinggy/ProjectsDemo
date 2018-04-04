@@ -1,0 +1,16 @@
+D:\CodeSource\CompanyDemo\Redis.Demo\bin\Debug\Redis.Demo.exe.config
+D:\CodeSource\CompanyDemo\Redis.Demo\bin\Debug\Redis.Demo.exe
+D:\CodeSource\CompanyDemo\Redis.Demo\bin\Debug\Redis.Demo.pdb
+D:\CodeSource\CompanyDemo\Redis.Demo\bin\Debug\Newtonsoft.Json.dll
+D:\CodeSource\CompanyDemo\Redis.Demo\bin\Debug\nunit.framework.dll
+D:\CodeSource\CompanyDemo\Redis.Demo\bin\Debug\ServiceStack.Common.dll
+D:\CodeSource\CompanyDemo\Redis.Demo\bin\Debug\ServiceStack.Interfaces.dll
+D:\CodeSource\CompanyDemo\Redis.Demo\bin\Debug\ServiceStack.Redis.dll
+D:\CodeSource\CompanyDemo\Redis.Demo\bin\Debug\ServiceStack.Text.dll
+D:\CodeSource\CompanyDemo\Redis.Demo\bin\Debug\Newtonsoft.Json.xml
+D:\CodeSource\CompanyDemo\Redis.Demo\bin\Debug\nunit.framework.xml
+D:\CodeSource\CompanyDemo\Redis.Demo\bin\Debug\ServiceStack.Common.xml
+D:\CodeSource\CompanyDemo\Redis.Demo\bin\Debug\ServiceStack.Redis.xml
+D:\CodeSource\CompanyDemo\Redis.Demo\bin\Debug\ServiceStack.Text.xml
+D:\CodeSource\CompanyDemo\Redis.Demo\obj\Debug\Redis.Demo.exe
+D:\CodeSource\CompanyDemo\Redis.Demo\obj\Debug\Redis.Demo.pdb

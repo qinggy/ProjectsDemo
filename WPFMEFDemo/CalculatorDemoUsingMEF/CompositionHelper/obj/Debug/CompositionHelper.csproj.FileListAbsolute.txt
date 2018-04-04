@@ -1,0 +1,7 @@
+D:\CodeSource\CompanyDemo\WPFMEFDemo\CalculatorDemoUsingMEF\CompositionHelper\bin\Debug\CompositionHelper.dll
+D:\CodeSource\CompanyDemo\WPFMEFDemo\CalculatorDemoUsingMEF\CompositionHelper\bin\Debug\CompositionHelper.pdb
+D:\CodeSource\CompanyDemo\WPFMEFDemo\CalculatorDemoUsingMEF\CompositionHelper\bin\Debug\CalculatorContract.dll
+D:\CodeSource\CompanyDemo\WPFMEFDemo\CalculatorDemoUsingMEF\CompositionHelper\bin\Debug\CalculatorContract.pdb
+D:\CodeSource\CompanyDemo\WPFMEFDemo\CalculatorDemoUsingMEF\CompositionHelper\obj\Debug\CompositionHelper.csprojResolveAssemblyReference.cache
+D:\CodeSource\CompanyDemo\WPFMEFDemo\CalculatorDemoUsingMEF\CompositionHelper\obj\Debug\CompositionHelper.dll
+D:\CodeSource\CompanyDemo\WPFMEFDemo\CalculatorDemoUsingMEF\CompositionHelper\obj\Debug\CompositionHelper.pdb

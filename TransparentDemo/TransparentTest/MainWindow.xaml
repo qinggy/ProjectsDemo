@@ -1,0 +1,54 @@
+﻿<Window x:Class="TransparentTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:control="clr-namespace:IS.WPF.Controls;assembly=IS.WPF.Controls"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Border Height="1.5" VerticalAlignment="Top" Panel.ZIndex="2" Background="Transparent" BorderBrush="Transparent">
+            <Border.Style>
+                <Style TargetType="Border">
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Cursor" Value="Hand"/>
+                            <Trigger.EnterActions>
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation Storyboard.TargetProperty="Height" To="100" Duration="0:0:0.002"/>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </Trigger.EnterActions>
+                            <Trigger.ExitActions>
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation Storyboard.TargetProperty="Height" To="1.5" Duration="0:0:0.001"/>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </Trigger.ExitActions>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Border.Style>
+            <Grid>
+                <Button Content="查    询" Width="80" Height="30" Panel.ZIndex="3" Click="Button_Click"/>
+                <Border Opacity="0.5" Background="Black" BorderBrush="DarkGray" BorderThickness="1"/>
+            </Grid>
+        </Border>
+        <Canvas x:Name="MainCanvas"
+            PreviewMouseDown="MainCanvas_PreviewMouseDown"
+            PreviewMouseMove="MainCanvas_PreviewMouseMove"
+            PreviewMouseUp="MainCanvas_PreviewMouseUp">
+            <Canvas.Background>
+                <ImageBrush ImageSource="7114561_113246203134_2.jpg"/>
+            </Canvas.Background>
+            <control:AreaDetailControl PresentTitle="南方水泥" ProcessEvent="Process" Interval="5" Canvas.Left="0" Canvas.Top="120"
+                                       PresentContent="WPF中ContextMenu弹出菜单可以设置成半透明，阿斯顿发送到阿斯顿发送到阿斯顿发送到艾弗斯蒂芬但它的二级菜单为什么设置不了"/>
+
+            <control:AreaDetailControl PresentTitle="万达广场" Canvas.Left="150" Canvas.Top="170" ProcessEvent="ProcessOne" Interval ="7"
+                PresentContent="WPF中ContextMenu弹出菜单可以设置成半透明，阿斯顿发送到阿斯顿发送到阿斯顿发送到艾弗森的飞洒的阿斯顿发的死发送到发送到发送到发送到发生的发的啥啊发生的发的啥阿斯顿发的死发生的发的啥发斯蒂芬阿斯蒂芬但它的二级菜单为什么设置不了"/>
+
+            <!--<MediaElement LoadedBehavior="Play" Stretch="Fill"
+                      Source="alert.gif" Height="50" Width="50" Panel.ZIndex="5"
+                      MediaEnded="MediaElement_MediaEnded"/>-->
+        </Canvas>
+    </Grid>
+</Window>

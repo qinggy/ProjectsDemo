@@ -1,0 +1,10 @@
+D:\CodeSource\CompanyDemo\IS.Angus.Main\bin\Debug\IS.Angus.Main.exe.config
+D:\CodeSource\CompanyDemo\IS.Angus.Main\bin\Debug\IS.Angus.Main.exe
+D:\CodeSource\CompanyDemo\IS.Angus.Main\bin\Debug\IS.Angus.Main.pdb
+D:\CodeSource\CompanyDemo\IS.Angus.Main\bin\Debug\IS.Angus.IService.dll
+D:\CodeSource\CompanyDemo\IS.Angus.Main\bin\Debug\IS.Angus.Service.dll
+D:\CodeSource\CompanyDemo\IS.Angus.Main\bin\Debug\IS.Angus.IService.pdb
+D:\CodeSource\CompanyDemo\IS.Angus.Main\bin\Debug\IS.Angus.Service.pdb
+D:\CodeSource\CompanyDemo\IS.Angus.Main\obj\Debug\IS.Angus.Main.csprojResolveAssemblyReference.cache
+D:\CodeSource\CompanyDemo\IS.Angus.Main\obj\Debug\IS.Angus.Main.exe
+D:\CodeSource\CompanyDemo\IS.Angus.Main\obj\Debug\IS.Angus.Main.pdb

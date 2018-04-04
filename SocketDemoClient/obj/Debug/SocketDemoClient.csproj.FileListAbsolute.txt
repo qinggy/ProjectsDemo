@@ -1,0 +1,4 @@
+D:\CodeSource\CompanyDemo\SocketDemoClient\bin\Debug\SocketDemoClient.exe
+D:\CodeSource\CompanyDemo\SocketDemoClient\bin\Debug\SocketDemoClient.pdb
+D:\CodeSource\CompanyDemo\SocketDemoClient\obj\Debug\SocketDemoClient.exe
+D:\CodeSource\CompanyDemo\SocketDemoClient\obj\Debug\SocketDemoClient.pdb

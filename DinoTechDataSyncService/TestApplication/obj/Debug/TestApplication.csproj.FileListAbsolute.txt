@@ -1,0 +1,5 @@
+D:\CodeSource\CompanyDemo\DinoTechDataSyncService\TestApplication\bin\Debug\TestApplication.exe.config
+D:\CodeSource\CompanyDemo\DinoTechDataSyncService\TestApplication\bin\Debug\TestApplication.exe
+D:\CodeSource\CompanyDemo\DinoTechDataSyncService\TestApplication\bin\Debug\TestApplication.pdb
+D:\CodeSource\CompanyDemo\DinoTechDataSyncService\TestApplication\obj\Debug\TestApplication.exe
+D:\CodeSource\CompanyDemo\DinoTechDataSyncService\TestApplication\obj\Debug\TestApplication.pdb

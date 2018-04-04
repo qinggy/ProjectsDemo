@@ -1,0 +1,17 @@
+D:\CodeSource\CompanyDemo\SpringNetAop\bin\Debug\SpringNetAop.exe.config
+D:\CodeSource\CompanyDemo\SpringNetAop\bin\Debug\SpringNetAop.exe
+D:\CodeSource\CompanyDemo\SpringNetAop\bin\Debug\SpringNetAop.pdb
+D:\CodeSource\CompanyDemo\SpringNetAop\bin\Debug\Common.Logging.dll
+D:\CodeSource\CompanyDemo\SpringNetAop\bin\Debug\ServiceInterface.dll
+D:\CodeSource\CompanyDemo\SpringNetAop\bin\Debug\Spring.Aop.dll
+D:\CodeSource\CompanyDemo\SpringNetAop\bin\Debug\Spring.Core.dll
+D:\CodeSource\CompanyDemo\SpringNetAop\bin\Debug\Entities.dll
+D:\CodeSource\CompanyDemo\SpringNetAop\bin\Debug\ServiceInterface.pdb
+D:\CodeSource\CompanyDemo\SpringNetAop\bin\Debug\Spring.Aop.pdb
+D:\CodeSource\CompanyDemo\SpringNetAop\bin\Debug\Spring.Aop.xml
+D:\CodeSource\CompanyDemo\SpringNetAop\bin\Debug\Spring.Core.pdb
+D:\CodeSource\CompanyDemo\SpringNetAop\bin\Debug\Spring.Core.xml
+D:\CodeSource\CompanyDemo\SpringNetAop\bin\Debug\Entities.pdb
+D:\CodeSource\CompanyDemo\SpringNetAop\obj\Debug\SpringNetAop.csprojResolveAssemblyReference.cache
+D:\CodeSource\CompanyDemo\SpringNetAop\obj\Debug\SpringNetAop.exe
+D:\CodeSource\CompanyDemo\SpringNetAop\obj\Debug\SpringNetAop.pdb

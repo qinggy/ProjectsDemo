@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<cross-domain-policy>
+<allow-access-from domain="*" />
+<!-- 意为：允许来自任意域名对本web服务站点的任意跨域访问，如要限制跨域访问站点：可将"*"更改为相应域名，多个域名则为多个< allow-access-from ... />节点 -->
+</cross-domain-policy> 

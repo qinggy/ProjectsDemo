@@ -1,0 +1,14 @@
+D:\CodeSource\CompanyDemo\ExcelHelpTaskPane\ExcelHelpTaskPane\bin\Debug\ExcelHelpTaskPane.dll
+D:\CodeSource\CompanyDemo\ExcelHelpTaskPane\ExcelHelpTaskPane\bin\Debug\ExcelHelpTaskPane.pdb
+D:\CodeSource\CompanyDemo\ExcelHelpTaskPane\ExcelHelpTaskPane\bin\Debug\ExcelHelpTaskPane.dll.manifest
+D:\CodeSource\CompanyDemo\ExcelHelpTaskPane\ExcelHelpTaskPane\bin\Debug\ExcelHelpTaskPane.vsto
+D:\CodeSource\CompanyDemo\ExcelHelpTaskPane\ExcelHelpTaskPane\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+D:\CodeSource\CompanyDemo\ExcelHelpTaskPane\ExcelHelpTaskPane\obj\Debug\ExcelHelpTaskPane.ExcelHelp.resources
+D:\CodeSource\CompanyDemo\ExcelHelpTaskPane\ExcelHelpTaskPane\obj\Debug\ExcelHelpTaskPane.Help.resources
+D:\CodeSource\CompanyDemo\ExcelHelpTaskPane\ExcelHelpTaskPane\obj\Debug\ExcelHelpTaskPane.Properties.Resources.resources
+D:\CodeSource\CompanyDemo\ExcelHelpTaskPane\ExcelHelpTaskPane\obj\Debug\ExcelHelpTaskPane.csproj.GenerateResource.Cache
+D:\CodeSource\CompanyDemo\ExcelHelpTaskPane\ExcelHelpTaskPane\obj\Debug\ExcelHelpTaskPane.dll
+D:\CodeSource\CompanyDemo\ExcelHelpTaskPane\ExcelHelpTaskPane\obj\Debug\ExcelHelpTaskPane.pdb
+D:\CodeSource\CompanyDemo\ExcelHelpTaskPane\ExcelHelpTaskPane\bin\Debug\Microsoft.Office.Tools.Excel.dll
+D:\CodeSource\CompanyDemo\ExcelHelpTaskPane\ExcelHelpTaskPane\bin\Debug\Microsoft.Office.Tools.v4.0.Framework.dll
+D:\CodeSource\CompanyDemo\ExcelHelpTaskPane\ExcelHelpTaskPane\bin\Debug\Microsoft.VisualStudio.Tools.Applications.Runtime.dll

@@ -1,0 +1,4 @@
+D:\CodeSource\CompanyDemo\ReaderWriterLock\bin\Debug\ReaderWriterLock.exe
+D:\CodeSource\CompanyDemo\ReaderWriterLock\bin\Debug\ReaderWriterLock.pdb
+D:\CodeSource\CompanyDemo\ReaderWriterLock\obj\Debug\ReaderWriterLock.exe
+D:\CodeSource\CompanyDemo\ReaderWriterLock\obj\Debug\ReaderWriterLock.pdb

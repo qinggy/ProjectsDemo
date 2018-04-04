@@ -1,0 +1,14 @@
+D:\CodeSource\CompanyDemo\TicketBooking.Picture.Identification\bin\Debug\x64\liblept172.dll
+D:\CodeSource\CompanyDemo\TicketBooking.Picture.Identification\bin\Debug\x64\libtesseract304.dll
+D:\CodeSource\CompanyDemo\TicketBooking.Picture.Identification\bin\Debug\x86\liblept172.dll
+D:\CodeSource\CompanyDemo\TicketBooking.Picture.Identification\bin\Debug\x86\libtesseract304.dll
+D:\CodeSource\CompanyDemo\TicketBooking.Picture.Identification\bin\Debug\TicketBooking.Picture.Identification.exe
+D:\CodeSource\CompanyDemo\TicketBooking.Picture.Identification\bin\Debug\TicketBooking.Picture.Identification.pdb
+D:\CodeSource\CompanyDemo\TicketBooking.Picture.Identification\bin\Debug\Tesseract.dll
+D:\CodeSource\CompanyDemo\TicketBooking.Picture.Identification\bin\Debug\Tesseract.xml
+D:\CodeSource\CompanyDemo\TicketBooking.Picture.Identification\obj\Debug\TicketBooking.Picture.Identification.MainForm.resources
+D:\CodeSource\CompanyDemo\TicketBooking.Picture.Identification\obj\Debug\TicketBooking.Picture.Identification.Properties.Resources.resources
+D:\CodeSource\CompanyDemo\TicketBooking.Picture.Identification\obj\Debug\TicketBooking.Picture.Identification.csproj.GenerateResource.Cache
+D:\CodeSource\CompanyDemo\TicketBooking.Picture.Identification\obj\Debug\TicketBooking.Picture.Identification.exe
+D:\CodeSource\CompanyDemo\TicketBooking.Picture.Identification\obj\Debug\TicketBooking.Picture.Identification.pdb
+D:\CodeSource\CompanyDemo\TicketBooking.Picture.Identification\obj\Debug\TicketBooking.Picture.Identification.csprojResolveAssemblyReference.cache

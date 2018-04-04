@@ -1,0 +1,4 @@
+D:\CodeSource\CompanyDemo\SqlBulkCopyInsertOrUpdate\bin\Debug\SqlBulkCopyInsertOrUpdate.exe
+D:\CodeSource\CompanyDemo\SqlBulkCopyInsertOrUpdate\bin\Debug\SqlBulkCopyInsertOrUpdate.pdb
+D:\CodeSource\CompanyDemo\SqlBulkCopyInsertOrUpdate\obj\Debug\SqlBulkCopyInsertOrUpdate.exe
+D:\CodeSource\CompanyDemo\SqlBulkCopyInsertOrUpdate\obj\Debug\SqlBulkCopyInsertOrUpdate.pdb

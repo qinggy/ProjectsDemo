@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="6f783911-9360-4ecf-865e-0a89dc1d77f2" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://172.17.1.102:8400/DinoTechDataSyncService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="DinoTechDataSyncService.xsd" MetadataType="Schema" ID="9cac6862-8478-46db-81e7-f5bf297d20e8" SourceId="1" SourceUrl="http://172.17.1.102:8400/DinoTechDataSyncService.svc?xsd=xsd4" />
+    <MetadataFile FileName="DinoTechDataSyncService1.xsd" MetadataType="Schema" ID="65b563be-234c-4907-8956-f0bbd6018cc7" SourceId="1" SourceUrl="http://172.17.1.102:8400/DinoTechDataSyncService.svc?xsd=xsd6" />
+    <MetadataFile FileName="DinoTechDataSyncService2.xsd" MetadataType="Schema" ID="0d241491-dd03-4d3f-ac0b-e0fa8ece2194" SourceId="1" SourceUrl="http://172.17.1.102:8400/DinoTechDataSyncService.svc?xsd=xsd0" />
+    <MetadataFile FileName="DinoTechDataSyncService.wsdl" MetadataType="Wsdl" ID="29d29295-b0bc-4360-a743-ef5694118cdf" SourceId="1" SourceUrl="http://172.17.1.102:8400/DinoTechDataSyncService.svc?wsdl" />
+    <MetadataFile FileName="DinoTechDataSyncService3.xsd" MetadataType="Schema" ID="363fd7de-60e7-4770-8255-9bc78fcac09d" SourceId="1" SourceUrl="http://172.17.1.102:8400/DinoTechDataSyncService.svc?xsd=xsd1" />
+    <MetadataFile FileName="DinoTechDataSyncService.disco" MetadataType="Disco" ID="ac3f2e3c-430c-47b3-8fb1-d53e15c3f731" SourceId="1" SourceUrl="http://172.17.1.102:8400/DinoTechDataSyncService.svc?disco" />
+    <MetadataFile FileName="DinoTechDataSyncService4.xsd" MetadataType="Schema" ID="fa68f51a-9d2e-4c6f-a020-39b3a9f80947" SourceId="1" SourceUrl="http://172.17.1.102:8400/DinoTechDataSyncService.svc?xsd=xsd3" />
+    <MetadataFile FileName="DinoTechDataSyncService5.xsd" MetadataType="Schema" ID="e9f96a78-23b4-4da6-a80d-23ef581f170a" SourceId="1" SourceUrl="http://172.17.1.102:8400/DinoTechDataSyncService.svc?xsd=xsd2" />
+    <MetadataFile FileName="DinoTechDataSyncService6.xsd" MetadataType="Schema" ID="498249f1-d2f7-4d40-b417-2012917621fd" SourceId="1" SourceUrl="http://172.17.1.102:8400/DinoTechDataSyncService.svc?xsd=xsd5" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

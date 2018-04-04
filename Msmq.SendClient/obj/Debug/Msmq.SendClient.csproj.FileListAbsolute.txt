@@ -1,0 +1,9 @@
+D:\CodeSource\CompanyDemo\Msmq.SendClient\bin\Debug\Msmq.SendClient.exe
+D:\CodeSource\CompanyDemo\Msmq.SendClient\bin\Debug\Msmq.SendClient.pdb
+D:\CodeSource\CompanyDemo\Msmq.SendClient\bin\Debug\MsmqHelper.dll
+D:\CodeSource\CompanyDemo\Msmq.SendClient\bin\Debug\Newtonsoft.Json.dll
+D:\CodeSource\CompanyDemo\Msmq.SendClient\bin\Debug\MsmqHelper.pdb
+D:\CodeSource\CompanyDemo\Msmq.SendClient\bin\Debug\Newtonsoft.Json.xml
+D:\CodeSource\CompanyDemo\Msmq.SendClient\obj\Debug\Msmq.SendClient.csprojResolveAssemblyReference.cache
+D:\CodeSource\CompanyDemo\Msmq.SendClient\obj\Debug\Msmq.SendClient.exe
+D:\CodeSource\CompanyDemo\Msmq.SendClient\obj\Debug\Msmq.SendClient.pdb

@@ -1,0 +1,70 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleWCF.Contract", "SimpleWCF.Contract\SimpleWCF.Contract.csproj", "{7F743826-1B9E-4EED-B2A3-46055A210368}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleWCF.Implement", "SimpleWCF.Implement\SimpleWCF.Implement.csproj", "{20B79C77-92C5-49E4-BCFC-CA456510EF3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleWCF.Client", "SimpleWCF.Client\SimpleWCF.Client.csproj", "{4CB4D0A4-DA0C-4E7B-AFDB-FD1BE82491C4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{EF4444AC-E5FD-4FD5-8435-6D56216AA87E} = {EF4444AC-E5FD-4FD5-8435-6D56216AA87E}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleWCF.Client.Web", "SimpleWCF.Client.Web\SimpleWCF.Client.Web.csproj", "{653FB2F3-547C-410B-A129-BFE327469E00}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleWCF.Service", "SimpleWCF.Service\SimpleWCF.Service.csproj", "{EF4444AC-E5FD-4FD5-8435-6D56216AA87E}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://angusqing-projects.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = SimpleWCF.Client.Web\\SimpleWCF.Client.Web.csproj
+		SccProjectName1 = SimpleWCF.Client.Web
+		SccLocalPath1 = SimpleWCF.Client.Web
+		SccProjectUniqueName2 = SimpleWCF.Client\\SimpleWCF.Client.csproj
+		SccProjectName2 = SimpleWCF.Client
+		SccLocalPath2 = SimpleWCF.Client
+		SccProjectUniqueName3 = SimpleWCF.Contract\\SimpleWCF.Contract.csproj
+		SccProjectName3 = SimpleWCF.Contract
+		SccLocalPath3 = SimpleWCF.Contract
+		SccProjectUniqueName4 = SimpleWCF.Implement\\SimpleWCF.Implement.csproj
+		SccProjectName4 = SimpleWCF.Implement
+		SccLocalPath4 = SimpleWCF.Implement
+		SccProjectUniqueName5 = SimpleWCF.Service\\SimpleWCF.Service.csproj
+		SccProjectName5 = SimpleWCF.Service
+		SccLocalPath5 = SimpleWCF.Service
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7F743826-1B9E-4EED-B2A3-46055A210368}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F743826-1B9E-4EED-B2A3-46055A210368}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F743826-1B9E-4EED-B2A3-46055A210368}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F743826-1B9E-4EED-B2A3-46055A210368}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20B79C77-92C5-49E4-BCFC-CA456510EF3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20B79C77-92C5-49E4-BCFC-CA456510EF3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20B79C77-92C5-49E4-BCFC-CA456510EF3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20B79C77-92C5-49E4-BCFC-CA456510EF3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CB4D0A4-DA0C-4E7B-AFDB-FD1BE82491C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CB4D0A4-DA0C-4E7B-AFDB-FD1BE82491C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CB4D0A4-DA0C-4E7B-AFDB-FD1BE82491C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CB4D0A4-DA0C-4E7B-AFDB-FD1BE82491C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{653FB2F3-547C-410B-A129-BFE327469E00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{653FB2F3-547C-410B-A129-BFE327469E00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{653FB2F3-547C-410B-A129-BFE327469E00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{653FB2F3-547C-410B-A129-BFE327469E00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF4444AC-E5FD-4FD5-8435-6D56216AA87E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF4444AC-E5FD-4FD5-8435-6D56216AA87E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF4444AC-E5FD-4FD5-8435-6D56216AA87E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF4444AC-E5FD-4FD5-8435-6D56216AA87E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

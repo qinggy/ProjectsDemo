@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<mvcSiteMap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns="http://mvcsitemap.codeplex.com/schemas/MvcSiteMap-File-4.0"
+            xsi:schemaLocation="http://mvcsitemap.codeplex.com/schemas/MvcSiteMap-File-4.0 MvcSiteMapSchema.xsd">
+
+  <mvcSiteMapNode title="主页" controller="Home" action="Index">
+    <mvcSiteMapNode title="关于" controller="Home" action="About"/>
+    <mvcSiteMapNode title="联系方式" controller="Home" action="Contact"/>
+  </mvcSiteMapNode>
+</mvcSiteMap>

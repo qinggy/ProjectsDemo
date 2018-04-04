@@ -1,0 +1,12 @@
+D:\CodeSource\CompanyDemo\AsyncInvokeDemo\obj\Debug\AsyncInvokeDemo_MarkupCompile.cache
+D:\CodeSource\CompanyDemo\AsyncInvokeDemo\bin\Debug\AsyncInvokeDemo.exe.config
+D:\CodeSource\CompanyDemo\AsyncInvokeDemo\bin\Debug\AsyncInvokeDemo.exe
+D:\CodeSource\CompanyDemo\AsyncInvokeDemo\bin\Debug\AsyncInvokeDemo.pdb
+D:\CodeSource\CompanyDemo\AsyncInvokeDemo\obj\Debug\MainWindow.baml
+D:\CodeSource\CompanyDemo\AsyncInvokeDemo\obj\Debug\MainWindow.g.cs
+D:\CodeSource\CompanyDemo\AsyncInvokeDemo\obj\Debug\App.g.cs
+D:\CodeSource\CompanyDemo\AsyncInvokeDemo\obj\Debug\AsyncInvokeDemo.g.resources
+D:\CodeSource\CompanyDemo\AsyncInvokeDemo\obj\Debug\AsyncInvokeDemo.Properties.Resources.resources
+D:\CodeSource\CompanyDemo\AsyncInvokeDemo\obj\Debug\AsyncInvokeDemo.csproj.GenerateResource.Cache
+D:\CodeSource\CompanyDemo\AsyncInvokeDemo\obj\Debug\AsyncInvokeDemo.exe
+D:\CodeSource\CompanyDemo\AsyncInvokeDemo\obj\Debug\AsyncInvokeDemo.pdb

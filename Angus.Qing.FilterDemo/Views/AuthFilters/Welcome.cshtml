@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = ViewBag.Message;
+}
+
+<h2>需要权限才能访问的页面</h2>
+
+<div>
+    欢迎你： @Context.User.Identity.Name<br />
+    当前页面：@ViewBag.Message<br />
+    @Html.ActionLink("管理员", "AdminUser", "AuthFilters");&nbsp;
+    @Html.ActionLink("高级会员", "SeniorUser", "AuthFilters");&nbsp;
+    @Html.ActionLink("初级会员", "JuniorUser", "AuthFilters");&nbsp;&nbsp;
+    @Html.ActionLink("退出", "LogOut", "Account", null, new { onclick = "return confirm('确认退出？')" })
+</div>

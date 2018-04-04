@@ -1,0 +1,13 @@
+D:\CodeSource\CompanyDemo\RegisterOperation\bin\Debug\ReportRegistor.exe.manifest
+D:\CodeSource\CompanyDemo\RegisterOperation\bin\Debug\ReportRegistor.application
+D:\CodeSource\CompanyDemo\RegisterOperation\bin\Debug\ReportRegistor.exe
+D:\CodeSource\CompanyDemo\RegisterOperation\bin\Debug\ReportRegistor.pdb
+D:\CodeSource\CompanyDemo\RegisterOperation\obj\Debug\ReportRegistor.Form1.resources
+D:\CodeSource\CompanyDemo\RegisterOperation\obj\Debug\ReportRegistor.Properties.Resources.resources
+D:\CodeSource\CompanyDemo\RegisterOperation\obj\Debug\RegistorOperation.csproj.GenerateResource.Cache
+D:\CodeSource\CompanyDemo\RegisterOperation\obj\Debug\ReportRegistor.TrustInfo.xml
+D:\CodeSource\CompanyDemo\RegisterOperation\obj\Debug\ReportRegistor.exe.manifest
+D:\CodeSource\CompanyDemo\RegisterOperation\obj\Debug\ReportRegistor.application
+D:\CodeSource\CompanyDemo\RegisterOperation\obj\Debug\ReportRegistor.exe
+D:\CodeSource\CompanyDemo\RegisterOperation\obj\Debug\ReportRegistor.pdb
+D:\CodeSource\CompanyDemo\RegisterOperation\obj\Debug\RegistorOperation.csprojResolveAssemblyReference.cache

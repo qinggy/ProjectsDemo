@@ -1,0 +1,7 @@
+D:\CodeSource\CompanyDemo\PictureOperation\bin\Debug\PictureOperation.exe
+D:\CodeSource\CompanyDemo\PictureOperation\bin\Debug\PictureOperation.pdb
+D:\CodeSource\CompanyDemo\PictureOperation\obj\Debug\PicZipDemo.Form1.resources
+D:\CodeSource\CompanyDemo\PictureOperation\obj\Debug\PictureOperation.Properties.Resources.resources
+D:\CodeSource\CompanyDemo\PictureOperation\obj\Debug\PictureOperation.csproj.GenerateResource.Cache
+D:\CodeSource\CompanyDemo\PictureOperation\obj\Debug\PictureOperation.exe
+D:\CodeSource\CompanyDemo\PictureOperation\obj\Debug\PictureOperation.pdb

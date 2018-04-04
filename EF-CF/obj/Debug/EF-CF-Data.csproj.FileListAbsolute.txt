@@ -1,0 +1,12 @@
+D:\CodeSource\CompanyDemo\EF-CF\bin\Debug\EF-CF-Data.dll.config
+D:\CodeSource\CompanyDemo\EF-CF\bin\Debug\EF-CF-Data.dll
+D:\CodeSource\CompanyDemo\EF-CF\bin\Debug\EF-CF-Data.pdb
+D:\CodeSource\CompanyDemo\EF-CF\bin\Debug\EntityFramework.dll
+D:\CodeSource\CompanyDemo\EF-CF\bin\Debug\EntityFramework.SqlServer.dll
+D:\CodeSource\CompanyDemo\EF-CF\bin\Debug\EntityFramework.xml
+D:\CodeSource\CompanyDemo\EF-CF\bin\Debug\EntityFramework.SqlServer.xml
+D:\CodeSource\CompanyDemo\EF-CF\obj\Debug\EF-CF-Data.dll
+D:\CodeSource\CompanyDemo\EF-CF\obj\Debug\EF-CF-Data.pdb
+D:\CodeSource\CompanyDemo\EF-CF\bin\Debug\zh-Hans\EntityFramework.resources.dll
+D:\CodeSource\CompanyDemo\EF-CF\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
+D:\CodeSource\CompanyDemo\EF-CF\obj\Debug\EF-CF-Data.csprojResolveAssemblyReference.cache

@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IS.Esd.Utility", "IS.Esd.Utility\IS.Esd.Utility.csproj", "{6BA82765-D3F7-4D89-8036-DAD1A20232AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IS.Esd.Business", "IS.Esd.Business\IS.Esd.Business.csproj", "{B76B0C69-E96C-4F82-AEC7-E42EB44F8ECE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IS.Esd.Domain", "IS.Esd.Domain\IS.Esd.Domain.csproj", "{3D48F156-6690-43CE-B113-8DB8992B8C03}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IS.Esd.Repository", "IS.Esd.Repository\IS.Esd.Repository.csproj", "{86917C69-435B-421B-B54F-53062A2269CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IS.Esd.VersionManager.Web", "IS.Esd.VersionManager.Web\IS.Esd.VersionManager.Web.csproj", "{5AF38689-D84F-4E71-978E-C2AC893A29FE}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://angusqing-projects.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = IS.Esd.Business\\IS.Esd.Business.csproj
+		SccProjectName1 = IS.Esd.Business
+		SccLocalPath1 = IS.Esd.Business
+		SccProjectUniqueName2 = IS.Esd.Domain\\IS.Esd.Domain.csproj
+		SccProjectName2 = IS.Esd.Domain
+		SccLocalPath2 = IS.Esd.Domain
+		SccProjectUniqueName3 = IS.Esd.Repository\\IS.Esd.Repository.csproj
+		SccProjectName3 = IS.Esd.Repository
+		SccLocalPath3 = IS.Esd.Repository
+		SccProjectUniqueName4 = IS.Esd.Utility\\IS.Esd.Utility.csproj
+		SccProjectName4 = IS.Esd.Utility
+		SccLocalPath4 = IS.Esd.Utility
+		SccProjectUniqueName5 = IS.Esd.VersionManager.Web\\IS.Esd.VersionManager.Web.csproj
+		SccProjectName5 = IS.Esd.VersionManager.Web
+		SccLocalPath5 = IS.Esd.VersionManager.Web
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6BA82765-D3F7-4D89-8036-DAD1A20232AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BA82765-D3F7-4D89-8036-DAD1A20232AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BA82765-D3F7-4D89-8036-DAD1A20232AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BA82765-D3F7-4D89-8036-DAD1A20232AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B76B0C69-E96C-4F82-AEC7-E42EB44F8ECE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B76B0C69-E96C-4F82-AEC7-E42EB44F8ECE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B76B0C69-E96C-4F82-AEC7-E42EB44F8ECE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B76B0C69-E96C-4F82-AEC7-E42EB44F8ECE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D48F156-6690-43CE-B113-8DB8992B8C03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D48F156-6690-43CE-B113-8DB8992B8C03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D48F156-6690-43CE-B113-8DB8992B8C03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D48F156-6690-43CE-B113-8DB8992B8C03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86917C69-435B-421B-B54F-53062A2269CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86917C69-435B-421B-B54F-53062A2269CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86917C69-435B-421B-B54F-53062A2269CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86917C69-435B-421B-B54F-53062A2269CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AF38689-D84F-4E71-978E-C2AC893A29FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AF38689-D84F-4E71-978E-C2AC893A29FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AF38689-D84F-4E71-978E-C2AC893A29FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AF38689-D84F-4E71-978E-C2AC893A29FE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,4 @@
+D:\CodeSource\CompanyDemo\WPFMEFDemo\CalculatorDemoUsingMEF\CalculatorContract\bin\Debug\CalculatorContract.dll
+D:\CodeSource\CompanyDemo\WPFMEFDemo\CalculatorDemoUsingMEF\CalculatorContract\bin\Debug\CalculatorContract.pdb
+D:\CodeSource\CompanyDemo\WPFMEFDemo\CalculatorDemoUsingMEF\CalculatorContract\obj\Debug\CalculatorContract.dll
+D:\CodeSource\CompanyDemo\WPFMEFDemo\CalculatorDemoUsingMEF\CalculatorContract\obj\Debug\CalculatorContract.pdb

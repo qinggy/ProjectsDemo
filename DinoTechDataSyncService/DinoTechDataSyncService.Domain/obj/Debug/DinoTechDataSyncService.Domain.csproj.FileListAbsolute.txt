@@ -1,0 +1,4 @@
+D:\CodeSource\CompanyDemo\DinoTechDataSyncService\DinoTechDataSyncService.Domain\bin\Debug\DinoTechDataSyncService.Domain.dll
+D:\CodeSource\CompanyDemo\DinoTechDataSyncService\DinoTechDataSyncService.Domain\bin\Debug\DinoTechDataSyncService.Domain.pdb
+D:\CodeSource\CompanyDemo\DinoTechDataSyncService\DinoTechDataSyncService.Domain\obj\Debug\DinoTechDataSyncService.Domain.dll
+D:\CodeSource\CompanyDemo\DinoTechDataSyncService\DinoTechDataSyncService.Domain\obj\Debug\DinoTechDataSyncService.Domain.pdb

@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://172.17.1.102:8400/DinoTechDataSyncService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/DinoTechDataSyncService.Domain" />
+  <xs:import schemaLocation="http://172.17.1.102:8400/DinoTechDataSyncService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/DinoTechDataSyncService.Business" />
+  <xs:import schemaLocation="http://172.17.1.102:8400/DinoTechDataSyncService.svc?xsd=xsd5" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="http://172.17.1.102:8400/DinoTechDataSyncService.svc?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/DinoTechDataSyncService.WCF.FileUtilities" />
+  <xs:element name="ValidateUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="timeZoneOffSet" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateUserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/DinoTechDataSyncService.Domain" minOccurs="0" name="ValidateUserResult" nillable="true" type="q1:ResponseUserTokenInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubmitEnergies">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/DinoTechDataSyncService.Domain" minOccurs="0" name="Energies" nillable="true" type="q2:ArrayOfEnergy" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubmitEnergiesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/DinoTechDataSyncService.Business" minOccurs="0" name="SubmitEnergiesResult" nillable="true" type="q3:ResponseStatus" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubmitMeterModels">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/DinoTechDataSyncService.Domain" minOccurs="0" name="meterModelItems" nillable="true" type="q4:ArrayOfMeterModel" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubmitMeterModelsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/DinoTechDataSyncService.Business" minOccurs="0" name="SubmitMeterModelsResult" nillable="true" type="q5:ResponseStatus" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubmitAquisitionParameters">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/DinoTechDataSyncService.Domain" minOccurs="0" name="acquisitionParametersItems" nillable="true" type="q6:ArrayOfAcquisitionParameters" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubmitAquisitionParametersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/DinoTechDataSyncService.Business" minOccurs="0" name="SubmitAquisitionParametersResult" nillable="true" type="q7:ResponseStatus" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubmitRegionalAreas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/DinoTechDataSyncService.Domain" minOccurs="0" name="areaItems" nillable="true" type="q8:ArrayOfAreas" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubmitRegionalAreasResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/DinoTechDataSyncService.Business" minOccurs="0" name="SubmitRegionalAreasResult" nillable="true" type="q9:ResponseStatus" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubmitMeterModelFieldTypes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/DinoTechDataSyncService.Domain" minOccurs="0" name="meterModelFieldTypesItems" nillable="true" type="q10:ArrayOfMeterModelFieldTypes" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubmitMeterModelFieldTypesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/DinoTechDataSyncService.Business" minOccurs="0" name="SubmitMeterModelFieldTypesResult" nillable="true" type="q11:ResponseStatus" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubmitBaseMeters">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/DinoTechDataSyncService.Domain" minOccurs="0" name="baseMeterItems" nillable="true" type="q12:ArrayOfBaseMeter" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubmitBaseMetersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/DinoTechDataSyncService.Business" minOccurs="0" name="SubmitBaseMetersResult" nillable="true" type="q13:ResponseStatus" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubmitBaseMeterAcquisitionParameters">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/DinoTechDataSyncService.Domain" minOccurs="0" name="baseMeteAcuisitionParameterItems" nillable="true" type="q14:ArrayOfBaseMeterAcuisitionParameter" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubmitBaseMeterAcquisitionParametersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="SubmitBaseMeterAcquisitionParametersResult" nillable="true" type="q15:ArrayOfKeyValueOfintint" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubmitVirtualMeterAcquisitionParameters">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/DinoTechDataSyncService.Domain" minOccurs="0" name="virtualMeteParameterInfoItems" nillable="true" type="q16:ArrayOfVirtualMeterParameterInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubmitVirtualMeterAcquisitionParametersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="SubmitVirtualMeterAcquisitionParametersResult" nillable="true" type="q17:ArrayOfKeyValueOfintint" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubmitMinutesRecords">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/DinoTechDataSyncService.Domain" minOccurs="0" name="minutesRecordItems" nillable="true" type="q18:ArrayOfMinutesRecord" />
+        <xs:element minOccurs="0" name="lastSyncDateTime" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubmitMinutesRecordsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/DinoTechDataSyncService.Business" minOccurs="0" name="SubmitMinutesRecordsResult" nillable="true" type="q19:ResponseStatus" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubmitHourRecords">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/DinoTechDataSyncService.Domain" minOccurs="0" name="hourRecordItems" nillable="true" type="q20:ArrayOfHourRecord" />
+        <xs:element minOccurs="0" name="lastSyncDateTime" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubmitHourRecordsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/DinoTechDataSyncService.Business" minOccurs="0" name="SubmitHourRecordsResult" nillable="true" type="q21:ResponseStatus" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubmitDayRecords">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/DinoTechDataSyncService.Domain" minOccurs="0" name="dayRecordItems" nillable="true" type="q22:ArrayOfDayRecord" />
+        <xs:element minOccurs="0" name="lastSyncDateTime" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubmitDayRecordsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/DinoTechDataSyncService.Business" minOccurs="0" name="SubmitDayRecordsResult" nillable="true" type="q23:ResponseStatus" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubmitMonthRecords">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/DinoTechDataSyncService.Domain" minOccurs="0" name="monthRecordItems" nillable="true" type="q24:ArrayOfMonthRecord" />
+        <xs:element minOccurs="0" name="lastSyncDateTime" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubmitMonthRecordsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/DinoTechDataSyncService.Business" minOccurs="0" name="SubmitMonthRecordsResult" nillable="true" type="q25:ResponseStatus" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubmitYearRecords">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/DinoTechDataSyncService.Domain" minOccurs="0" name="yearRecordItems" nillable="true" type="q26:ArrayOfYearRecord" />
+        <xs:element minOccurs="0" name="lastSyncDateTime" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubmitYearRecordsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/DinoTechDataSyncService.Business" minOccurs="0" name="SubmitYearRecordsResult" nillable="true" type="q27:ResponseStatus" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateSyncLogInfo">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateSyncLogInfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/DinoTechDataSyncService.Business" minOccurs="0" name="UpdateSyncLogInfoResult" nillable="true" type="q28:ResponseStatus" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMinutesRecordSyncCount">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMinutesRecordSyncCountResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetMinutesRecordSyncCountResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetHourRecordSyncCount">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetHourRecordSyncCountResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetHourRecordSyncCountResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDayRecordSyncCount">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDayRecordSyncCountResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetDayRecordSyncCountResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMonthRecordSyncCount">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMonthRecordSyncCountResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetMonthRecordSyncCountResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetYearRecordSyncCount">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetYearRecordSyncCountResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetYearRecordSyncCountResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMinutesRecordsLastSyncDateTime">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="bmftId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMinutesRecordsLastSyncDateTimeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetMinutesRecordsLastSyncDateTimeResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInstantaneousDataLastSyncDateTime">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="bmfId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dType" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInstantaneousDataLastSyncDateTimeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetInstantaneousDataLastSyncDateTimeResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetHourRecordLastSyncDateTime">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="bmftId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetHourRecordLastSyncDateTimeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetHourRecordLastSyncDateTimeResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDayRecordsLastSyncDateTime">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="bmftId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDayRecordsLastSyncDateTimeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetDayRecordsLastSyncDateTimeResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMonthRecordLastSyncDateTime">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="bmftId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMonthRecordLastSyncDateTimeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetMonthRecordLastSyncDateTimeResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetYearRecordLastSyncDateTime">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="bmftId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetYearRecordLastSyncDateTimeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetYearRecordLastSyncDateTimeResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListOfAllAreaMeterAndParametersOnCloud">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListOfAllAreaMeterAndParametersOnCloudResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/DinoTechDataSyncService.Domain" minOccurs="0" name="GetListOfAllAreaMeterAndParametersOnCloudResult" nillable="true" type="q29:ArrayOfEnergyPowerMeterDataTree" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SyncEnergyMeterDataToCloud">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q30="http://schemas.datacontract.org/2004/07/DinoTechDataSyncService.Domain" minOccurs="0" name="energyMeterHistoryDataRecord" nillable="true" type="q30:ArrayOfEnergyMeterHistoryDataRecord" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SyncEnergyMeterDataToCloudResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q31="http://schemas.datacontract.org/2004/07/DinoTechDataSyncService.Business" minOccurs="0" name="SyncEnergyMeterDataToCloudResult" nillable="true" type="q31:ResponseStatus" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddRealTimeBTMeterData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q32="http://schemas.datacontract.org/2004/07/DinoTechDataSyncService.WCF.FileUtilities" minOccurs="0" name="requestBTMeterData" nillable="true" type="q32:RequestBTMData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddRealTimeBTMeterDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q33="http://schemas.datacontract.org/2004/07/DinoTechDataSyncService.Business" minOccurs="0" name="AddRealTimeBTMeterDataResult" nillable="true" type="q33:ResponseStatus" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,8 @@
+D:\CodeSource\CompanyDemo\NUnitDemo\bin\Debug\NUnitDemo.dll
+D:\CodeSource\CompanyDemo\NUnitDemo\bin\Debug\NUnitDemo.pdb
+D:\CodeSource\CompanyDemo\NUnitDemo\bin\Debug\nunit.framework.dll
+D:\CodeSource\CompanyDemo\NUnitDemo\bin\Debug\nunit.framework.xml
+D:\CodeSource\CompanyDemo\NUnitDemo\obj\Debug\NUnitDemo.dll
+D:\CodeSource\CompanyDemo\NUnitDemo\obj\Debug\NUnitDemo.pdb
+D:\CodeSource\CompanyDemo\NUnitDemo\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\CodeSource\CompanyDemo\NUnitDemo\bin\Debug\Microsoft.Practices.ObjectBuilder.dll

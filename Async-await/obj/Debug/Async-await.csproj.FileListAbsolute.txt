@@ -1,0 +1,6 @@
+D:\CodeSource\CompanyDemo\Async-await\bin\Debug\Async-await.exe.config
+D:\CodeSource\CompanyDemo\Async-await\bin\Debug\Async-await.exe
+D:\CodeSource\CompanyDemo\Async-await\bin\Debug\Async-await.pdb
+D:\CodeSource\CompanyDemo\Async-await\obj\Debug\Async-await.exe
+D:\CodeSource\CompanyDemo\Async-await\obj\Debug\Async-await.pdb
+D:\CodeSource\CompanyDemo\Async-await\obj\Debug\Async-await.csprojResolveAssemblyReference.cache

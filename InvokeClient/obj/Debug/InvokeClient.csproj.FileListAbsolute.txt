@@ -1,0 +1,5 @@
+D:\CodeSource\CompanyDemo\InvokeClient\bin\Debug\InvokeClient.exe.config
+D:\CodeSource\CompanyDemo\InvokeClient\bin\Debug\InvokeClient.exe
+D:\CodeSource\CompanyDemo\InvokeClient\bin\Debug\InvokeClient.pdb
+D:\CodeSource\CompanyDemo\InvokeClient\obj\Debug\InvokeClient.exe
+D:\CodeSource\CompanyDemo\InvokeClient\obj\Debug\InvokeClient.pdb

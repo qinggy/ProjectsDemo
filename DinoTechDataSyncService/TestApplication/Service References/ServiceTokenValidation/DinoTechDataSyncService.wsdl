@@ -1,0 +1,782 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="DinoTechDataSyncService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="WSHttpBinding_IDinoTechDataSyncService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://172.17.1.102:8400/DinoTechDataSyncService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://172.17.1.102:8400/DinoTechDataSyncService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://172.17.1.102:8400/DinoTechDataSyncService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/DinoTechDataSyncService.Domain" />
+      <xsd:import schemaLocation="http://172.17.1.102:8400/DinoTechDataSyncService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/DinoTechDataSyncService.WCF" />
+      <xsd:import schemaLocation="http://172.17.1.102:8400/DinoTechDataSyncService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/DinoTechDataSyncService.Business" />
+      <xsd:import schemaLocation="http://172.17.1.102:8400/DinoTechDataSyncService.svc?xsd=xsd5" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://172.17.1.102:8400/DinoTechDataSyncService.svc?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/DinoTechDataSyncService.WCF.FileUtilities" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IDinoTechDataSyncService_ValidateUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateUser" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_ValidateUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_SubmitEnergies_InputMessage">
+    <wsdl:part name="parameters" element="tns:SubmitEnergies" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_SubmitEnergies_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SubmitEnergiesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_SubmitEnergies_ServiceErrorFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/DinoTechDataSyncService.WCF" name="detail" element="q1:ServiceError" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_SubmitMeterModels_InputMessage">
+    <wsdl:part name="parameters" element="tns:SubmitMeterModels" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_SubmitMeterModels_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SubmitMeterModelsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_SubmitMeterModels_ServiceErrorFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.datacontract.org/2004/07/DinoTechDataSyncService.WCF" name="detail" element="q2:ServiceError" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_SubmitAquisitionParameters_InputMessage">
+    <wsdl:part name="parameters" element="tns:SubmitAquisitionParameters" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_SubmitAquisitionParameters_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SubmitAquisitionParametersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_SubmitAquisitionParameters_ServiceErrorFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.datacontract.org/2004/07/DinoTechDataSyncService.WCF" name="detail" element="q3:ServiceError" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_SubmitRegionalAreas_InputMessage">
+    <wsdl:part name="parameters" element="tns:SubmitRegionalAreas" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_SubmitRegionalAreas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SubmitRegionalAreasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_SubmitRegionalAreas_ServiceErrorFault_FaultMessage">
+    <wsdl:part xmlns:q4="http://schemas.datacontract.org/2004/07/DinoTechDataSyncService.WCF" name="detail" element="q4:ServiceError" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_SubmitMeterModelFieldTypes_InputMessage">
+    <wsdl:part name="parameters" element="tns:SubmitMeterModelFieldTypes" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_SubmitMeterModelFieldTypes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SubmitMeterModelFieldTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_SubmitMeterModelFieldTypes_ServiceErrorFault_FaultMessage">
+    <wsdl:part xmlns:q5="http://schemas.datacontract.org/2004/07/DinoTechDataSyncService.WCF" name="detail" element="q5:ServiceError" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_SubmitBaseMeters_InputMessage">
+    <wsdl:part name="parameters" element="tns:SubmitBaseMeters" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_SubmitBaseMeters_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SubmitBaseMetersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_SubmitBaseMeters_ServiceErrorFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.datacontract.org/2004/07/DinoTechDataSyncService.WCF" name="detail" element="q6:ServiceError" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_SubmitBaseMeterAcquisitionParameters_InputMessage">
+    <wsdl:part name="parameters" element="tns:SubmitBaseMeterAcquisitionParameters" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_SubmitBaseMeterAcquisitionParameters_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SubmitBaseMeterAcquisitionParametersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_SubmitBaseMeterAcquisitionParameters_ServiceErrorFault_FaultMessage">
+    <wsdl:part xmlns:q7="http://schemas.datacontract.org/2004/07/DinoTechDataSyncService.WCF" name="detail" element="q7:ServiceError" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_SubmitVirtualMeterAcquisitionParameters_InputMessage">
+    <wsdl:part name="parameters" element="tns:SubmitVirtualMeterAcquisitionParameters" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_SubmitVirtualMeterAcquisitionParameters_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SubmitVirtualMeterAcquisitionParametersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_SubmitVirtualMeterAcquisitionParameters_ServiceErrorFault_FaultMessage">
+    <wsdl:part xmlns:q8="http://schemas.datacontract.org/2004/07/DinoTechDataSyncService.WCF" name="detail" element="q8:ServiceError" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_SubmitMinutesRecords_InputMessage">
+    <wsdl:part name="parameters" element="tns:SubmitMinutesRecords" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_SubmitMinutesRecords_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SubmitMinutesRecordsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_SubmitMinutesRecords_ServiceErrorFault_FaultMessage">
+    <wsdl:part xmlns:q9="http://schemas.datacontract.org/2004/07/DinoTechDataSyncService.WCF" name="detail" element="q9:ServiceError" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_SubmitHourRecords_InputMessage">
+    <wsdl:part name="parameters" element="tns:SubmitHourRecords" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_SubmitHourRecords_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SubmitHourRecordsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_SubmitHourRecords_ServiceErrorFault_FaultMessage">
+    <wsdl:part xmlns:q10="http://schemas.datacontract.org/2004/07/DinoTechDataSyncService.WCF" name="detail" element="q10:ServiceError" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_SubmitDayRecords_InputMessage">
+    <wsdl:part name="parameters" element="tns:SubmitDayRecords" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_SubmitDayRecords_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SubmitDayRecordsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_SubmitDayRecords_ServiceErrorFault_FaultMessage">
+    <wsdl:part xmlns:q11="http://schemas.datacontract.org/2004/07/DinoTechDataSyncService.WCF" name="detail" element="q11:ServiceError" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_SubmitMonthRecords_InputMessage">
+    <wsdl:part name="parameters" element="tns:SubmitMonthRecords" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_SubmitMonthRecords_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SubmitMonthRecordsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_SubmitMonthRecords_ServiceErrorFault_FaultMessage">
+    <wsdl:part xmlns:q12="http://schemas.datacontract.org/2004/07/DinoTechDataSyncService.WCF" name="detail" element="q12:ServiceError" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_SubmitYearRecords_InputMessage">
+    <wsdl:part name="parameters" element="tns:SubmitYearRecords" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_SubmitYearRecords_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SubmitYearRecordsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_SubmitYearRecords_ServiceErrorFault_FaultMessage">
+    <wsdl:part xmlns:q13="http://schemas.datacontract.org/2004/07/DinoTechDataSyncService.WCF" name="detail" element="q13:ServiceError" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_UpdateSyncLogInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateSyncLogInfo" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_UpdateSyncLogInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateSyncLogInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_UpdateSyncLogInfo_ServiceErrorFault_FaultMessage">
+    <wsdl:part xmlns:q14="http://schemas.datacontract.org/2004/07/DinoTechDataSyncService.WCF" name="detail" element="q14:ServiceError" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_GetMinutesRecordSyncCount_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMinutesRecordSyncCount" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_GetMinutesRecordSyncCount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMinutesRecordSyncCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_GetMinutesRecordSyncCount_ServiceErrorFault_FaultMessage">
+    <wsdl:part xmlns:q15="http://schemas.datacontract.org/2004/07/DinoTechDataSyncService.WCF" name="detail" element="q15:ServiceError" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_GetHourRecordSyncCount_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetHourRecordSyncCount" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_GetHourRecordSyncCount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetHourRecordSyncCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_GetHourRecordSyncCount_ServiceErrorFault_FaultMessage">
+    <wsdl:part xmlns:q16="http://schemas.datacontract.org/2004/07/DinoTechDataSyncService.WCF" name="detail" element="q16:ServiceError" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_GetDayRecordSyncCount_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDayRecordSyncCount" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_GetDayRecordSyncCount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDayRecordSyncCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_GetDayRecordSyncCount_ServiceErrorFault_FaultMessage">
+    <wsdl:part xmlns:q17="http://schemas.datacontract.org/2004/07/DinoTechDataSyncService.WCF" name="detail" element="q17:ServiceError" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_GetMonthRecordSyncCount_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMonthRecordSyncCount" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_GetMonthRecordSyncCount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMonthRecordSyncCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_GetMonthRecordSyncCount_ServiceErrorFault_FaultMessage">
+    <wsdl:part xmlns:q18="http://schemas.datacontract.org/2004/07/DinoTechDataSyncService.WCF" name="detail" element="q18:ServiceError" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_GetYearRecordSyncCount_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetYearRecordSyncCount" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_GetYearRecordSyncCount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetYearRecordSyncCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_GetYearRecordSyncCount_ServiceErrorFault_FaultMessage">
+    <wsdl:part xmlns:q19="http://schemas.datacontract.org/2004/07/DinoTechDataSyncService.WCF" name="detail" element="q19:ServiceError" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_GetMinutesRecordsLastSyncDateTime_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMinutesRecordsLastSyncDateTime" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_GetMinutesRecordsLastSyncDateTime_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMinutesRecordsLastSyncDateTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_GetMinutesRecordsLastSyncDateTime_ServiceErrorFault_FaultMessage">
+    <wsdl:part xmlns:q20="http://schemas.datacontract.org/2004/07/DinoTechDataSyncService.WCF" name="detail" element="q20:ServiceError" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_GetInstantaneousDataLastSyncDateTime_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetInstantaneousDataLastSyncDateTime" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_GetInstantaneousDataLastSyncDateTime_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetInstantaneousDataLastSyncDateTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_GetInstantaneousDataLastSyncDateTime_ServiceErrorFault_FaultMessage">
+    <wsdl:part xmlns:q21="http://schemas.datacontract.org/2004/07/DinoTechDataSyncService.WCF" name="detail" element="q21:ServiceError" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_GetHourRecordLastSyncDateTime_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetHourRecordLastSyncDateTime" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_GetHourRecordLastSyncDateTime_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetHourRecordLastSyncDateTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_GetHourRecordLastSyncDateTime_ServiceErrorFault_FaultMessage">
+    <wsdl:part xmlns:q22="http://schemas.datacontract.org/2004/07/DinoTechDataSyncService.WCF" name="detail" element="q22:ServiceError" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_GetDayRecordsLastSyncDateTime_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDayRecordsLastSyncDateTime" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_GetDayRecordsLastSyncDateTime_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDayRecordsLastSyncDateTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_GetDayRecordsLastSyncDateTime_ServiceErrorFault_FaultMessage">
+    <wsdl:part xmlns:q23="http://schemas.datacontract.org/2004/07/DinoTechDataSyncService.WCF" name="detail" element="q23:ServiceError" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_GetMonthRecordLastSyncDateTime_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMonthRecordLastSyncDateTime" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_GetMonthRecordLastSyncDateTime_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMonthRecordLastSyncDateTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_GetMonthRecordLastSyncDateTime_ServiceErrorFault_FaultMessage">
+    <wsdl:part xmlns:q24="http://schemas.datacontract.org/2004/07/DinoTechDataSyncService.WCF" name="detail" element="q24:ServiceError" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_GetYearRecordLastSyncDateTime_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetYearRecordLastSyncDateTime" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_GetYearRecordLastSyncDateTime_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetYearRecordLastSyncDateTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_GetYearRecordLastSyncDateTime_ServiceErrorFault_FaultMessage">
+    <wsdl:part xmlns:q25="http://schemas.datacontract.org/2004/07/DinoTechDataSyncService.WCF" name="detail" element="q25:ServiceError" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_GetListOfAllAreaMeterAndParametersOnCloud_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListOfAllAreaMeterAndParametersOnCloud" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_GetListOfAllAreaMeterAndParametersOnCloud_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListOfAllAreaMeterAndParametersOnCloudResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_GetListOfAllAreaMeterAndParametersOnCloud_ServiceErrorFault_FaultMessage">
+    <wsdl:part xmlns:q26="http://schemas.datacontract.org/2004/07/DinoTechDataSyncService.WCF" name="detail" element="q26:ServiceError" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_SyncEnergyMeterDataToCloud_InputMessage">
+    <wsdl:part name="parameters" element="tns:SyncEnergyMeterDataToCloud" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_SyncEnergyMeterDataToCloud_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SyncEnergyMeterDataToCloudResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_SyncEnergyMeterDataToCloud_ServiceErrorFault_FaultMessage">
+    <wsdl:part xmlns:q27="http://schemas.datacontract.org/2004/07/DinoTechDataSyncService.WCF" name="detail" element="q27:ServiceError" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_AddRealTimeBTMeterData_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddRealTimeBTMeterData" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_AddRealTimeBTMeterData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddRealTimeBTMeterDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDinoTechDataSyncService_AddRealTimeBTMeterData_ServiceErrorFault_FaultMessage">
+    <wsdl:part xmlns:q28="http://schemas.datacontract.org/2004/07/DinoTechDataSyncService.WCF" name="detail" element="q28:ServiceError" />
+  </wsdl:message>
+  <wsdl:portType name="IDinoTechDataSyncService">
+    <wsdl:operation name="ValidateUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/ValidateUser" message="tns:IDinoTechDataSyncService_ValidateUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/ValidateUserResponse" message="tns:IDinoTechDataSyncService_ValidateUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SubmitEnergies">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/SubmitEnergies" message="tns:IDinoTechDataSyncService_SubmitEnergies_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/SubmitEnergiesResponse" message="tns:IDinoTechDataSyncService_SubmitEnergies_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/SubmitEnergiesServiceErrorFault" name="ServiceErrorFault" message="tns:IDinoTechDataSyncService_SubmitEnergies_ServiceErrorFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SubmitMeterModels">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/SubmitMeterModels" message="tns:IDinoTechDataSyncService_SubmitMeterModels_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/SubmitMeterModelsResponse" message="tns:IDinoTechDataSyncService_SubmitMeterModels_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/SubmitMeterModelsServiceErrorFault" name="ServiceErrorFault" message="tns:IDinoTechDataSyncService_SubmitMeterModels_ServiceErrorFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SubmitAquisitionParameters">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/SubmitAquisitionParameters" message="tns:IDinoTechDataSyncService_SubmitAquisitionParameters_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/SubmitAquisitionParametersResponse" message="tns:IDinoTechDataSyncService_SubmitAquisitionParameters_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/SubmitAquisitionParametersServiceErrorFault" name="ServiceErrorFault" message="tns:IDinoTechDataSyncService_SubmitAquisitionParameters_ServiceErrorFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SubmitRegionalAreas">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/SubmitRegionalAreas" message="tns:IDinoTechDataSyncService_SubmitRegionalAreas_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/SubmitRegionalAreasResponse" message="tns:IDinoTechDataSyncService_SubmitRegionalAreas_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/SubmitRegionalAreasServiceErrorFault" name="ServiceErrorFault" message="tns:IDinoTechDataSyncService_SubmitRegionalAreas_ServiceErrorFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SubmitMeterModelFieldTypes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/SubmitMeterModelFieldTypes" message="tns:IDinoTechDataSyncService_SubmitMeterModelFieldTypes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/SubmitMeterModelFieldTypesResponse" message="tns:IDinoTechDataSyncService_SubmitMeterModelFieldTypes_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/SubmitMeterModelFieldTypesServiceErrorFault" name="ServiceErrorFault" message="tns:IDinoTechDataSyncService_SubmitMeterModelFieldTypes_ServiceErrorFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SubmitBaseMeters">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/SubmitBaseMeters" message="tns:IDinoTechDataSyncService_SubmitBaseMeters_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/SubmitBaseMetersResponse" message="tns:IDinoTechDataSyncService_SubmitBaseMeters_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/SubmitBaseMetersServiceErrorFault" name="ServiceErrorFault" message="tns:IDinoTechDataSyncService_SubmitBaseMeters_ServiceErrorFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SubmitBaseMeterAcquisitionParameters">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/SubmitBaseMeterAcquisitionParameters" message="tns:IDinoTechDataSyncService_SubmitBaseMeterAcquisitionParameters_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/SubmitBaseMeterAcquisitionParametersResponse" message="tns:IDinoTechDataSyncService_SubmitBaseMeterAcquisitionParameters_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/SubmitBaseMeterAcquisitionParametersServiceErrorFault" name="ServiceErrorFault" message="tns:IDinoTechDataSyncService_SubmitBaseMeterAcquisitionParameters_ServiceErrorFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SubmitVirtualMeterAcquisitionParameters">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/SubmitVirtualMeterAcquisitionParameters" message="tns:IDinoTechDataSyncService_SubmitVirtualMeterAcquisitionParameters_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/SubmitVirtualMeterAcquisitionParametersResponse" message="tns:IDinoTechDataSyncService_SubmitVirtualMeterAcquisitionParameters_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/SubmitVirtualMeterAcquisitionParametersServiceErrorFault" name="ServiceErrorFault" message="tns:IDinoTechDataSyncService_SubmitVirtualMeterAcquisitionParameters_ServiceErrorFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SubmitMinutesRecords">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/SubmitMinutesRecords" message="tns:IDinoTechDataSyncService_SubmitMinutesRecords_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/SubmitMinutesRecordsResponse" message="tns:IDinoTechDataSyncService_SubmitMinutesRecords_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/SubmitMinutesRecordsServiceErrorFault" name="ServiceErrorFault" message="tns:IDinoTechDataSyncService_SubmitMinutesRecords_ServiceErrorFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SubmitHourRecords">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/SubmitHourRecords" message="tns:IDinoTechDataSyncService_SubmitHourRecords_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/SubmitHourRecordsResponse" message="tns:IDinoTechDataSyncService_SubmitHourRecords_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/SubmitHourRecordsServiceErrorFault" name="ServiceErrorFault" message="tns:IDinoTechDataSyncService_SubmitHourRecords_ServiceErrorFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SubmitDayRecords">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/SubmitDayRecords" message="tns:IDinoTechDataSyncService_SubmitDayRecords_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/SubmitDayRecordsResponse" message="tns:IDinoTechDataSyncService_SubmitDayRecords_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/SubmitDayRecordsServiceErrorFault" name="ServiceErrorFault" message="tns:IDinoTechDataSyncService_SubmitDayRecords_ServiceErrorFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SubmitMonthRecords">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/SubmitMonthRecords" message="tns:IDinoTechDataSyncService_SubmitMonthRecords_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/SubmitMonthRecordsResponse" message="tns:IDinoTechDataSyncService_SubmitMonthRecords_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/SubmitMonthRecordsServiceErrorFault" name="ServiceErrorFault" message="tns:IDinoTechDataSyncService_SubmitMonthRecords_ServiceErrorFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SubmitYearRecords">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/SubmitYearRecords" message="tns:IDinoTechDataSyncService_SubmitYearRecords_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/SubmitYearRecordsResponse" message="tns:IDinoTechDataSyncService_SubmitYearRecords_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/SubmitYearRecordsServiceErrorFault" name="ServiceErrorFault" message="tns:IDinoTechDataSyncService_SubmitYearRecords_ServiceErrorFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSyncLogInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/UpdateSyncLogInfo" message="tns:IDinoTechDataSyncService_UpdateSyncLogInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/UpdateSyncLogInfoResponse" message="tns:IDinoTechDataSyncService_UpdateSyncLogInfo_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/UpdateSyncLogInfoServiceErrorFault" name="ServiceErrorFault" message="tns:IDinoTechDataSyncService_UpdateSyncLogInfo_ServiceErrorFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMinutesRecordSyncCount">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/GetMinutesRecordSyncCount" message="tns:IDinoTechDataSyncService_GetMinutesRecordSyncCount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/GetMinutesRecordSyncCountResponse" message="tns:IDinoTechDataSyncService_GetMinutesRecordSyncCount_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/GetMinutesRecordSyncCountServiceErrorFault" name="ServiceErrorFault" message="tns:IDinoTechDataSyncService_GetMinutesRecordSyncCount_ServiceErrorFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHourRecordSyncCount">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/GetHourRecordSyncCount" message="tns:IDinoTechDataSyncService_GetHourRecordSyncCount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/GetHourRecordSyncCountResponse" message="tns:IDinoTechDataSyncService_GetHourRecordSyncCount_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/GetHourRecordSyncCountServiceErrorFault" name="ServiceErrorFault" message="tns:IDinoTechDataSyncService_GetHourRecordSyncCount_ServiceErrorFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDayRecordSyncCount">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/GetDayRecordSyncCount" message="tns:IDinoTechDataSyncService_GetDayRecordSyncCount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/GetDayRecordSyncCountResponse" message="tns:IDinoTechDataSyncService_GetDayRecordSyncCount_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/GetDayRecordSyncCountServiceErrorFault" name="ServiceErrorFault" message="tns:IDinoTechDataSyncService_GetDayRecordSyncCount_ServiceErrorFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMonthRecordSyncCount">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/GetMonthRecordSyncCount" message="tns:IDinoTechDataSyncService_GetMonthRecordSyncCount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/GetMonthRecordSyncCountResponse" message="tns:IDinoTechDataSyncService_GetMonthRecordSyncCount_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/GetMonthRecordSyncCountServiceErrorFault" name="ServiceErrorFault" message="tns:IDinoTechDataSyncService_GetMonthRecordSyncCount_ServiceErrorFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetYearRecordSyncCount">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/GetYearRecordSyncCount" message="tns:IDinoTechDataSyncService_GetYearRecordSyncCount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/GetYearRecordSyncCountResponse" message="tns:IDinoTechDataSyncService_GetYearRecordSyncCount_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/GetYearRecordSyncCountServiceErrorFault" name="ServiceErrorFault" message="tns:IDinoTechDataSyncService_GetYearRecordSyncCount_ServiceErrorFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMinutesRecordsLastSyncDateTime">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/GetMinutesRecordsLastSyncDateTime" message="tns:IDinoTechDataSyncService_GetMinutesRecordsLastSyncDateTime_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/GetMinutesRecordsLastSyncDateTimeResponse" message="tns:IDinoTechDataSyncService_GetMinutesRecordsLastSyncDateTime_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/GetMinutesRecordsLastSyncDateTimeServiceErrorFault" name="ServiceErrorFault" message="tns:IDinoTechDataSyncService_GetMinutesRecordsLastSyncDateTime_ServiceErrorFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInstantaneousDataLastSyncDateTime">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/GetInstantaneousDataLastSyncDateTime" message="tns:IDinoTechDataSyncService_GetInstantaneousDataLastSyncDateTime_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/GetInstantaneousDataLastSyncDateTimeResponse" message="tns:IDinoTechDataSyncService_GetInstantaneousDataLastSyncDateTime_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/GetInstantaneousDataLastSyncDateTimeServiceErrorFault" name="ServiceErrorFault" message="tns:IDinoTechDataSyncService_GetInstantaneousDataLastSyncDateTime_ServiceErrorFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHourRecordLastSyncDateTime">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/GetHourRecordLastSyncDateTime" message="tns:IDinoTechDataSyncService_GetHourRecordLastSyncDateTime_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/GetHourRecordLastSyncDateTimeResponse" message="tns:IDinoTechDataSyncService_GetHourRecordLastSyncDateTime_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/GetHourRecordLastSyncDateTimeServiceErrorFault" name="ServiceErrorFault" message="tns:IDinoTechDataSyncService_GetHourRecordLastSyncDateTime_ServiceErrorFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDayRecordsLastSyncDateTime">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/GetDayRecordsLastSyncDateTime" message="tns:IDinoTechDataSyncService_GetDayRecordsLastSyncDateTime_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/GetDayRecordsLastSyncDateTimeResponse" message="tns:IDinoTechDataSyncService_GetDayRecordsLastSyncDateTime_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/GetDayRecordsLastSyncDateTimeServiceErrorFault" name="ServiceErrorFault" message="tns:IDinoTechDataSyncService_GetDayRecordsLastSyncDateTime_ServiceErrorFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMonthRecordLastSyncDateTime">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/GetMonthRecordLastSyncDateTime" message="tns:IDinoTechDataSyncService_GetMonthRecordLastSyncDateTime_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/GetMonthRecordLastSyncDateTimeResponse" message="tns:IDinoTechDataSyncService_GetMonthRecordLastSyncDateTime_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/GetMonthRecordLastSyncDateTimeServiceErrorFault" name="ServiceErrorFault" message="tns:IDinoTechDataSyncService_GetMonthRecordLastSyncDateTime_ServiceErrorFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetYearRecordLastSyncDateTime">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/GetYearRecordLastSyncDateTime" message="tns:IDinoTechDataSyncService_GetYearRecordLastSyncDateTime_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/GetYearRecordLastSyncDateTimeResponse" message="tns:IDinoTechDataSyncService_GetYearRecordLastSyncDateTime_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/GetYearRecordLastSyncDateTimeServiceErrorFault" name="ServiceErrorFault" message="tns:IDinoTechDataSyncService_GetYearRecordLastSyncDateTime_ServiceErrorFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListOfAllAreaMeterAndParametersOnCloud">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/GetListOfAllAreaMeterAndParametersOnCloud" message="tns:IDinoTechDataSyncService_GetListOfAllAreaMeterAndParametersOnCloud_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/GetListOfAllAreaMeterAndParametersOnCloudResponse" message="tns:IDinoTechDataSyncService_GetListOfAllAreaMeterAndParametersOnCloud_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/GetListOfAllAreaMeterAndParametersOnCloudServiceErrorFault" name="ServiceErrorFault" message="tns:IDinoTechDataSyncService_GetListOfAllAreaMeterAndParametersOnCloud_ServiceErrorFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SyncEnergyMeterDataToCloud">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/SyncEnergyMeterDataToCloud" message="tns:IDinoTechDataSyncService_SyncEnergyMeterDataToCloud_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/SyncEnergyMeterDataToCloudResponse" message="tns:IDinoTechDataSyncService_SyncEnergyMeterDataToCloud_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/SyncEnergyMeterDataToCloudServiceErrorFault" name="ServiceErrorFault" message="tns:IDinoTechDataSyncService_SyncEnergyMeterDataToCloud_ServiceErrorFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddRealTimeBTMeterData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/AddRealTimeBTMeterData" message="tns:IDinoTechDataSyncService_AddRealTimeBTMeterData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/AddRealTimeBTMeterDataResponse" message="tns:IDinoTechDataSyncService_AddRealTimeBTMeterData_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IDinoTechDataSyncService/AddRealTimeBTMeterDataServiceErrorFault" name="ServiceErrorFault" message="tns:IDinoTechDataSyncService_AddRealTimeBTMeterData_ServiceErrorFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSHttpBinding_IDinoTechDataSyncService" type="tns:IDinoTechDataSyncService">
+    <wsp:PolicyReference URI="#WSHttpBinding_IDinoTechDataSyncService_policy" />
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ValidateUser">
+      <soap12:operation soapAction="http://tempuri.org/IDinoTechDataSyncService/ValidateUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitEnergies">
+      <soap12:operation soapAction="http://tempuri.org/IDinoTechDataSyncService/SubmitEnergies" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceErrorFault">
+        <soap12:fault use="literal" name="ServiceErrorFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitMeterModels">
+      <soap12:operation soapAction="http://tempuri.org/IDinoTechDataSyncService/SubmitMeterModels" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceErrorFault">
+        <soap12:fault use="literal" name="ServiceErrorFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitAquisitionParameters">
+      <soap12:operation soapAction="http://tempuri.org/IDinoTechDataSyncService/SubmitAquisitionParameters" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceErrorFault">
+        <soap12:fault use="literal" name="ServiceErrorFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitRegionalAreas">
+      <soap12:operation soapAction="http://tempuri.org/IDinoTechDataSyncService/SubmitRegionalAreas" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceErrorFault">
+        <soap12:fault use="literal" name="ServiceErrorFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitMeterModelFieldTypes">
+      <soap12:operation soapAction="http://tempuri.org/IDinoTechDataSyncService/SubmitMeterModelFieldTypes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceErrorFault">
+        <soap12:fault use="literal" name="ServiceErrorFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitBaseMeters">
+      <soap12:operation soapAction="http://tempuri.org/IDinoTechDataSyncService/SubmitBaseMeters" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceErrorFault">
+        <soap12:fault use="literal" name="ServiceErrorFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitBaseMeterAcquisitionParameters">
+      <soap12:operation soapAction="http://tempuri.org/IDinoTechDataSyncService/SubmitBaseMeterAcquisitionParameters" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceErrorFault">
+        <soap12:fault use="literal" name="ServiceErrorFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitVirtualMeterAcquisitionParameters">
+      <soap12:operation soapAction="http://tempuri.org/IDinoTechDataSyncService/SubmitVirtualMeterAcquisitionParameters" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceErrorFault">
+        <soap12:fault use="literal" name="ServiceErrorFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitMinutesRecords">
+      <soap12:operation soapAction="http://tempuri.org/IDinoTechDataSyncService/SubmitMinutesRecords" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceErrorFault">
+        <soap12:fault use="literal" name="ServiceErrorFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitHourRecords">
+      <soap12:operation soapAction="http://tempuri.org/IDinoTechDataSyncService/SubmitHourRecords" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceErrorFault">
+        <soap12:fault use="literal" name="ServiceErrorFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitDayRecords">
+      <soap12:operation soapAction="http://tempuri.org/IDinoTechDataSyncService/SubmitDayRecords" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceErrorFault">
+        <soap12:fault use="literal" name="ServiceErrorFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitMonthRecords">
+      <soap12:operation soapAction="http://tempuri.org/IDinoTechDataSyncService/SubmitMonthRecords" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceErrorFault">
+        <soap12:fault use="literal" name="ServiceErrorFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitYearRecords">
+      <soap12:operation soapAction="http://tempuri.org/IDinoTechDataSyncService/SubmitYearRecords" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceErrorFault">
+        <soap12:fault use="literal" name="ServiceErrorFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSyncLogInfo">
+      <soap12:operation soapAction="http://tempuri.org/IDinoTechDataSyncService/UpdateSyncLogInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceErrorFault">
+        <soap12:fault use="literal" name="ServiceErrorFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetMinutesRecordSyncCount">
+      <soap12:operation soapAction="http://tempuri.org/IDinoTechDataSyncService/GetMinutesRecordSyncCount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceErrorFault">
+        <soap12:fault use="literal" name="ServiceErrorFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetHourRecordSyncCount">
+      <soap12:operation soapAction="http://tempuri.org/IDinoTechDataSyncService/GetHourRecordSyncCount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceErrorFault">
+        <soap12:fault use="literal" name="ServiceErrorFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetDayRecordSyncCount">
+      <soap12:operation soapAction="http://tempuri.org/IDinoTechDataSyncService/GetDayRecordSyncCount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceErrorFault">
+        <soap12:fault use="literal" name="ServiceErrorFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetMonthRecordSyncCount">
+      <soap12:operation soapAction="http://tempuri.org/IDinoTechDataSyncService/GetMonthRecordSyncCount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceErrorFault">
+        <soap12:fault use="literal" name="ServiceErrorFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetYearRecordSyncCount">
+      <soap12:operation soapAction="http://tempuri.org/IDinoTechDataSyncService/GetYearRecordSyncCount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceErrorFault">
+        <soap12:fault use="literal" name="ServiceErrorFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetMinutesRecordsLastSyncDateTime">
+      <soap12:operation soapAction="http://tempuri.org/IDinoTechDataSyncService/GetMinutesRecordsLastSyncDateTime" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceErrorFault">
+        <soap12:fault use="literal" name="ServiceErrorFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetInstantaneousDataLastSyncDateTime">
+      <soap12:operation soapAction="http://tempuri.org/IDinoTechDataSyncService/GetInstantaneousDataLastSyncDateTime" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceErrorFault">
+        <soap12:fault use="literal" name="ServiceErrorFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetHourRecordLastSyncDateTime">
+      <soap12:operation soapAction="http://tempuri.org/IDinoTechDataSyncService/GetHourRecordLastSyncDateTime" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceErrorFault">
+        <soap12:fault use="literal" name="ServiceErrorFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetDayRecordsLastSyncDateTime">
+      <soap12:operation soapAction="http://tempuri.org/IDinoTechDataSyncService/GetDayRecordsLastSyncDateTime" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceErrorFault">
+        <soap12:fault use="literal" name="ServiceErrorFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetMonthRecordLastSyncDateTime">
+      <soap12:operation soapAction="http://tempuri.org/IDinoTechDataSyncService/GetMonthRecordLastSyncDateTime" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceErrorFault">
+        <soap12:fault use="literal" name="ServiceErrorFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetYearRecordLastSyncDateTime">
+      <soap12:operation soapAction="http://tempuri.org/IDinoTechDataSyncService/GetYearRecordLastSyncDateTime" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceErrorFault">
+        <soap12:fault use="literal" name="ServiceErrorFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetListOfAllAreaMeterAndParametersOnCloud">
+      <soap12:operation soapAction="http://tempuri.org/IDinoTechDataSyncService/GetListOfAllAreaMeterAndParametersOnCloud" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceErrorFault">
+        <soap12:fault use="literal" name="ServiceErrorFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="SyncEnergyMeterDataToCloud">
+      <soap12:operation soapAction="http://tempuri.org/IDinoTechDataSyncService/SyncEnergyMeterDataToCloud" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceErrorFault">
+        <soap12:fault use="literal" name="ServiceErrorFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="AddRealTimeBTMeterData">
+      <soap12:operation soapAction="http://tempuri.org/IDinoTechDataSyncService/AddRealTimeBTMeterData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceErrorFault">
+        <soap12:fault use="literal" name="ServiceErrorFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DinoTechDataSyncService">
+    <wsdl:port name="WSHttpBinding_IDinoTechDataSyncService" binding="tns:WSHttpBinding_IDinoTechDataSyncService">
+      <soap12:address location="http://172.17.1.102:8400/DinoTechDataSyncService.svc" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>http://172.17.1.102:8400/DinoTechDataSyncService.svc</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,7 @@
+D:\CodeSource\CompanyDemo\MsmqHelper\bin\Debug\MsmqHelper.dll
+D:\CodeSource\CompanyDemo\MsmqHelper\bin\Debug\MsmqHelper.pdb
+D:\CodeSource\CompanyDemo\MsmqHelper\bin\Debug\Newtonsoft.Json.dll
+D:\CodeSource\CompanyDemo\MsmqHelper\bin\Debug\Newtonsoft.Json.xml
+D:\CodeSource\CompanyDemo\MsmqHelper\obj\Debug\MsmqHelper.dll
+D:\CodeSource\CompanyDemo\MsmqHelper\obj\Debug\MsmqHelper.pdb
+D:\CodeSource\CompanyDemo\MsmqHelper\obj\Debug\MsmqHelper.csprojResolveAssemblyReference.cache

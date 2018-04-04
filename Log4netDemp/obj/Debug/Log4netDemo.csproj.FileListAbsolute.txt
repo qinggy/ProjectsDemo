@@ -1,0 +1,15 @@
+D:\CodeSource\CompanyDemo\Log4netDemp\obj\Debug\Log4netDemp_MarkupCompile.cache
+D:\CodeSource\CompanyDemo\Log4netDemp\obj\Debug\MainWindow.baml
+D:\CodeSource\CompanyDemo\Log4netDemp\obj\Debug\MainWindow.g.cs
+D:\CodeSource\CompanyDemo\Log4netDemp\obj\Debug\App.g.cs
+D:\CodeSource\CompanyDemo\Log4netDemp\obj\Debug\Log4netDemp.g.resources
+D:\CodeSource\CompanyDemo\Log4netDemp\obj\Debug\Log4netDemp.Properties.Resources.resources
+D:\CodeSource\CompanyDemo\Log4netDemp\obj\Debug\Log4netDemo.csproj.GenerateResource.Cache
+D:\CodeSource\CompanyDemo\Log4netDemp\bin\Debug\Log4netDemp.exe.config
+D:\CodeSource\CompanyDemo\Log4netDemp\bin\Debug\Log4netDemp.exe
+D:\CodeSource\CompanyDemo\Log4netDemp\bin\Debug\Log4netDemp.pdb
+D:\CodeSource\CompanyDemo\Log4netDemp\bin\Debug\log4net.dll
+D:\CodeSource\CompanyDemo\Log4netDemp\bin\Debug\log4net.xml
+D:\CodeSource\CompanyDemo\Log4netDemp\obj\Debug\Log4netDemp.exe
+D:\CodeSource\CompanyDemo\Log4netDemp\obj\Debug\Log4netDemp.pdb
+D:\CodeSource\CompanyDemo\Log4netDemp\obj\Debug\Log4netDemo.csprojResolveAssemblyReference.cache

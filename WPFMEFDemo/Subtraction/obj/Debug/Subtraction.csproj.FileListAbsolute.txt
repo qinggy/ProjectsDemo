@@ -1,0 +1,7 @@
+D:\CodeSource\CompanyDemo\WPFMEFDemo\Subtraction\bin\Debug\Subtraction.dll
+D:\CodeSource\CompanyDemo\WPFMEFDemo\Subtraction\bin\Debug\Subtraction.pdb
+D:\CodeSource\CompanyDemo\WPFMEFDemo\Subtraction\bin\Debug\CalculatorContract.dll
+D:\CodeSource\CompanyDemo\WPFMEFDemo\Subtraction\bin\Debug\CalculatorContract.pdb
+D:\CodeSource\CompanyDemo\WPFMEFDemo\Subtraction\obj\Debug\Subtraction.dll
+D:\CodeSource\CompanyDemo\WPFMEFDemo\Subtraction\obj\Debug\Subtraction.pdb
+D:\CodeSource\CompanyDemo\WPFMEFDemo\Subtraction\obj\Debug\Subtraction.csprojResolveAssemblyReference.cache

@@ -1,0 +1,7 @@
+D:\CodeSource\CompanyDemo\OperationPdf\bin\Debug\OperationPdf.exe
+D:\CodeSource\CompanyDemo\OperationPdf\bin\Debug\OperationPdf.pdb
+D:\CodeSource\CompanyDemo\OperationPdf\bin\Debug\itextsharp.dll
+D:\CodeSource\CompanyDemo\OperationPdf\bin\Debug\itextsharp.xmlworker.dll
+D:\CodeSource\CompanyDemo\OperationPdf\bin\Debug\itextsharp.xml
+D:\CodeSource\CompanyDemo\OperationPdf\obj\Debug\OperationPdf.exe
+D:\CodeSource\CompanyDemo\OperationPdf\obj\Debug\OperationPdf.pdb

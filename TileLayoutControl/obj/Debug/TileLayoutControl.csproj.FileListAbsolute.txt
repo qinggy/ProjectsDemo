@@ -1,0 +1,17 @@
+D:\CodeSource\CompanyDemo\TileLayoutControl\obj\Debug\TileLayoutControl_MarkupCompile.cache
+D:\CodeSource\CompanyDemo\TileLayoutControl\obj\Debug\App.g.cs
+D:\CodeSource\CompanyDemo\TileLayoutControl\bin\Debug\TileLayoutControl.exe.config
+D:\CodeSource\CompanyDemo\TileLayoutControl\bin\Debug\TileLayoutControl.exe
+D:\CodeSource\CompanyDemo\TileLayoutControl\bin\Debug\TileLayoutControl.pdb
+D:\CodeSource\CompanyDemo\TileLayoutControl\bin\Debug\DevExpress.Data.v13.1.dll
+D:\CodeSource\CompanyDemo\TileLayoutControl\bin\Debug\devexpress.xpf.core.v13.1.dll
+D:\CodeSource\CompanyDemo\TileLayoutControl\bin\Debug\devexpress.xpf.layoutcontrol.v13.1.dll
+D:\CodeSource\CompanyDemo\TileLayoutControl\bin\Debug\DevExpress.Xpf.Mvvm.v13.1.dll
+D:\CodeSource\CompanyDemo\TileLayoutControl\obj\Debug\MainWindow.baml
+D:\CodeSource\CompanyDemo\TileLayoutControl\obj\Debug\MainWindow.g.cs
+D:\CodeSource\CompanyDemo\TileLayoutControl\obj\Debug\TileLayoutControl.g.resources
+D:\CodeSource\CompanyDemo\TileLayoutControl\obj\Debug\TileLayoutControl.Properties.Resources.resources
+D:\CodeSource\CompanyDemo\TileLayoutControl\obj\Debug\TileLayoutControl.csproj.GenerateResource.Cache
+D:\CodeSource\CompanyDemo\TileLayoutControl\obj\Debug\TileLayoutControl.exe
+D:\CodeSource\CompanyDemo\TileLayoutControl\obj\Debug\TileLayoutControl.pdb
+D:\CodeSource\CompanyDemo\TileLayoutControl\obj\Debug\TileLayoutControl.csprojResolveAssemblyReference.cache

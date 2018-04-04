@@ -1,0 +1,45 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>调用异步Controller返回</h2>
+<script src="~/Script/jquery-1.10.2.intellisense.js"></script>
+<script src="~/Script/jquery-1.10.2.min.js"></script>
+<style type="text/css">
+    input {
+        margin: 5px;
+    }
+</style>
+
+<h3>开始对比测试</h3>
+<div>
+    <input type="button" value="同步调用Action" id="syncbtn" />
+    <input type="button" value="异步调用Action，Task" id="asyncompleted" />
+    <input type="button" value="同步调用Action，XXXAsync和XXXCompleted" id="asyncbtn" />
+</div>
+
+<fieldset>
+    <legend>获取的网页内容</legend>
+    <div id="content"></div>
+</fieldset>
+<script type="text/javascript">
+    $(function () {
+        $('#syncbtn').click(function () {
+            $.post("/DemoAsync/getWebContent", function (data) {
+                $('#content').html(data);
+            });
+        });
+
+        $('#asyncompleted').click(function () {
+            $.post("/DemoAsync/TaskHtml", function (data) {
+                $('#content').html(data);
+            });
+        });
+
+        $('#asyncbtn').click(function () {
+            $.post("/DemoAsync/Html", function (data) {
+                $('#content').html(data);
+            });
+        });
+    });
+</script>

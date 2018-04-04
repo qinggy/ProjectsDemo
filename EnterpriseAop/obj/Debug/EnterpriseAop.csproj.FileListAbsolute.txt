@@ -1,0 +1,1 @@
+D:\CodeSource\CompanyDemo\EnterpriseAop\obj\Debug\EnterpriseAop.csprojResolveAssemblyReference.cache

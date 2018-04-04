@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <script src="Scripts/jquery-1.8.2.min.js"></script>
+    <script src="Scripts/jquery.signalR-2.2.0.min.js"></script>
+    <script src="signalr/hubs"></script>
+    <script type="text/javascript">
+        $(function () {
+            var chat = $.connection.ViewDataHub;
+
+            init(chat);
+
+            $("#btnclick").click(function () {
+                $.connection.hub.start().done(function (msg) {
+                    chat.server.hello($("#txttalk").val()).done(function (message) {
+                        $("#dvtalk").append("我是调用后返回的消息：" + message + "<br/>");
+                        $("#txttalk").val("");
+                    });
+                });
+            });
+
+            $("#btntalk").click(function () {
+                $.connection.hub.start().done(function () {
+                    chat.server.sendMessage($("#txttalk").val()).done(function (msg) {
+                        $("#txttalk").val("");
+                    });
+                });
+            });
+        });
+
+
+        function init(chat) {
+            chat.client.talk = function (message) {
+                var msg = "<B>" + message + "</B>"
+                $("#dvtalk").append("我是广播的消息：" + msg + "<br/>");
+            }
+        }
+    </script>
+</head>
+<body>
+    <table id="tbtoday"></table>
+    <input type="text" id="txttalk" width="150" />
+    <input type="button" id="btnclick" value="调用那个服务端返回数据" />
+    <input type="button" id="btntalk" value="广播" />
+    <div id="dvtalk">
+    </div>
+</body>
+</html>

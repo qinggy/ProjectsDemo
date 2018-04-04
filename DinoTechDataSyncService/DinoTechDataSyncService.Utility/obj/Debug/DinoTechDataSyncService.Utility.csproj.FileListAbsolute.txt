@@ -1,0 +1,9 @@
+D:\CodeSource\CompanyDemo\DinoTechDataSyncService\DinoTechDataSyncService.Utility\bin\Debug\DinoTechDataSyncService.Utility.dll
+D:\CodeSource\CompanyDemo\DinoTechDataSyncService\DinoTechDataSyncService.Utility\bin\Debug\DinoTechDataSyncService.Utility.pdb
+D:\CodeSource\CompanyDemo\DinoTechDataSyncService\DinoTechDataSyncService.Utility\bin\Debug\log4net.dll
+D:\CodeSource\CompanyDemo\DinoTechDataSyncService\DinoTechDataSyncService.Utility\bin\Debug\NLog.dll
+D:\CodeSource\CompanyDemo\DinoTechDataSyncService\DinoTechDataSyncService.Utility\bin\Debug\log4net.xml
+D:\CodeSource\CompanyDemo\DinoTechDataSyncService\DinoTechDataSyncService.Utility\bin\Debug\NLog.xml
+D:\CodeSource\CompanyDemo\DinoTechDataSyncService\DinoTechDataSyncService.Utility\obj\Debug\DinoTechDataSyncService.Utility.dll
+D:\CodeSource\CompanyDemo\DinoTechDataSyncService\DinoTechDataSyncService.Utility\obj\Debug\DinoTechDataSyncService.Utility.pdb
+D:\CodeSource\CompanyDemo\DinoTechDataSyncService\DinoTechDataSyncService.Utility\obj\Debug\DinoTechDataSyncService.Utility.csprojResolveAssemblyReference.cache

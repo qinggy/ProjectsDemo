@@ -1,0 +1,47 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+<div>
+    <input type="button" value="Ajax下Post请求后，重定位到另外一个界面" />
+    <input type="button" value="Ajax下Get请求后，重定位到另外一个界面" />
+    <a href="@Url.Action("Details", "Home", new { id = 425})">通常情况下通过浏览器的Get请求</a>
+    <input type="button" value="通常情况下的Post请求（表单提交）" />
+</div>
+<form method="post" action="/Home/Create">
+    <input name="Id" value="22" type="text" style="display:block;"/>
+    <input name="Name" value="Angus" type="text" style="display:block;" />
+    <input name="Age" value="24" type="text" style="display:block;" />
+</form>
+<span>
+    讲解，通常情况下，我们对服务器的请求分为两类，get/post
+    同时我们可以按照多种方式发起这两种请求，最常用的Ajax，或者直接通过浏览器
+    通过浏览器的Get请求，一般就是比如a控件的href，或者js控制location.href等最明显的感觉就是可以在浏览器地址栏中看得到
+    而通过浏览器的Post请求，一般就只有form表单的提交了submit，该方式不会该表浏览器的地址
+    注意只有通过浏览器发起的请求，我们才能在后台重定向。
+</span>
+@section scripts{
+    <script type="text/javascript">
+        $(function () {
+            $('div input:first').click(function () {
+                $.post("/Home/Details", { id: 254 }, function (response) {
+
+                })
+            });
+
+            $('div input:nth-child(2)').click(function () {
+                //$('form').submit();
+                $.get("/Home/Details", { id: 254 }, function (response) {
+
+                });
+            });
+
+            $('div input:last').click(function () {
+                $('form').submit();
+            });
+
+        });
+    </script>
+}

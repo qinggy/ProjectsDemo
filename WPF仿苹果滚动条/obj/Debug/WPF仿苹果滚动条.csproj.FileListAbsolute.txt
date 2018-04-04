@@ -1,0 +1,12 @@
+D:\CodeSource\CompanyDemo\WPF仿苹果滚动条\obj\Debug\WPF仿苹果滚动条_MarkupCompile.cache
+D:\CodeSource\CompanyDemo\WPF仿苹果滚动条\bin\Debug\WPF仿苹果滚动条.exe.config
+D:\CodeSource\CompanyDemo\WPF仿苹果滚动条\bin\Debug\WPF仿苹果滚动条.exe
+D:\CodeSource\CompanyDemo\WPF仿苹果滚动条\bin\Debug\WPF仿苹果滚动条.pdb
+D:\CodeSource\CompanyDemo\WPF仿苹果滚动条\obj\Debug\MainWindow.baml
+D:\CodeSource\CompanyDemo\WPF仿苹果滚动条\obj\Debug\MainWindow.g.cs
+D:\CodeSource\CompanyDemo\WPF仿苹果滚动条\obj\Debug\App.g.cs
+D:\CodeSource\CompanyDemo\WPF仿苹果滚动条\obj\Debug\WPF仿苹果滚动条.g.resources
+D:\CodeSource\CompanyDemo\WPF仿苹果滚动条\obj\Debug\WPF仿苹果滚动条.Properties.Resources.resources
+D:\CodeSource\CompanyDemo\WPF仿苹果滚动条\obj\Debug\WPF仿苹果滚动条.csproj.GenerateResource.Cache
+D:\CodeSource\CompanyDemo\WPF仿苹果滚动条\obj\Debug\WPF仿苹果滚动条.exe
+D:\CodeSource\CompanyDemo\WPF仿苹果滚动条\obj\Debug\WPF仿苹果滚动条.pdb

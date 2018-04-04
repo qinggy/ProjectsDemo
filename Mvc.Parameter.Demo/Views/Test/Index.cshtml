@@ -1,0 +1,101 @@
+﻿@{
+    ViewBag.Title = "POST传值Demo";
+}
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <style type="text/css">
+        input {
+            margin-bottom: 5px;
+            display: block;
+        }
+    </style>
+</head>
+
+<h2>Index</h2>
+<input id="input0" type="button" value="POST传递一个自定义实体类参数到Controller[SaveSingleEntity(UserLogin user)]" />
+<input id="input1" type="button" value="POST传递多个自定义实体类参数到Controller[SaveMultiEntity(UserLogin user, Contact contract)]" />
+<input id="input2" type="button" value="POST传递多个自定义实体类参数到Controller[SaveMultiListEntity(List<UserLogin> userLogin, Contact contact)]" />
+<input id="input3" type="button" value="POST传递多个自定义实体类参数到Controller[SaveMultiListEntities(List<UserLogin> userLogin, List<Contact> contact)]" />
+<input id="input4" type="button" value="POST传递多个自定义实体类参数以及一个string参数到Controller[SaveDoubleEntity(List<UserLogin> userLogin, List<Contact> contact, string code)]" />
+
+<script type="text/javascript">
+    $(function () {
+        var user = { 'Username': 'Angus', 'Password': '12345678' };
+        var contact = { 'Firstname': 'Qing', 'Lastname': 'Angus' };
+
+        $('#input0').click(function () {
+            var DTO = { 'userLogin': user };
+
+            $.ajax({
+                url: "/Test/SaveSingleEntity",
+                type: "POST",
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                data: JSON.stringify(DTO),
+                success: function (response) { }
+            });
+        });
+
+        $('#input1').click(function () {
+            var DTO = { 'userLogin': user, 'contact': contact };
+
+            $.ajax({
+                url: "/Test/SaveMultiEntity",
+                type: "POST",
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                data: JSON.stringify(DTO),
+                success: function (response) { }
+            });
+        });
+
+        $('#input2').click(function () {
+            var userLogin = [user, user, user];
+            var DTO = { 'userLogin': userLogin, 'contact': contact };
+
+            $.ajax({
+                url: "/Test/SaveMultiListEntity",
+                type: "POST",
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                data: JSON.stringify(DTO),
+                success: function (response) { }
+            });
+        });
+
+        $('#input3').click(function () {
+            var userLogin = [user, user, user];
+            var contactList = [contact, contact, contact];
+            var DTO = { 'userLogin': userLogin, 'contact': contactList };
+
+            $.ajax({
+                url: "/Test/SaveMultiListEntities",
+                type: "POST",
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                data: JSON.stringify(DTO),
+                success: function (response) { }
+            });
+        });
+
+        $('#input4').click(function () {
+            var userLogin = [user, user, user];
+            var contactList = [contact, contact, contact];
+            var DTO = { 'userLogin': userLogin, 'contact': contactList, "code": 'XXddDD' };
+
+            $.ajax({
+                url: "/Test/SaveDoubleEntity",
+                type: "POST",
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                data: JSON.stringify(DTO),
+                success: function (response) { }
+            });
+        });
+    });
+</script>

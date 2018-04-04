@@ -1,0 +1,4 @@
+D:\CodeSource\CompanyDemo\IS.Angus.IService\bin\Debug\IS.Angus.IService.dll
+D:\CodeSource\CompanyDemo\IS.Angus.IService\bin\Debug\IS.Angus.IService.pdb
+D:\CodeSource\CompanyDemo\IS.Angus.IService\obj\Debug\IS.Angus.IService.dll
+D:\CodeSource\CompanyDemo\IS.Angus.IService\obj\Debug\IS.Angus.IService.pdb

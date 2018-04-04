@@ -1,0 +1,4 @@
+D:\CodeSource\CompanyDemo\NewFeatures\bin\Debug\NewFeatures.exe
+D:\CodeSource\CompanyDemo\NewFeatures\bin\Debug\NewFeatures.pdb
+D:\CodeSource\CompanyDemo\NewFeatures\obj\Debug\NewFeatures.exe
+D:\CodeSource\CompanyDemo\NewFeatures\obj\Debug\NewFeatures.pdb

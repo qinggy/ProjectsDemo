@@ -1,0 +1,4 @@
+D:\CodeSource\CompanyDemo\QueueManager\bin\Debug\QueueManager.dll
+D:\CodeSource\CompanyDemo\QueueManager\bin\Debug\QueueManager.pdb
+D:\CodeSource\CompanyDemo\QueueManager\obj\Debug\QueueManager.dll
+D:\CodeSource\CompanyDemo\QueueManager\obj\Debug\QueueManager.pdb

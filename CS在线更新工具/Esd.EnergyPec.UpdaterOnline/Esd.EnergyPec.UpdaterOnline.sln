@@ -1,0 +1,76 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Esd.EnergyPec.UpdaterOnline", "Esd.EnergyPec.UpdaterOnline\Esd.EnergyPec.UpdaterOnline.csproj", "{188B08D4-27E3-41AE-8E9F-D9B18A851D3A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Esd.EnergyPec.CommonImp", "Esd.EnergyPec.Common\Esd.EnergyPec.CommonImp.csproj", "{EF69AF64-F8D2-4E02-8BBF-8B7355B53A40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Esd.EnergyPec.Services", "Esd.EnergyPec.Services\Esd.EnergyPec.Services.csproj", "{0CC095A3-BC86-4635-B0AA-62DDDD29BF5F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Esd.EnergyPec.Service", "Esd.EnergyPec.Service\Esd.EnergyPec.Service.csproj", "{F63227D8-2FAA-4C3A-B8BC-C6B82A4D346A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleTest", "ConsoleTest\ConsoleTest.csproj", "{11043DFC-B295-4B21-992C-84DA837F197D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Esd.EnergyPec.DataUpdaterApp", "Esd.EnergyPec.DataUpdaterApp\Esd.EnergyPec.DataUpdaterApp.csproj", "{78BE214E-8667-4FCA-A811-9BC11F1A3F12}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://angusqing-projects.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ConsoleTest\\ConsoleTest.csproj
+		SccProjectName1 = ConsoleTest
+		SccLocalPath1 = ConsoleTest
+		SccProjectUniqueName2 = Esd.EnergyPec.Common\\Esd.EnergyPec.CommonImp.csproj
+		SccProjectName2 = Esd.EnergyPec.Common
+		SccLocalPath2 = Esd.EnergyPec.Common
+		SccProjectUniqueName3 = Esd.EnergyPec.DataUpdaterApp\\Esd.EnergyPec.DataUpdaterApp.csproj
+		SccProjectName3 = Esd.EnergyPec.DataUpdaterApp
+		SccLocalPath3 = Esd.EnergyPec.DataUpdaterApp
+		SccProjectUniqueName4 = Esd.EnergyPec.Service\\Esd.EnergyPec.Service.csproj
+		SccProjectName4 = Esd.EnergyPec.Service
+		SccLocalPath4 = Esd.EnergyPec.Service
+		SccProjectUniqueName5 = Esd.EnergyPec.Services\\Esd.EnergyPec.Services.csproj
+		SccProjectName5 = Esd.EnergyPec.Services
+		SccLocalPath5 = Esd.EnergyPec.Services
+		SccProjectUniqueName6 = Esd.EnergyPec.UpdaterOnline\\Esd.EnergyPec.UpdaterOnline.csproj
+		SccProjectName6 = Esd.EnergyPec.UpdaterOnline
+		SccLocalPath6 = Esd.EnergyPec.UpdaterOnline
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{188B08D4-27E3-41AE-8E9F-D9B18A851D3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{188B08D4-27E3-41AE-8E9F-D9B18A851D3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{188B08D4-27E3-41AE-8E9F-D9B18A851D3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{188B08D4-27E3-41AE-8E9F-D9B18A851D3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF69AF64-F8D2-4E02-8BBF-8B7355B53A40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF69AF64-F8D2-4E02-8BBF-8B7355B53A40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF69AF64-F8D2-4E02-8BBF-8B7355B53A40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF69AF64-F8D2-4E02-8BBF-8B7355B53A40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CC095A3-BC86-4635-B0AA-62DDDD29BF5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CC095A3-BC86-4635-B0AA-62DDDD29BF5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CC095A3-BC86-4635-B0AA-62DDDD29BF5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CC095A3-BC86-4635-B0AA-62DDDD29BF5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F63227D8-2FAA-4C3A-B8BC-C6B82A4D346A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F63227D8-2FAA-4C3A-B8BC-C6B82A4D346A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F63227D8-2FAA-4C3A-B8BC-C6B82A4D346A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F63227D8-2FAA-4C3A-B8BC-C6B82A4D346A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11043DFC-B295-4B21-992C-84DA837F197D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11043DFC-B295-4B21-992C-84DA837F197D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11043DFC-B295-4B21-992C-84DA837F197D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11043DFC-B295-4B21-992C-84DA837F197D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78BE214E-8667-4FCA-A811-9BC11F1A3F12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78BE214E-8667-4FCA-A811-9BC11F1A3F12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78BE214E-8667-4FCA-A811-9BC11F1A3F12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78BE214E-8667-4FCA-A811-9BC11F1A3F12}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

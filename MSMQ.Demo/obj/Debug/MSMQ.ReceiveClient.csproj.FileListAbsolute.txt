@@ -1,0 +1,9 @@
+D:\CodeSource\CompanyDemo\MSMQ.Demo\bin\Debug\MSMQ.Demo.exe
+D:\CodeSource\CompanyDemo\MSMQ.Demo\bin\Debug\MSMQ.Demo.pdb
+D:\CodeSource\CompanyDemo\MSMQ.Demo\bin\Debug\MsmqHelper.dll
+D:\CodeSource\CompanyDemo\MSMQ.Demo\bin\Debug\Newtonsoft.Json.dll
+D:\CodeSource\CompanyDemo\MSMQ.Demo\bin\Debug\MsmqHelper.pdb
+D:\CodeSource\CompanyDemo\MSMQ.Demo\bin\Debug\Newtonsoft.Json.xml
+D:\CodeSource\CompanyDemo\MSMQ.Demo\obj\Debug\MSMQ.ReceiveClient.csprojResolveAssemblyReference.cache
+D:\CodeSource\CompanyDemo\MSMQ.Demo\obj\Debug\MSMQ.Demo.exe
+D:\CodeSource\CompanyDemo\MSMQ.Demo\obj\Debug\MSMQ.Demo.pdb

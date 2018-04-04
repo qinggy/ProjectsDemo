@@ -1,0 +1,7 @@
+D:\CodeSource\CompanyDemo\WPFMEFDemo\Addition\Addition\obj\Debug\Addition.csprojResolveAssemblyReference.cache
+D:\CodeSource\CompanyDemo\WPFMEFDemo\Addition\Addition\bin\Debug\Add.dll
+D:\CodeSource\CompanyDemo\WPFMEFDemo\Addition\Addition\bin\Debug\Add.pdb
+D:\CodeSource\CompanyDemo\WPFMEFDemo\Addition\Addition\bin\Debug\CalculatorContract.dll
+D:\CodeSource\CompanyDemo\WPFMEFDemo\Addition\Addition\bin\Debug\CalculatorContract.pdb
+D:\CodeSource\CompanyDemo\WPFMEFDemo\Addition\Addition\obj\Debug\Add.dll
+D:\CodeSource\CompanyDemo\WPFMEFDemo\Addition\Addition\obj\Debug\Add.pdb

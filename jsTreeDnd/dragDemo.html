@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link href="bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="http://static.jstree.com/3.3.1/assets/dist/themes/default/style.min.css">
+    <!--<link rel="stylesheet" href="//static.jstree.com/3.3.1/assets/docs.css">-->
+    <script src="jquery-1.10.2.min.js"></script>
+    <script src="jstree.min.js"></script>
+</head>
+<body>
+    <!--<div class="drag" style="padding:5px; display:inline-block; border-radius:4px;border:1px solid blue">Drag me</div>-->
+    <div id="tree" class="jstree jstree-default" style="width:200px; height:300px;float:left;"></div>
+    <div class="drop" style="min-height:200px; min-width:200px; background:lime; border-radius:10px;float:left">释放</div>
+
+    <script>
+        $(function () {
+            //$('#tree').jstree({
+            //    'plugins': ['dnd']
+            //});
+            $("#tree").jstree({
+                "core": {
+                    "data": [{
+                        "data": "[A node]",
+                        "children": ["Child 1", "Child 2"]
+                    }],
+                    "check_callback": true
+                },
+                "plugins": ["dnd"]
+            })
+            $(document)
+                .on('dnd_move.vakata', function (e, data) {
+                    var t = $(data.event.target);
+                    if (!t.closest('.jstree').length) {
+                        if (t.closest('.drop').length) {
+                            data.helper.find('.jstree-icon').removeClass('jstree-er').addClass('jstree-ok');
+                        }
+                        else {
+                            data.helper.find('.jstree-icon').removeClass('jstree-ok').addClass('jstree-er');
+                        }
+                    }
+                })
+                .on('dnd_stop.vakata', function (e, data) {
+                    var t = $(data.event.target);
+                    if (!t.closest('.jstree').length) {
+                        if (t.closest('.drop').length) {
+                            $(data.element).clone().appendTo(t.closest('.drop'));
+                        }
+                    }
+                });
+        });
+    </script>
+</body>
+</html>

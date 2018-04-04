@@ -1,0 +1,7 @@
+D:\CodeSource\CompanyDemo\Data.Upload.Repeater\bin\Debug\Data.Upload.Repeater.exe
+D:\CodeSource\CompanyDemo\Data.Upload.Repeater\bin\Debug\Data.Upload.Repeater.pdb
+D:\CodeSource\CompanyDemo\Data.Upload.Repeater\obj\Debug\Data.Upload.Repeater.mainForm.resources
+D:\CodeSource\CompanyDemo\Data.Upload.Repeater\obj\Debug\Data.Upload.Repeater.Properties.Resources.resources
+D:\CodeSource\CompanyDemo\Data.Upload.Repeater\obj\Debug\Data.Upload.Repeater.csproj.GenerateResource.Cache
+D:\CodeSource\CompanyDemo\Data.Upload.Repeater\obj\Debug\Data.Upload.Repeater.exe
+D:\CodeSource\CompanyDemo\Data.Upload.Repeater\obj\Debug\Data.Upload.Repeater.pdb

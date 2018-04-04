@@ -1,0 +1,5 @@
+D:\CodeSource\CompanyDemo\Wcf.Service\bin\Wcf.Service.dll.config
+D:\CodeSource\CompanyDemo\Wcf.Service\bin\Wcf.Service.dll
+D:\CodeSource\CompanyDemo\Wcf.Service\bin\Wcf.Service.pdb
+D:\CodeSource\CompanyDemo\Wcf.Service\obj\Debug\Wcf.Service.dll
+D:\CodeSource\CompanyDemo\Wcf.Service\obj\Debug\Wcf.Service.pdb

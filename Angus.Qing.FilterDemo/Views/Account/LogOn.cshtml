@@ -1,0 +1,44 @@
+﻿@{
+    Layout = null;
+    ViewBag.Title = "LogOn";
+}
+
+@*<form action="/Account/LogOn" method="post">
+            用户名：<input type="text" name="UserName" />
+            密码：<input type="password" name="Password" />
+            记住我：<input type="checkbox" name="RememberMe" />
+            <input type="button" value="登录" id="sub" onclick="Submit();" />
+        </form>
+    <script type="text/javascript">
+        function Submit() {
+            $('#sub').submit();
+        }
+
+        //var obj = {};
+        //obj.UserName = $('#UserName').val();
+        //obj.Password = $('#Password').val();
+        //obj.RememberMe = $('#RememberMe').prop('checked');
+
+        //$.ajax({
+        //    url: "/Account/LogOn",
+        //    type: "post",
+        //    contentType: "application/json",
+        //    data: JSON.stringify(obj),
+        //    success: function (response) {
+
+        //    }
+        //});
+    </script>*@
+
+@using (Html.BeginForm("LogOn", "Account", FormMethod.Post, new{ @*@class = "",*@ @style = "position:absolute;top:20%;left:38%;border:1px solid #ddd;padding:20px 50px 50px 50px;border-radius: 5px;box-shadow: 0 0 20px 8px #edf;"}))
+{
+    <h2 style="text-align:center">登录页面</h2>
+    <div style="padding-bottom:20px;">
+        用户名：@Html.TextBox("UserName", "", new { @style = "margin-bottom: 10px;" })<br />
+        密&nbsp;码：@Html.TextBox("Password", "", new { @style = "margin-bottom: 10px;" })<br />
+        记住我：@Html.CheckBox("RememberMe")
+        <p>
+            <input type="submit" value="登录" />
+        </p>
+    </div>
+}

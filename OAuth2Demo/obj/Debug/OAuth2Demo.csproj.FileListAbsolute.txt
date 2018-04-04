@@ -1,0 +1,10 @@
+D:\CodeSource\CompanyDemo\OAuth2Demo\obj\Debug\OAuth2Demo.csprojResolveAssemblyReference.cache
+D:\CodeSource\CompanyDemo\OAuth2Demo\bin\OAuth2Demo.dll.config
+D:\CodeSource\CompanyDemo\OAuth2Demo\bin\OAuth2Demo.dll
+D:\CodeSource\CompanyDemo\OAuth2Demo\bin\OAuth2Demo.pdb
+D:\CodeSource\CompanyDemo\OAuth2Demo\bin\CYQ.Data.dll
+D:\CodeSource\CompanyDemo\OAuth2Demo\bin\OAuth2.dll
+D:\CodeSource\CompanyDemo\OAuth2Demo\bin\OAuth2.pdb
+D:\CodeSource\CompanyDemo\OAuth2Demo\bin\CYQ.Data.xml
+D:\CodeSource\CompanyDemo\OAuth2Demo\obj\Debug\OAuth2Demo.dll
+D:\CodeSource\CompanyDemo\OAuth2Demo\obj\Debug\OAuth2Demo.pdb
