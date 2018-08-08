@@ -1,0 +1,290 @@
+.hidden {
+  display: none;
+}
+
+.content {
+  background-color: #f9f9f9;
+}
+
+.health-detail-header {
+  display: flex;
+  flex-direction: row;
+  background-color: #f9f9f9;
+  height: 3.25rem;
+}
+
+.health-detail-header_menu {
+  height: 3.25rem;
+  display: inline-block;
+  line-height: 3.25rem;
+  flex: 0 0 13%;
+  min-width: 2rem;
+  position: relative;
+  border-bottom: 0.025rem solid #d0d0d0;
+}
+
+.health-detail-header_menu .icon-nav {
+  position: absolute;
+  right: 40%;
+}
+
+.health-detail-header_menu .icon-nav:before {
+  color: #000;
+  line-height: 3.25rem;
+}
+
+.health-detail-header_tab {
+  flex: 1;
+  background-color: #f9f9f9;
+}
+
+#showMoreBtn {
+  margin-right: 0.5rem;
+}
+
+.health-detail-header_tab a {
+  height: 3.25rem !important;
+  line-height: 3.25rem !important;
+  color: #000;
+  font-size: 0.85rem !important;
+}
+
+.health-detail-header_more {
+  flex: 0 0 4rem;
+  border-bottom: 0.025rem solid #d0d0d0;
+}
+
+.bar-tab .active span,
+.bar-tab .active i {
+  color: #0894ec !important;
+}
+
+.health-detail-header_more span {
+  line-height: 3.25rem;
+  margin-left: 0.5rem;
+  color: #000;
+  font-size: 0.85rem;
+}
+
+.health-detail-header_tab i.icon-jump {
+  margin-left: 0.25rem;
+  transform: rotate(270deg);
+  display: inline-block;
+  color: #000;
+}
+
+.pull-left {
+  cursor: pointer;
+}
+
+.search-condition-container {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  display: none;
+  border-bottom: 0.025rem solid #d0d0d0;
+}
+
+.condition-row {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.search-date {
+  width: 40%;
+  min-width: 5rem;
+  border: 0.025rem solid #d0d0d0;
+  flex: 1;
+  border-radius: 0.2rem;
+}
+
+.instantanous-value-date {
+  height: 2rem;
+}
+
+.search-input {
+  border-radius: 0.1rem;
+  border: transparent;
+  outline: transparent;
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  color: #5f646e;
+  padding: 0 0.5rem;
+}
+
+.search-btn {
+  width: 5rem;
+  height: 2rem;
+}
+
+.health-detail-subscribe {
+  color: #0894ec;
+  display: inline-block;
+  height: 1rem;
+  font-size: 0.5rem;
+  padding: 0.05rem 0.25rem;
+  flex: 0 0 2rem;
+  margin-right: 1rem;
+  margin-top: 0.1rem;
+  border-radius: 0.1rem;
+  line-height: 0.85rem;
+}
+
+.healthType {
+  display: flex;
+  line-height: 3rem;
+}
+
+.healthType .health-overrun,
+.healthType .health-communicate {
+  flex: 1;
+  text-align: center;
+  color: #5f646e;
+}
+
+.health-title-container {
+  line-height: 2rem;
+  position: relative;
+  text-align: center;
+}
+
+.health-title-container>span {
+  color: #5f646e;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+.health-title-container>div {
+  position: absolute;
+  right: 0rem;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+#health-detail-cycle .health-data-unit {
+  color: #000;
+}
+
+#health-detail-cycle .health-data-score {
+  color: rgb(29, 178, 0);
+}
+
+.health-alart-container {
+  background-color: #f9f9f9;
+  padding: 0 0.5rem;
+}
+
+.health-alart-container .alert-data-item:nth-child(odd) {
+  background-color: rgb(238, 249, 255);
+}
+
+.alert-container {
+  height: 3rem;
+  vertical-align: middle;
+  padding: 1rem 0;
+  font-size: 0.75rem;
+  color: #000;
+}
+
+.alert-header {
+  margin-left: 0.5rem;
+  border-left: 0.25rem solid #0894ec;
+  padding-left: 0.5rem;
+}
+
+.alert-header>span {
+  font-weight: bold;
+}
+
+.active {
+  color: #0894ec !important;
+}
+
+.health-info-container {
+  padding: 0.2rem 1rem;
+  color: #000;
+  font-size: 0.75rem;
+  padding-top: 0.5rem;
+}
+
+.infoTable {
+  width: 100%;
+}
+
+.infoTable tr {
+  line-height: 1.5rem;
+  height: 1.5rem;
+}
+
+.infoTable tr td:nth-child(even) {
+  text-align: center;
+}
+
+.info-data {
+  color: #0894ec;
+  font-weight: bold
+}
+
+.health-alart-container .list-block {
+  margin: 0 0 0.8rem 0;
+  background-color: #f9f9f9;
+}
+
+.list,
+.parameterList {
+  color: #000;
+  background-color: #f9f9f9 !important;
+}
+
+/* .list>li.item-content:nth-child(odd) {
+  background-color: rgb(238, 249, 255);
+} */
+
+li.item-content {
+  border-bottom: 0.05rem solid #e7e7e7;
+}
+
+.list .item-inner:after,
+.parameterList .item-inner:after {
+  content: none !important;
+}
+
+.list .item-inner,
+.parameterList .item-inner {
+  background-image: none !important;
+}
+
+.list .item-title,
+.parameterList .item-title {
+  line-height: 1rem;
+}
+
+.item-href {
+  color: #0894ec !important;
+}
+
+.sub-item-container {
+  padding-left: 1rem;
+  margin: 0 !important;
+}
+
+.communicate_chart {
+  position: relative;
+  margin-top: -0.5rem;
+}
+
+.communicate_chart canvas {
+  left: -0.4rem !important;
+}
+
+.parameter-charts {
+  height: 15rem;
+  width: 100%;
+}
+
+.unit {
+  position: absolute;
+  right: 0.4rem;
+  top: 1rem;
+  font-size: 0.65rem;
+}
