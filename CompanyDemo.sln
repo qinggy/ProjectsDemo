@@ -164,7 +164,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OAuth验证", "OAuth验证"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiFormAuthorization", "WebApiAuthorization\WebApiFormAuthorization.csproj", "{CB714C1E-DDFE-465A-90F9-A8F23FF1A89D}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApiForm权限验证以及启用Session", "WebApiForm权限验证以及启用Session", "{7DAD87EE-53E1-4BA1-9467-B2A1F4F98360}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApi使用Form限验证以及启用Session", "WebApi使用Form限验证以及启用Session", "{7DAD87EE-53E1-4BA1-9467-B2A1F4F98360}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApi传参讲解", "WebApi传参讲解", "{8E645861-F513-47F3-BBCD-4EB88E27DEC0}"
 EndProject
