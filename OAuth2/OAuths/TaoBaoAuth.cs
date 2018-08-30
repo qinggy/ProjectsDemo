@@ -56,7 +56,6 @@ namespace OAuth2
                             openID = Tool.GetJosnValue(result, "taobao_user_id");
                             nickName = Tool.GetJosnValue(result, "taobao_user_nick");
                             return true;
-
                         }
                         else
                         {

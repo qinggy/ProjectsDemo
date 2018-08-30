@@ -8,3 +8,15 @@ D:\CodeSource\CompanyDemo\OAuth2Demo\bin\OAuth2.pdb
 D:\CodeSource\CompanyDemo\OAuth2Demo\bin\CYQ.Data.xml
 D:\CodeSource\CompanyDemo\OAuth2Demo\obj\Debug\OAuth2Demo.dll
 D:\CodeSource\CompanyDemo\OAuth2Demo\obj\Debug\OAuth2Demo.pdb
+C:\Workspace\backend\ProjectDemo\OAuth2Demo\bin\OAuth2Demo.dll.config
+C:\Workspace\backend\ProjectDemo\OAuth2Demo\bin\OAuth2Demo.dll
+C:\Workspace\backend\ProjectDemo\OAuth2Demo\bin\OAuth2Demo.pdb
+C:\Workspace\backend\ProjectDemo\OAuth2Demo\bin\CYQ.Data.dll
+C:\Workspace\backend\ProjectDemo\OAuth2Demo\bin\OAuth2.dll
+C:\Workspace\backend\ProjectDemo\OAuth2Demo\bin\OAuth2.pdb
+C:\Workspace\backend\ProjectDemo\OAuth2Demo\bin\CYQ.Data.xml
+C:\Workspace\backend\ProjectDemo\OAuth2Demo\obj\Debug\OAuth2Demo.csprojResolveAssemblyReference.cache
+C:\Workspace\backend\ProjectDemo\OAuth2Demo\obj\Debug\OAuth2Demo.csproj.CoreCompileInputs.cache
+C:\Workspace\backend\ProjectDemo\OAuth2Demo\obj\Debug\OAuth2Demo.csproj.CopyComplete
+C:\Workspace\backend\ProjectDemo\OAuth2Demo\obj\Debug\OAuth2Demo.dll
+C:\Workspace\backend\ProjectDemo\OAuth2Demo\obj\Debug\OAuth2Demo.pdb

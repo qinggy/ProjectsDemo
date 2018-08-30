@@ -50,6 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OAuths\WeiXinAuth.cs" />
     <Compile Include="OAuthTable\OAuth2Account.cs" />
     <Compile Include="OAuth2Base.cs" />
     <Compile Include="OAuth2Factory.cs" />

@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
-using System.Text;
-using System.Web;
+
 namespace OAuth2
 {
     /// <summary>
@@ -71,6 +70,7 @@ namespace OAuth2
                     _ServerList.Add(OAuthServer.SinaWeiBo.ToString(), new SinaWeiBoOAuth());//–¬¿ÀŒ¢≤©
                     _ServerList.Add(OAuthServer.QQ.ToString(), new QQOAuth());//QQŒ¢≤©
                     _ServerList.Add(OAuthServer.TaoBao.ToString(), new TaoBaoAuth());//Ã‘±¶
+                    _ServerList.Add(OAuthServer.WeiXin.ToString(), new WeiXinAuth()); //Œ¢–≈
                 }
                 return _ServerList;
             }

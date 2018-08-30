@@ -74,11 +74,11 @@ namespace OAuth2
                 return Tool.GetConfig(server.ToString() + ".AppKey");
             }
         }
-        internal string AppSercet
+        internal string AppSecret
         {
             get
             {
-                return Tool.GetConfig(server.ToString() + ".AppSercet");
+                return Tool.GetConfig(server.ToString() + ".AppSecret");
             }
         }
         internal string CallbackUrl
@@ -101,7 +101,7 @@ namespace OAuth2
             string result = string.Empty;
             try
             {
-                string para = "grant_type=authorization_code&client_id=" + AppKey + "&client_secret=" + AppSercet + "&code=" + code + "&state=" + server;
+                string para = "grant_type=authorization_code&client_id=" + AppKey + "&client_secret=" + AppSecret + "&code=" + code + "&state=" + server;
                 para += "&redirect_uri=" + System.Web.HttpUtility.UrlEncode(CallbackUrl) + "&rnd=" + DateTime.Now.Second;
                 if (method == "POST")
                 {
@@ -116,7 +116,7 @@ namespace OAuth2
                     result = wc.DownloadString(TokenUrl + "?" + para);
                 }
             }
-            catch(Exception err)
+            catch (Exception err)
             {
                 CYQ.Data.Log.WriteLogToTxt(err);
             }
@@ -209,6 +209,10 @@ namespace OAuth2
         /// 淘宝网
         /// </summary>
         TaoBao,
+        /// <summary>
+        /// 微信
+        /// </summary>
+        WeiXin,
         /// <summary>
         /// 人人网（未支持）
         /// </summary>

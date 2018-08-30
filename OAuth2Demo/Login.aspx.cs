@@ -80,6 +80,7 @@ namespace OAuth2Demo
             }
         }
     }
+
     public class UserLogin
     {
         /// <summary>

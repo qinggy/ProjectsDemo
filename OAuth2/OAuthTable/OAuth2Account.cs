@@ -10,8 +10,8 @@ namespace OAuth2
         {
             base.SetInit(this, "OAuth2Account", "Txt Path={0}App_Data");
         }
-        private int _ID;
 
+        private int _ID;
         public int ID
         {
             get
@@ -23,6 +23,7 @@ namespace OAuth2
                 _ID = value;
             }
         }
+
         private string _OAuthServer;
         /// <summary>
         /// 授权的服务类型
@@ -38,6 +39,7 @@ namespace OAuth2
                 _OAuthServer = value;
             }
         }
+
         private string _Token;
         /// <summary>
         /// 保存的Token
@@ -53,6 +55,7 @@ namespace OAuth2
                 _Token = value;
             }
         }
+
         private string _OpenID;
         /// <summary>
         /// 保存对应的ID
@@ -68,7 +71,6 @@ namespace OAuth2
                 _OpenID = value;
             }
         }
-        private string _BindAccount;
 
         private DateTime _ExpireTime;
         /// <summary>
@@ -101,6 +103,7 @@ namespace OAuth2
                 _NickName = value;
             }
         }
+
         private string _HeadUrl;
         /// <summary>
         /// 返回的第三方账号对应的头像地址。
@@ -116,8 +119,8 @@ namespace OAuth2
                 _HeadUrl = value;
             }
         }
-
-
+        
+        private string _BindAccount;
         /// <summary>
         /// 绑定的账号
         /// </summary>
